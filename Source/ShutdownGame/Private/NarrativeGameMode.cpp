@@ -25,6 +25,9 @@ void ANarrativeGameMode::StartCharacterSegment(const FString& CharacterName)
 	ANarrativeGameState* GS = GetGameState<ANarrativeGameState>();
 	if (!GS) return;
 
+	// Set the active character name in the Game State.
+	GS->ActiveCharacterName = CharacterName;
+	
 	// Find the current state for the requested character.
 	FCharacterState* CharState = GS->CharacterStates.Find(CharacterName);
 	if (!CharState) return;
@@ -50,6 +53,13 @@ void ANarrativeGameMode::StartCharacterSegment(const FString& CharacterName)
 
 void ANarrativeGameMode::ReturnToMapView()
 {
+	ANarrativeGameState* GS = GetGameState<ANarrativeGameState>();
+	if (GS)
+	{
+		// Clear the active character name when returning to map.
+		GS->ActiveCharacterName = "";
+	}
+
 	// Change the game state back and notify Blueprints.
 	CurrentGameState = EGameState::EMapView;
 	OnGameStateChanged(CurrentGameState);
@@ -91,7 +101,6 @@ void ANarrativeGameMode::ResolveTokenChallenge(const FString& CharacterName, boo
 	}
 
 	// TODO: Display the outcome narrative text here before returning to map.
-	// For now, we will just return to the map immediately.
 	
 	// Advance time.
 	GS->CurrentTimeOfDayIndex++;

@@ -33,6 +33,10 @@ public:
 	/// Stores the state for each playable character, mapped by their name.
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Game State")
 	TMap<FString, FCharacterState> CharacterStates;
+	
+	/// The name of the character whose segment is currently being played.
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Game Flow")
+	FString ActiveCharacterName;
 
 	/// Holds the parsed data for the currently active narrative segment. UI will read from this.
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Game State")

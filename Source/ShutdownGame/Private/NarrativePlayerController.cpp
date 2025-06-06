@@ -1,7 +1,8 @@
 #include "NarrativePlayerController.h"
 #include "Kismet/GameplayStatics.h"
 #include "GameFramework/Pawn.h"
-#include "Blueprint/UserWidget.h" // Include for UUserWidget
+#include "Blueprint/UserWidget.h"
+#include "NarrativeDialogWidget.h" // Include our new widget base class header
 
 void ANarrativePlayerController::BeginPlay()
 {
@@ -76,7 +77,7 @@ void ANarrativePlayerController::ShowMapView()
 	if (MapWidgetInstance && !MapWidgetInstance->IsInViewport())
 	{
 		MapWidgetInstance->AddToViewport();
-		SetInputMode(FInputModeGameAndUI()); // Or FInputModeUIOnly
+		SetInputMode(FInputModeGameAndUI());
 		bShowMouseCursor = true;
 	}
 }
@@ -90,18 +91,19 @@ void ANarrativePlayerController::ShowDialogView()
 
 	if (DialogWidgetClass && !DialogWidgetInstance)
 	{
-		DialogWidgetInstance = CreateWidget<UUserWidget>(this, DialogWidgetClass);
+		DialogWidgetInstance = CreateWidget<UNarrativeDialogWidget>(this, DialogWidgetClass);
 	}
 
 	if (DialogWidgetInstance && !DialogWidgetInstance->IsInViewport())
 	{
 		DialogWidgetInstance->AddToViewport();
-		SetInputMode(FInputModeGameAndUI()); // Or FInputModeUIOnly
-		bShowMouseCursor = true;
-	}
+		SetInputMode(FInputModeGameAndUI());
 
-	// This is a good place to call a BlueprintImplementableEvent on the widget
-	// to tell it to populate itself with the latest data from the GameState.
+		bShowMouseCursor = true;
+		
+		// Call the BlueprintImplementableEvent on the widget to tell it to populate itself.
+		DialogWidgetInstance->OnDisplaySegment();
+	}
 }
 
 void ANarrativePlayerController::UpdateSunRotation(float NewRotationX)

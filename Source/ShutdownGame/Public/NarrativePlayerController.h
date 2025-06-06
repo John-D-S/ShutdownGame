@@ -4,7 +4,8 @@
 #include "GameFramework/PlayerController.h"
 #include "NarrativePlayerController.generated.h"
 
-class UUserWidget; // Forward declaration
+class UUserWidget; // Forward declaration for Map Widget
+class UNarrativeDialogWidget; // Forward declaration for our new Dialog base class
 
 UCLASS()
 class SHUTDOWNGAME_API ANarrativePlayerController : public APlayerController
@@ -40,9 +41,9 @@ private:
 	UPROPERTY(EditDefaultsOnly, Category = "UI Classes")
 	TSubclassOf<UUserWidget> MapWidgetClass;
 	
-	/// The Blueprint class for the Dialog widget. Set this in the Blueprint child class defaults.
+	/// The Blueprint class for the Dialog widget. Must inherit from NarrativeDialogWidget.
 	UPROPERTY(EditDefaultsOnly, Category = "UI Classes")
-	TSubclassOf<UUserWidget> DialogWidgetClass;
+	TSubclassOf<UNarrativeDialogWidget> DialogWidgetClass;
 
 	/// The created instance of the Map widget.
 	UPROPERTY()
@@ -50,7 +51,7 @@ private:
 
 	/// The created instance of the Dialog widget.
 	UPROPERTY()
-	TObjectPtr<UUserWidget> DialogWidgetInstance;
+	TObjectPtr<UNarrativeDialogWidget> DialogWidgetInstance;
 
 	/// The actor in the world tagged as 'SunPivot' that controls the sun's rotation.
 	UPROPERTY()
