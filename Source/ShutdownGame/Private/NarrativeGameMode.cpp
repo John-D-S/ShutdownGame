@@ -86,7 +86,6 @@ void ANarrativeGameMode::ResolveTokenChallenge(const FString& CharacterName, boo
 		CharState->CurrentPathString.Append(OutcomeChoice);
 	}
 
-	// Correctly look up the weight for the current day.
 	const float* Weight = PathWeights.Find(GS->CurrentDay);
 	if (Weight)
 	{
@@ -114,15 +113,19 @@ void ANarrativeGameMode::StartNewDay()
 	ANarrativeGameState* GS = GetGameState<ANarrativeGameState>();
 	if (GS)
 	{
+		// First, update the core state variables.
 		GS->PlayedCharactersThisDay.Empty();
+		GS->CurrentDay++;
+		GS->CurrentTimeOfDayIndex = 0;
 		
-		// This now correctly triggers Day 2, 3, etc.
+		// Then, call the Blueprint event to let it set the tokens for the new day.
 		GS->OnNewDayStarted();
 	}
 
 	ANarrativePlayerController* PC = Cast<ANarrativePlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 	if (PC)
 	{
+		// From the 12am position, rotate 120 degrees more to get to the 8am position.
 		PC->IncrementSunRotation(120.0f);
 	}
 	
