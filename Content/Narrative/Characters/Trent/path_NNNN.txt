@@ -1,0 +1,16 @@
+NARRATOR: The flickering sun throws long, distorted shadows across the Coldry factory floor. Trent, sweat beading on his brow, grips a wrench, the metal cold against his calloused hand. ColCorp's foreman, a weasel-faced man named Petrov, keeps demanding more canisters, regardless of quality.  The automatons' warnings grow more insistent. This is it.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Trent confronts Petrov, demanding better materials and demanding ColCorp stop pressuring the workers to produce substandard canisters, threatening to expose their shortcuts to the Union and the automatons if he doesn't comply. He'll use his influence within the union to shut down production until the situation is rectified."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Petrov, facing the raw fury in Trent's eyes and the threat of a full-blown union strike, backs down.  He reluctantly agrees to procure better materials, promising to report to higher-ups that the current production levels are unsustainable.  A tense calm settles over the factory floor.
+    # IMAGE: Trent, standing defiantly before a cowering Petrov, his union brothers and sisters rallying behind him, a sense of grim determination etched on their faces.  The dim light of the failing sun casts long, dramatic shadows.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Petrov laughs, dismissing Trent's threats. He calls security, accusing Trent of insubordination. A brawl ensues, but Trent is outnumbered and subdued. The substandard canisters continue to roll off the line, further jeopardizing the sun's operation.
+    # IMAGE: Trent, bruised and battered, pinned against a wall by ColCorp security guards, his defiant expression replaced by grim resignation as Petrov looks on with smug satisfaction.  The factory floor is a chaotic mess of overturned machinery.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

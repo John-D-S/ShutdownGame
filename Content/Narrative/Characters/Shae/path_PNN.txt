@@ -1,0 +1,18 @@
+NARRATOR: The flickering sun casts long, unsettling shadows across Shae's office.  The PSN's contradictory statements about the fuel shortage are fueling anxieties within Lumina's council, mirroring her own growing unease.  She needs to regain control, to reassure herself and her superiors that the situation is manageable.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Shae will convene a closed-door meeting with key figures in Lumina RRM to discreetly investigate whether deliberate slowdowns in exotope transport to Sun Island are occurring, and to subtly pressure them to prioritize deliveries while maintaining a veneer of system compliance."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Through careful questioning and veiled threats to their standing within Lumina, Shae uncovers evidence of minor logistical manipulation—enough to explain some delays but not the full crisis.  She secures a promise of increased efficiency from the RRM directors, presenting it as a preemptive measure to prevent chaos.  A sense of fragile control returns.
+    # IMAGE: Shae sits at the head of a long mahogany table in a dimly lit conference room.  The RRM directors, faces etched with apprehension, nod in agreement as she speaks, their anxieties slightly eased by her reassuring but firm presence.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_PNNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Shae's attempts to subtly pressure the RRM directors backfire. They deny any wrongdoing, stonewalling her inquiries and leveraging her own anxieties about challenging the system to deflect her suspicions. The meeting dissolves in strained silences and unanswered questions, leaving Shae more vulnerable and terrified than before.
+    # IMAGE: Shae sits alone in her office, the flickering light highlighting her anxious expression, a half-empty glass of water trembling in her hand, the weight of her failures pressing down on her.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_PNNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

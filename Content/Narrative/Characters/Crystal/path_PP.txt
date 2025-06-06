@@ -1,0 +1,16 @@
+NARRATOR: The flickering sun casts an unsettling strobe effect across Southpoint's already chaotic cityscape.  Crystal, mid-tune on a synth rigged to a repurposed mining drone, feels the usual thrill of the performance fading, replaced by a prickle of unease.  The energy dips, the bass line cuts out.  This isn't just a power glitch.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Leveraging her connections in Southpoint's underground scene, Crystal will try to secure a high-quality, black market exotope sample from Helios, using her charisma and a promise of a killer performance at an exclusive party as leverage. She hopes to analyze the sample and broadcast her findings to expose Helios's shady practices, igniting public pressure for change."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Crystal's charm, coupled with a tantalizing offer of a private concert featuring never-before-heard augmented sounds, wins over a hesitant Helios contact.  She obtains a sample of the superior exotope, confirming its purity.  Her subsequent live analysis, broadcast via a guerilla network, sparks outrage and exposes Helios's negligence.
+    # IMAGE: Crystal, bathed in the glow of her augmented instruments, her face a mask of defiant energy as holographic data streams revealing Helios's deception project behind her.
+    NEXT_PATH_SEGMENT: path_PPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The Helios contact, while impressed by Crystal's audacious proposal, ultimately prioritizes profit and loyalty over a risky deal.  Crystal’s attempt to expose them backfires, leaving her vulnerable and attracting unwanted attention from Helios's security.
+    # IMAGE: Crystal, surrounded by menacing figures in dark alleyways of Southpoint, her instruments discarded, a look of dawning panic on her face.  The flickering sunlight casts long, distorted shadows.
+    NEXT_PATH_SEGMENT: path_PPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

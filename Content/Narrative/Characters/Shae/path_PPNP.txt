@@ -1,0 +1,16 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Lumina's usually pristine avenues. Shae, clutching her datapad, feels the familiar knot of anxiety tighten in her stomach.  The Lumina RRM's assurances ring hollow against the backdrop of impending disaster.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Confront Minister Valerius, the head of Lumina RRM, with evidence of their deliberate slowdowns in exotope transport, appealing to his sense of duty and Lumina's stability—even threatening to report his actions to the Union if necessary. This could jeopardize her standing within the system but, she hopes, would force decisive action."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Valerius, initially defensive, is swayed by Shae's meticulously presented evidence and the escalating crisis.  He reluctantly agrees to prioritize exotope shipments, though the political fallout promises to be significant. He quietly orders the OptimaShip system to prioritize Sun Island deliveries.
+    # IMAGE: Shae, looking relieved but still tense, exchanges a strained handshake with Minister Valerius in his dimly lit office. The emergency lights flicker overhead.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Valerius, unmoved by Shae's pleas and accusations, dismisses her concerns as “hysteria” and “disruptive behavior,” using the situation to further consolidate his power. Her attempt to expose the truth only strengthens his position, further undermining her own credibility.
+    # IMAGE: Shae standing alone and defeated in Valerius’ opulent, yet cold, office.  His back is turned, his silhouette a symbol of the system’s unyielding power.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

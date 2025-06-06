@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts long, skeletal shadows across the Coldry factory floor.  ColCorp's foreman, a weasel named Barlow, is pushing for another overtime shift, ignoring the growing unrest and the increasingly erratic power supply. Trent clenches his jaw, the familiar knot of resentment tightening in his gut.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Trent confronts Barlow, demanding better safety precautions and pay for the dangerous conditions caused by the failing sun and ColCorp's cost-cutting measures. He threatens a walkout if his demands aren't met immediately."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Barlow, intimidated by Trent's fury and the simmering anger of the other workers, backs down.  He agrees to Trent's demands, promising improved safety and hazard pay, to avoid a potentially crippling strike.  The factory, for now, avoids complete collapse.
+    # IMAGE: Trent standing defiantly before a cowering Barlow, his fists clenched but not raised, the other workers watching with a mixture of fear and admiration.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: path_NNNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Barlow, backed by ColCorp security, refuses to yield.  Trent's defiant stand sparks a violent clash with security forces, resulting in injuries and further disruption to the already strained factory operations. The workers are scattered and demoralized.
+    # IMAGE: A chaotic scene of a brawl within the factory, security guards wrestling with workers, amidst sparks and flying debris; Trent is being restrained.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: path_NNNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

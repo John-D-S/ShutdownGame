@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun throws long, distorted shadows across the Coldry factory floor. Trent, his face grim, surveys the half-finished exotope canisters – a mountain of substandard work, thanks to ColCorp's relentless pressure.  The automatons' final warning echoes in his mind:  one more day.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Trent will seize control of the canister production line, bypassing ColCorp's compromised quality control and focusing solely on producing a small batch of high-quality canisters for the automatons using the best remaining materials. He'll use his union contacts to ensure worker cooperation and enforce his methods through intimidation and direct action."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Sweat stinging his eyes, Trent barks orders, his voice a whip cracking through the echoing factory. Workers, initially hesitant, fall into line under his intense gaze.  A small but perfect batch of canisters emerges, ready for transport.  The automatons respond favorably to this demonstration of Coldry’s capacity for compliance.  A fragile unity forges in the face of survival.
+    # IMAGE: Trent, silhouetted against the flickering artificial sun, stands amidst a line of meticulously crafted exotope canisters, his workers looking determined rather than scared.  A small automaton unit quietly receives the canisters, its sensors scanning them approvingly.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's forceful methods backfire.  His attempts to override ColCorp's systems trigger a factory-wide shutdown; ColCorp's security forces intervene, seizing the remaining materials.  The fragile cooperation Trent secured shatters, replaced by a bitter showdown.  The automatons, faced with further delays, issue their final ultimatum.
+    # IMAGE: Chaos erupts in the Coldry factory.  Sparks fly, security bots clash with workers, and Trent, battered but defiant, is surrounded, his efforts thwarted.  The artificial sun dims ominously in the background.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

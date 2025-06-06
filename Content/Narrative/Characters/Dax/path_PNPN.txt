@@ -1,0 +1,15 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Dax's cramped Midcove apartment.  The PSN's lies are a constant, throbbing ache, a phantom limb of his sister's death. He needs clarity—to pierce the fog of misinformation one last time.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Initiate a covert data leak of the PSN's compromised threat assessment logs, focusing on evidence of deliberate disinformation campaigns related to the sun's failure, aiming to expose the network's manipulation before the sun collapses completely."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax executes a meticulously planned series of exploits, routing the data through encrypted channels to independent researchers across Ita's city-states.  The truth, raw and undeniable, begins to spread.
+    # IMAGE: A swirling vortex of data packets escaping a central server, forming a constellation of city-state symbols against a backdrop of a dying artificial sun.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Dax's leak is detected; a sophisticated countermeasure wipes his data, leaves him exposed and tracked, and triggers a PSN lockdown. The fleeting clarity he sought vanishes, replaced by the chilling certainty of his failure.
+    # IMAGE:  A close-up of Dax's face, pale and strained, as a digital cascade of red error messages fills his screen; the artificial sun casts an ominous red glow on his face.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

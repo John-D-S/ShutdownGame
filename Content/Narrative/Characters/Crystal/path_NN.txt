@@ -1,0 +1,16 @@
+NARRATOR: The flickering sun casts an unsettling strobe effect across Southpoint's already chaotic cityscape.  Crystal, amidst the rising panic, feels a familiar tightening in her chest – the dull thrum of anxiety she usually drowns out with music and excitement.  But even the thrill of impending chaos feels… muted.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Organize a massive, impromptu concert in the heart of Southpoint's rig district, using the energy fluctuations to power a spectacular, augmented light and sound show – a defiant celebration of life in the face of the dying sun, aiming to both distract from the fear and attract the attention of Helios, forcing them to acknowledge the crisis and potentially provide resources."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The concert becomes a legendary event.  The unpredictable energy surges feed into Crystal's augmented instruments, creating a breathtaking spectacle of light and sound that momentarily eclipses the fear. Helios representatives, intrigued by the publicity and the potential for exploitation, arrive, offering a deal—unstable but usable exotope fuel in exchange for Crystal’s performance in their corporate events for a limited time.
+    # IMAGE: A panoramic view of Southpoint's rig district at night, illuminated by a dazzling, chaotic display of light and sound emanating from Crystal's performance stage.  Crowds are ecstatic, faces lit by vibrant colors.
+    NEXT_PATH_SEGMENT: path_NNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The energy fluctuations prove too erratic and destructive, causing a catastrophic power surge that damages Crystal's equipment and leaves the concert in ruins.  Helios dismisses the event as a chaotic distraction and refuses to engage, leaving Crystal feeling vulnerable and exposed. The fear, previously masked, now feels overwhelming.
+    # IMAGE: A scene of devastation in the rig district, scorched earth and wrecked equipment scattered around a silent stage. Crystal sits alone amidst the debris, her face pale and drawn.
+    NEXT_PATH_SEGMENT: path_NNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

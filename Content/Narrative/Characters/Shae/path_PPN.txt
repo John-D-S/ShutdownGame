@@ -1,0 +1,15 @@
+NARRATOR: The flickering of the artificial sun is now undeniable, even in Lumina.  Shae's anxiety is a tangible thing, a knot in her stomach. The PSN's contradictory statements only fuel her fears.  She must act, but only within the bounds of the system.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Shae will convene an emergency meeting with key figures within Lumina RRM and the city council, presenting the automaton's warning as a potential threat to Lumina's stability and economic interests, urging for a renewed commitment to efficient exotope transport and compliance with automaton protocols. She will emphasize the potential for unrest and economic collapse if Lumina is seen as failing its duty to maintain the artificial sun."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Shae's carefully crafted presentation, highlighting the potential damage to Lumina's reputation and trade, resonates with the council. They agree to prioritize exotope shipments, issuing directives to streamline the OptimaShip system.  A sense of controlled urgency replaces the previous apathy.
+    # IMAGE: Shae stands at a podium, addressing a room full of serious-faced council members and RRM executives.  Charts depicting potential economic losses are projected behind her. The overall feeling is one of controlled tension and serious discussion, suggesting the council is now more actively engaged than before.
+    NEXT_PATH_SEGMENT: path_PPNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Shae's anxieties leak into her presentation.  Her pleas sound weak and uncertain, and her warnings about external threats are dismissed as fear-mongering or an attempt to consolidate power.  The council, already wary of the automatons' demands, sees this as an opportunity to further obstruct their efforts, strengthening their own power.
+    # IMAGE: Shae, looking defeated and small, stands before a disinterested council. The council members are engaged in side conversations, ignoring her presentation. The atmosphere is cold and dismissive.
+    NEXT_PATH_SEGMENT: path_PPNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

@@ -1,0 +1,18 @@
+NARRATOR: The flickering artificial sun casts long, distorted shadows across the Coldry factory floor. Trent, sweat stinging his eyes, grips a dented exotope canister. ColCorp's foreman, a weasel in a pristine white coat, keeps circling like a vulture.  The final batch needs to be ready, and the pressure is crushing.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Despite the substandard materials and ColCorp's blatant disregard for safety regulations, Trent will personally oversee the final quality check of the exotope canisters.  He intends to personally reject any that are below standard and physically intimidate the foreman into halting production until proper materials are sourced, even if it means a showdown."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's forceful inspection reveals a shocking number of faulty canisters. His confrontation with the foreman, fueled by righteous anger and a palpable threat of violence, results in a grudging agreement to halt production and secure better materials—at least for this final batch. The union backs him.
+    # IMAGE: Trent, arms crossed, standing defiantly over a pile of rejected canisters.  The foreman, pale and sweating, nervously signs a requisition form.  Coldry factory workers stand behind Trent in a show of solidarity.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Despite Trent's best efforts, the foreman subtly sabotages the quality check, using his influence to dismiss Trent's concerns.  The flawed canisters are shipped, and the foreman uses Trent's outburst as justification for further cuts and increased production pressure. The union, spread thin, fails to fully support his actions.  Trent is left feeling betrayed and impotent.
+    # IMAGE: Trent, alone, fists clenched, watching as a truck carrying faulty canisters drives away under the flickering artificial sun.  His face is a mask of furious frustration.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

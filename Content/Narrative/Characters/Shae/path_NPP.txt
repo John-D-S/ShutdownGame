@@ -1,0 +1,15 @@
+NARRATOR: The flickering of Ita's artificial sun is now undeniable, even in Lumina.  Reports of unrest in other city-states flood Shae's desk – a chilling reminder of the instability she so desperately avoids. The ever-present anxiety gnaws at her.  She needs reassurance, a confirmation that Lumina's meticulously crafted order can weather this storm.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Shae will convene a closed-door meeting with key figures in Lumina RRM, seeking to subtly influence their logistical strategies to prioritize the delivery of exotope canisters to Sun Island, while maintaining the appearance of adhering to standard procedures and avoiding any overt confrontation with the automatons or those questioning Lumina’s actions."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Shae's carefully worded appeals to loyalty and the preservation of Lumina's stability resonate.  RRM officials, reassured by her calm authority and commitment to the established system, subtly adjust their OptimaShip routing, prioritizing Sun Island shipments, at least temporarily. A small, but crucial, victory.
+    # IMAGE: Shae stands at the head of a long mahogany table in a dimly lit conference room.  Her expression is serious, but a slight, almost imperceptible, smile plays on her lips as key RRM officials nod in agreement, documents shuffled between them.  The room is subtly opulent, displaying Lumina's wealth and power.
+    NEXT_PATH_SEGMENT: path_NPPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Shae's attempts to influence RRM are met with resistance. Some officials are openly skeptical of the automaton's warnings, while others suspect Shae of overreacting or seeking to consolidate her own power.  Her appeals to loyalty fall flat, and the logistical bottlenecks persist, worsening the situation. The anxiety twists into full-blown panic.
+    # IMAGE: Shae sits alone in her office, the flickering lights reflecting in her wide, anxious eyes.  A pile of unread reports sits untouched on her desk, the glow of a datapad displaying a graph showing a rapidly depleting exotope reserve.
+    NEXT_PATH_SEGMENT: path_NPPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

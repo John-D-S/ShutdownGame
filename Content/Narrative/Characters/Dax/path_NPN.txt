@@ -1,0 +1,18 @@
+NARRATOR: The PSN's contradictory statements are a cacophony of noise, a deliberate obfuscation drowning out the automaton's stark warning. Dax feels the familiar cold dread of informational vacuum closing in. He needs clarity, concrete data.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Bypass the PSN's main feeds and directly access the raw sensor data from Seaburn's SebSA sun monitoring station, using a newly developed backdoor exploit."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The exploit works.  A torrent of raw spectral data floods Dax's screen, painting a grim but precise picture of the sun's dwindling energy reserves. The numbers are brutally clear, devoid of spin.
+    # IMAGE: A chaotic display of spectral data lines on a multitude of screens, interspersed with precise numerical readouts, all bathed in the dim emergency lighting of Dax's secure workspace. The overall impression is one of stark, undeniable truth amidst overwhelming data.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_NPNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: SebSA's security protocols prove unexpectedly resilient. The backdoor is detected, triggering an automatic lockdown, and Dax's intrusion leaves a traceable digital footprint. His access is cut off, the void of unanswered questions expanding.
+    # IMAGE: A stark, red "INTRUSION DETECTED" message flashing across Dax's screen, the data stream abruptly cut, overlaid with the chilling silence of his otherwise active workspace.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_NPNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

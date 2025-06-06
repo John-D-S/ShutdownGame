@@ -1,0 +1,18 @@
+NARRATOR: The flickering sun casts an unsettling strobe effect across Southpoint's neon-drenched alleys.  Crystal, mid-jam session in her makeshift studio, feels the usual thrill fading, replaced by a prickle of unease.  The city's usual chaotic energy feels… strained.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Organize a massive, impromptu concert – a 'Sun's Gonna Set' rave – to distract herself and others from the worsening situation, using her network of contacts and Southpoint's vibrant underground scene to rally support and draw attention away from the panic buying and the increasingly frantic warnings from the Automatons."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The rave explodes into a sensory overload of music, light, and augmented bodies, a vibrant defiance against the encroaching darkness.  For a night, at least, fear is replaced by ecstatic release. Crystal feels a fleeting sense of control, a powerful surge of connection.
+    # IMAGE: A sprawling, chaotic rave scene under the flickering artificial sun, bodies moving to the music, lasers cutting through the haze, a sea of faces illuminated by vibrant neon and augmented light shows. Crystal commands the stage, radiating energy, her music a conduit for collective escape.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_PNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The attempt to organize the rave falls flat. The growing unease and panic are too pervasive; people are too focused on securing necessities, too afraid to join a party that feels reckless and irresponsible.  Crystal is left with a growing sense of isolation and the cold realization that her usual escapism isn't working this time.
+    # IMAGE: A sparsely populated, dimly lit rave space, abandoned equipment strewn about, Crystal alone on stage, her music drowned out by the sounds of the city's growing unrest.  Her face is etched with a mixture of disappointment and rising anxiety.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_PNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

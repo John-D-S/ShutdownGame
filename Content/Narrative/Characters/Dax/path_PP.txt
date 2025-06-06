@@ -1,0 +1,15 @@
+NARRATOR: The flickering sun casts long, unsettling shadows across Dax's Midcove apartment.  Panic buying reports flood his monitors; the PSN's carefully crafted "all-clear" messages feel like a chilling echo of his past. He needs concrete data, not soothing lies.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Infiltrate ColCorp's Coldry intranet to verify the rumors of substandard exotope canisters and expose the extent of their cost-cutting measures, hoping to find evidence of deliberate sabotage."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax bypasses ColCorp's firewalls, navigating their network like a phantom. He uncovers internal memos detailing the use of inferior alloys and falsified quality reports, directly linking ColCorp's actions to the delayed sun-maintenance.  A surge of grim satisfaction washes over him; the clarity is brief, but potent.
+    # IMAGE: A close-up of Dax's monitor displaying a series of damning internal ColCorp memos, highlighted in red to emphasize critical compromises.  The background is a blurred image of ColCorp’s Coldry facility.
+    NEXT_PATH_SEGMENT: path_PPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: ColCorp's security systems prove more robust than anticipated. Dax's intrusion is detected; his access is severed, and a digital tripwire alerts their security team. The information vacuum closes in, leaving him with only fragments and suspicions, a gnawing sense of incompleteness.
+    # IMAGE: Dax’s monitor displaying a stark red error message, overlaid with a rapidly expanding digital spiderweb pattern visually representing the intrusion detection and network lockdown.
+    NEXT_PATH_SEGMENT: path_PPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

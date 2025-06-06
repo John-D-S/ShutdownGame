@@ -1,0 +1,18 @@
+NARRATOR: The flickering sun casts long, unsettling shadows across Shae's meticulously organized office in Lumina's governmental complex.  The contradictory reports from the PSN are driving her anxiety through the roof; the automatons' warning feels like a direct threat to Lumina's stability.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Shae will attempt to convene a closed-door meeting with key figures in Lumina's RRM and security apparatus to discreetly investigate the reported inefficiencies in exotope transport to Sun Island, framing the inquiry as a preemptive security measure to protect Lumina's interests and prevent any potential disruption to the established order."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The meeting, shrouded in secrecy, reveals subtle evidence of Lumina RRM's deliberate slowdowns, disguised as logistical challenges.  Shae, using her political acumen, manages to secure a commitment for increased transparency and efficiency, while subtly deflecting attention from the true scale of the problem.  She carefully avoids any action that could significantly disrupt the existing power structures.
+    # IMAGE: Shae sits at the head of a long mahogany table in a dimly lit room, key figures around her attentively listening, documents spread before them.  The atmosphere is tense but controlled, with a sense of clandestine collaboration.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_NNNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Shae's attempts to subtly investigate are met with resistance and obfuscation.  Her anxieties about rocking the boat prevent her from pushing too hard for answers, and her superiors dismiss her concerns as unfounded paranoia, furthering her sense of helplessness and reinforcing her reliance on existing systems despite their flaws.  The logistical inefficiencies continue, masked by carefully crafted misinformation.
+    # IMAGE: Shae sits alone in her office, surrounded by piles of contradictory reports, her face etched with worry and frustration.  The dim light from the failing sun casts elongated shadows, accentuating her isolation.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_NNNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

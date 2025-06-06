@@ -1,0 +1,18 @@
+NARRATOR: The flickering sun casts long, skeletal shadows across Coldry's factory floor. ColCorp's foreman, a weasel-faced man named Hartigan, is demanding another impossible quota, ignoring the failing equipment and dwindling resources. Trent feels the familiar simmer of rage.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Trent confronts Hartigan, demanding better equipment and a realistic quota, threatening a full-scale union walkout if his demands aren't met."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Hartigan, intimidated by Trent's fury and the solidarity of the workers behind him, reluctantly agrees to a reduced quota and promises to requisition better equipment.  A tense victory, but a victory nonetheless.
+    # IMAGE: Trent, standing defiantly before a cowering Hartigan, his fists clenched but his expression grimly satisfied.  The other workers stand behind him, a silent but powerful show of support.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: path_PNNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Hartigan, backed by ColCorp's security detail, refuses to budge. Trent's threat only escalates the situation, leading to a violent confrontation and a suspension for Trent. His defiance has backfired.
+    # IMAGE: Trent, bruised and battered, being hauled away by ColCorp security while other workers watch helplessly from a distance.  The factory looms over them, a symbol of oppressive power.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: path_PNNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

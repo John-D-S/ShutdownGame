@@ -1,0 +1,15 @@
+NARRATOR: The flickering sun throws long, distorted shadows across Coldry's factory floor. Trent, sweat stinging his eyes, grips a wrench, the cheap metal protesting under his strain. ColCorp's demands for faster production using substandard materials are a direct threat – a weakness he refuses to tolerate.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Organize a clandestine meeting of trusted union members to discuss sabotaging the ColCorp production line, focusing on subtly damaging the faulty canisters enough to halt production without causing outright explosions or revealing their involvement."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Under the cloak of darkness, Trent and his loyal crew work with grim efficiency.  They subtly weaken the substandard welds on a critical batch of canisters, enough to cause failure during transit.  ColCorp's demands are stalled, at least temporarily.
+    # IMAGE: A shadowy group huddled around a damaged exotope canister in a dimly lit Coldry factory, their faces obscured but their determined expressions clear.
+    NEXT_PATH_SEGMENT: path_NNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Trent's impulsive plan backfires.  The sabotage goes too far; a canister explodes, causing a minor factory fire and drawing unwanted attention.  ColCorp security swarms the area, and Trent finds himself facing accusations and potential repercussions.
+    # IMAGE:  Flames and smoke billowing from a Coldry factory as ColCorp security personnel rush to the scene, Trent watching from the shadows, his face grim with regret.
+    NEXT_PATH_SEGMENT: path_NNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

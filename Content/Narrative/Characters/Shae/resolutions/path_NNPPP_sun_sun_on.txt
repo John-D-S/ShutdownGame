@@ -1,0 +1,14 @@
+NARRATOR:  The artificial sun, a pale but persistent disc in the Ita sky, cast a weak, almost apologetic glow over Lumina.  Seven days. Seven days of escalating anxiety, of carefully constructed facades crumbling, of choices made and consequences faced.  Shae stood on the balcony of her office, the city spread beneath her like a fragile tapestry woven from ambition and fear. The faint hum of the restored supply lines was a constant, low thrum beneath the city's nervous energy.
+
+SHAE: (Whispering, more to herself than anyone else)  It’s… on.  They said it would be close.  Incredibly close.
+
+NARRATOR:  The "GOOD" outcome wasn't a triumphant victory, not in the way she’d always envisioned success. It wasn't the smooth, predictable advancement within the system she'd craved. It was messy, fraught with uncertainty, a compromise born of desperate action.  The evidence she'd presented, the sabotage she'd uncovered within Lumina RRM, hadn't earned her accolades. It had earned her a wary respect, a grudging acknowledgment that sometimes, even within the established order, things must be disrupted to survive.
+
+# IMAGE: Shae stands on the balcony, her back to the viewer.  The artificial sun is a weak, pale light in the sky, casting long shadows across Lumina.  She clutches a datapad displaying a partially redacted report – a testament to her success, but also the limits of her actions within the system. The faint hum of the city is almost inaudible.  Her shoulders are slightly slumped, the tension still visible.
+
+
+SHAE: (To herself, a hint of a sigh escaping her lips)  They still don't fully trust the automatons.  They still blame Coldry.  They still whisper about the PSN.  But the sun… the sun is burning.  For now.
+
+NARRATOR: The fragile balance of Ita, a precarious dance between technological dependence and deep-seated societal dysfunction, hung precariously in the balance. Shae understood now that true security wasn’t found in blind adherence to the system, but in the courage to challenge it when necessary, even if that challenge meant navigating a future as uncertain as the flickering light above.  The weight of her actions, and the lingering anxieties, remained, a constant reminder of the price of survival within a system built on its own inherent flaws. The safety she had sought had been found not in absolute control but in a hard-won, fragile stability.
+
+# IMAGE: Close-up of Shae's face, illuminated by the weak sunlight. A flicker of something akin to hope, mixed with profound weariness, resides in her eyes.  She seems both relieved and burdened by the weight of her success.

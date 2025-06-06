@@ -1,0 +1,18 @@
+NARRATOR: The bass throb of the latest Helios rave still vibrates in Crystal's bones, a fading echo of the exhilarating escape.  But even the most potent exotope cocktail can't fully drown out the nagging feeling that something's off.  The sun feels… weaker.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Chase the rumor of a secret after-party – a notorious underground gathering rumored to be hosted by a group of augmented tech heads known for their access to restricted data and experimental tech. Crystal figures they might know something juicy, something beyond the usual Helios-spun spin on the sun's dimming."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The party is wilder, weirder, and more informative than Crystal could have hoped.  Hidden amongst the glitching synths and bioluminescent body paint, she overhears hushed conversations about the failed automaton launch and a brewing crisis.  Someone slips her a data chip containing leaked Helios memos revealing the extent of their exotope manipulation.
+    # IMAGE: Crystal, surrounded by a throng of neon-clad partygoers, a mischievous grin playing on her lips as she discreetly pockets a data chip.  The background is a blur of pulsating lights and experimental augmentations.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_P.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The "secret" party turns out to be a Helios-sponsored trap, designed to distract and control the city's more inquisitive minds. Crystal, caught up in the thrill of the chase and the promise of exclusive new sounds, forgets her initial suspicions. She ends up spending the night indulging in heavily adulterated exotope cocktails and misses any crucial information.
+    # IMAGE: Crystal slumped against a wall in a dimly lit, grimy alleyway, the remnants of a failed night of partying, her head throbbing and her pockets empty. The neon lights of Southpoint are a cruel mockery of the fun she thought she'd find.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_N.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

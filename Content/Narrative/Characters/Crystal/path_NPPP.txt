@@ -1,0 +1,18 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Southpoint.  Another blackout looms, but Crystal isn't focusing on the impending darkness. A new synth-rave is about to start, and Helios is offering a lucrative gig – a chance to truly push her sonic boundaries, to feel truly *alive*.  But there's a nagging feeling, a flicker of something beyond the beat.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Accept Helios's gig, using the performance as a platform to subtly expose their negligence in exotope refinement, weaving a message of corporate greed into the music and visuals, hoping to stir the crowd into action without directly confronting Helios's enforcers."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The crowd roars its approval.  Crystal’s subversive message, cleverly disguised within layers of pulsing synths and augmented visuals, resonates deeply.  The energy shifts; a groundswell of protest begins to form, even as the music builds to a fever pitch.
+    # IMAGE: Crystal bathed in the strobing lights of her performance, the crowd a sea of faces both awestruck and energized, a subtle, almost imperceptible anti-Helios symbol projected onto the stage backdrop.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The performance is electrifying, a testament to Crystal's talent.  But Helios's goons swiftly shut down the event before the message gains traction, and the crowd is dispersed before any real protest can take form. Crystal escapes, but the feeling of failure hangs heavier than the scent of ozone after the lights go down.
+    # IMAGE: Crystal, silhouetted against the emergency lights of the abruptly-ended concert, her face grim as security personnel break up the crowd.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

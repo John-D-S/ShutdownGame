@@ -1,0 +1,16 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Dax's austere Midcove apartment.  The PSN's lies are a dull ache, a constant hum of suppressed panic. He needs clarity, a definitive answer, before the light fails entirely.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Initiate a covert data leak of the PSN's raw sensor data, bypassing their manipulative filters, and anonymously distribute it across Ita's fragmented intranets using a newly developed, untraceable routing protocol."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The data streams out, a torrent of unfiltered truth.  Across Ita, citizens receive the raw, unvarnished reality of the sun's imminent collapse, bypassing the PSN's carefully crafted narrative.
+    # IMAGE: A cascading waterfall of green digital code flowing across multiple screens, interspersed with images of the failing sun.  In the foreground, Dax's face is partially obscured by the glow, a flicker of something akin to relief in his eyes.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The leak is detected.  The PSN's automated countermeasures swiftly isolate and erase the compromised data streams, leaving Dax exposed and his efforts fruitless.  He's left with a crushing wave of helplessness, the darkness returning, deeper than before.
+    # IMAGE: Dax slumped in his chair, surrounded by the flickering red lights of numerous failed data streams. His face is etched with exhaustion and despair.  The screen displays a single, stark message: "ACCESS DENIED."
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

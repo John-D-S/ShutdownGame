@@ -1,0 +1,15 @@
+NARRATOR: The flickering sun casts long, jittery shadows across the Coldry factory floor. ColCorp's foreman, a weasel-faced man named Harv, keeps pushing for faster production, even as the quality of the exotope canisters plummets.  Trent feels the pressure building, a familiar tightness in his chest.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: Confront Harv directly, demanding better materials and safer working conditions, threatening a union slowdown if his demands aren't met.
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Harv, caught off guard by Trent's raw intensity and the simmering anger of the other workers, backs down. He promises to petition ColCorp for better resources, at least temporarily.  The workers, emboldened, maintain a slower, safer pace.
+    # IMAGE: Trent standing defiantly before a cowering Harv, a circle of hardened factory workers behind him, their collective gaze unwavering.
+    NEXT_PATH_SEGMENT: path_PPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Harv, unmoved by Trent's threat, calls in security.  A brawl ensues, leaving Trent bruised but defiant, and the factory shut down for the day. The union's position is weakened.  The substandard materials continue to be used.
+    # IMAGE: Trent, bloodied but unbowed, surrounded by ColCorp security guards, his fists clenched. The factory floor is in disarray.
+    NEXT_PATH_SEGMENT: path_PPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

@@ -1,0 +1,16 @@
+NARRATOR: The PSN's falsified data continues its insidious drip-feed, but Dax detects a subtle pattern: inconsistencies in the reported exotope shipments from Coldry.  A flicker of his compulsion—the need for clarity—ignites.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Infiltrate ColCorp's internal network to verify the Coldry exotope canister production reports, searching for evidence of compromised quality control or deliberate sabotage."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax bypasses ColCorp's firewalls using a novel exploit he developed.  The data reveals a systematic pattern of substandard materials being used, intentionally hidden in falsified reports.
+    # IMAGE: A detailed close-up of a computer screen displaying a complex network map with highlighted nodes representing compromised data streams, overlaid with a partially obscured ColCorp logo in the corner. The image is sharp and detailed.
+    NEXT_PATH_SEGMENT: path_NP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: ColCorp's security systems prove unexpectedly resilient.  Dax's intrusion is detected, triggering an automated lockdown before he can retrieve conclusive evidence.  He barely escapes detection, but the information vacuum remains.
+    # IMAGE: A blurry, grainy security camera image of Dax's back as he frantically retreats from a brightly lit server room, with a stylized, menacing "ACCESS DENIED" message superimposed across the screen.
+    NEXT_PATH_SEGMENT: path_NN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun throws long, distorted shadows across the Coldry factory floor. Trent, sweat plastering his hair to his forehead, grips a dented exotope canister. ColCorp's deadline looms; the automatons' demands grow harsher with each passing hour.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Overrule ColCorp's safety protocols and use the factory's emergency power surge to finish the exotope canister production run. This risks overloading the system but guarantees enough canisters for the immediate automaton needs."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The factory groans under the strain, lights flickering wildly, but the last canisters are sealed. Trent, panting, feels a grim satisfaction.  The automatons' initial response is... surprisingly muted.
+    # IMAGE: Trent stands amidst a chaotic but successful factory floor, the last canister secured, amidst sparking machinery and relieved workers.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The power surge fries the factory's mainframe, halting production entirely.  The automatons' response is immediate and brutal. Trent's defiance has backfired spectacularly.
+    # IMAGE: The Coldry factory engulfed in flames and smoke, the automatons' cold metallic forms moving through the devastation, with Trent looking defeated and injured in the foreground.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Southpoint.  Crystal, perched atop a Helios extraction rig, feels the familiar thrum of anxiety – but it's mixed with a potent cocktail of adrenaline and defiant exhilaration. Today, she's not just escaping; she's fighting back.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Stage a high-energy, guerilla-style performance art protest at the main Helios processing plant, using sonic weaponry to disrupt operations and expose Helios's negligence to the public via a live-streamed broadcast."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Crystal's electrifying performance, a chaotic blend of music, light, and disruptive sonic waves, grabs the attention of both the public and the authorities. The live stream goes viral, exposing Helios's shady practices and forcing a temporary halt in their operations.
+    # IMAGE: Crystal, bathed in the flickering light of the failing sun, center stage amidst a chaotic, yet vibrant, protest, surrounded by cheering supporters while Helios security forces look on in frustrated disbelief.  Sonic waves pulse visibly in the air.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Helios's security forces quickly shut down the broadcast and disperse the small crowd with brutal efficiency. Crystal's defiant performance is cut short, and the impact is minimal. She narrowly escapes arrest, but the protest is a costly failure.
+    # IMAGE: Crystal, silhouetted against the harsh glare of a Helios spotlight, surrounded by riot police. Her equipment lies broken on the ground.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

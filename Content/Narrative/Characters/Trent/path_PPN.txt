@@ -1,0 +1,16 @@
+NARRATOR: The flickering sun casts long, distorted shadows across the Coldry factory floor. Trent, sweat beading on his brow, watches ColCorp's foreman, a weasel of a man named Barlow, attempt to bully another worker into overtime.  The union's already strained, and ColCorp's cutting corners on canister quality is pushing everyone to the brink.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Confront Barlow directly, demanding he stop exploiting the workers and threatening to expose ColCorp's substandard canister production to the union and the wider community if he doesn't back down."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's raw intensity intimidates Barlow. He shrinks, stammering a retreat, promising to "look into" the overtime issue. Word of Trent's defiance spreads, bolstering union morale.
+    # IMAGE: Trent, arms crossed, towering over a cowering Barlow, the other workers watching with a mixture of fear and grudging admiration. The dim factory light highlights the tension in the scene.
+    NEXT_PATH_SEGMENT: path_PPNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Barlow, unfazed, calls for security.  Trent's outburst backfires; he's suspended, and the workers, fearing reprisal, remain silent. ColCorp uses the incident to further crack down on union activity.
+    # IMAGE: Trent being escorted out of the factory by ColCorp security, his face a mask of furious frustration, the other workers looking on fearfully.
+    NEXT_PATH_SEGMENT: path_PPNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

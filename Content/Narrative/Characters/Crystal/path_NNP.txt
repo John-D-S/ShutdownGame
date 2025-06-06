@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts long, eerie shadows across Southpoint's neon-drenched alleys.  Crystal, jittery from a half-finished synth-opium high, feels the familiar gnawing anxiety – the city's usual chaotic buzz feels muted, replaced by a low hum of fear.  She needs a distraction, a rush, *anything* to push back the encroaching dread.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Crash Helios's private party at the Skydeck – rumored to be overflowing with exclusive new augmentations and high-grade exotope – to score some gear and maybe even sneak a performance in front of the city's elite."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Crystal, using a combination of charm, quick thinking, and a strategically deployed sonic pulse, infiltrates the party.  She manages to snag some cutting-edge audio augmentations and even gets an impromptu set, electrifying the crowd with a blistering performance that momentarily eclipses the looming sun crisis.
+    # IMAGE: Crystal center stage at the Skydeck party, bathed in vibrant holographic light, her augmented instruments glowing, the faces of the Helios executives awestruck.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_NNPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Crystal's impulsive infiltration attempt is thwarted by Helios's heavily augmented security.  She's caught, roughed up, and tossed back into the increasingly desperate streets of Southpoint, her stolen augmentations confiscated and her reputation tarnished.  The anxiety she sought to escape only intensifies.
+    # IMAGE: Crystal, bruised and disheveled, glaring at the imposing Helios building from a dark alleyway, the flickering sun casting an ominous glow.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_NNPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

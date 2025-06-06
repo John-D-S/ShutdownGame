@@ -1,0 +1,15 @@
+NARRATOR: The artificial sun's erratic flickering casts long, dancing shadows across Dax's cramped Midcove apartment.  His multiple monitors blaze with fragmented data streams, a chaotic symphony of warnings and half-truths from the compromised PSN. The feeling of impending informational blackout—the same suffocating helplessness he felt after his sister's death—is almost palpable. He needs clarity, a complete picture, before the light fades completely.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: Dax decides to initiate a risky data leak from the PSN, hoping to bypass the system's corrupted filters and expose the true extent of its manipulation to the other city-states. He will focus on the discrepancies between official PSN reports on exotope supply and the raw data he's been secretly collecting.  This requires exploiting a known but rarely used backdoor, leaving behind a nearly untraceable digital signature.
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The backdoor holds.  Dax successfully uploads a carefully curated package of raw exotope data and PSN internal logs, highlighting the deliberate misinformation campaign. The data begins to spread across fragmented city-state networks, causing a ripple effect of public outrage and calls for action. A fragile hope ignites in him—a possibility of preventing another tragedy.
+    # IMAGE: A stylized representation of data packets bursting from a computer screen and spreading across a map of Ita, representing the leak's success.  The packets are glowing subtly, and they are reaching most city-states except Lumina.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The upload is detected. The PSN's automated defense systems swiftly isolate the breach and begin a counter-attack, deleting his hidden traces and flooding his systems with deceptive noise. Dax’s meticulously crafted digital signature is compromised, and he is left with a feeling of failure and an even greater sense of vulnerability. The light continues to flicker, the darkness seeming to close in, and the system he tried to leak the data to is rendered useless.
+    # IMAGE: A close-up of Dax's face, pale and strained, surrounded by the flickering light of dying monitors and a sea of red error messages.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

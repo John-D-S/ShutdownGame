@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting long, eerie shadows across Lumina. Shae, ever vigilant, feels the tremor of fear beneath her carefully maintained composure.  The latest reports from Sun Island are catastrophic.  This is it – the ultimate test of her loyalty, and Lumina's survival.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Secure an emergency meeting with the Lumina High Council, presenting falsified data that downplays the severity of the Sun Island situation, emphasizing the need for measured responses to prevent mass panic and maintain order, while secretly requesting a discrete allocation of emergency exotope reserves for Lumina’s own use."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Shae’s carefully constructed presentation, laced with carefully chosen statistics and appeals to stability, convinces the Council.  The emergency allocation is granted, securing Lumina's immediate needs.  The Council, however, remains largely oblivious to the true scale of the crisis.
+    # IMAGE: Shae standing before the Lumina High Council, a composed but tense expression on her face, as she points to a reassuring graph on a holographic display. The council members appear satisfied and unworried.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Despite her best efforts, a council member, suspicious of the inconsistencies in Shae's data, demands further investigation. Shae's carefully constructed facade crumbles, revealing her desperate attempt to prioritize Lumina's self-preservation. The Council, angered by her deception and the implied threat to their control, removes her from her position and declares her a threat to stability.
+    # IMAGE: Shae stands alone in a stark, empty office, her face reflecting defeat and despair.  The artificial sun flickers ominously outside the window.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

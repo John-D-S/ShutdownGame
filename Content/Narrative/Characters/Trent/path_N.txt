@@ -1,0 +1,15 @@
+NARRATOR: The midday sun, weaker than yesterday, casts long shadows across the Coldry factory floor. Trent, his face grim, clenches a worn wrench. ColCorp's latest demands – pushing the production of exotope canisters beyond safe limits – are a direct threat to the workers and the integrity of the canisters themselves.  The union's warnings about compromised quality are falling on deaf ears.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Trent decides to sabotage a batch of ColCorp-ordered exotope canisters, rendering them unusable for the artificial sun but ensuring they won't cause a catastrophic failure later. He’ll make it look like an accident caused by ColCorp's negligence to maintain his cover and frame them."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Working swiftly and silently during his shift, Trent subtly compromises the structural integrity of a select number of canisters.  He leaves behind enough evidence to convincingly implicate ColCorp's shoddy materials and safety practices. The faulty canisters are discovered before shipment, and ColCorp is forced to halt production. 
+    # IMAGE: Close-up shot of Trent's calloused hands working on a canister, a subtle imperfection barely visible, contrasted against the blurred background of the factory floor. The image subtly hints at his defiance.
+    NEXT_PATH_SEGMENT: path_NP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's sabotage attempt is discovered. ColCorp security apprehends him, accusing him of sabotage and threatening the union.  His carefully planned framing attempt backfires, painting him as a lone wolf acting against the will of the community.
+    # IMAGE: Trent pinned against a factory wall by ColCorp security guards, his defiant glare meeting the camera's lens.  The background is a chaotic factory floor, strewn with damaged canisters.
+    NEXT_PATH_SEGMENT: path_NN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

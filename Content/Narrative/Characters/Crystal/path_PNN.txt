@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts long, eerie shadows across Southpoint's already chaotic streets.  The air crackles with a nervous energy – a mix of fear and defiant revelry. Crystal, fueled by cheap synth-ale and a frantic need to avoid confronting the dimming light, feels the familiar pull of her compulsion.  She needs a distraction, something BIG.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Organize a massive, impromptu concert in the abandoned Helios exotope refinery, using scavenged equipment and the city's disaffected youth to create a defiant, electrifying performance as a symbol of Southpoint’s refusal to give in to fear – a huge middle finger to Helios and the failing sun."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The concert becomes a legendary event.  Despite the looming threat, the music ignites a spark of hope and defiance, drawing people together in a shared experience of exhilaration and resilience.  Crystal’s performance, raw and powerful, becomes a symbol of Southpoint’s spirit.
+    # IMAGE: A wide shot of a massive, impromptu concert taking place in the skeletal remains of a Helios refinery, illuminated by flickering lights and the energy of the crowd.  Crystal, bathed in light, commands the stage with her unique sonic augmentations, the crowd a sea of faces illuminated by phone screens and bioluminescent tattoos.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_PNNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The attempt to organize the concert falls apart.  The city’s unrest spills over into violence, and the performance descends into chaos before it even begins.  Crystal's desperate attempt to find a distraction only intensifies her underlying anxiety. The weight of the impending disaster becomes almost unbearable.
+    # IMAGE: A close-up of Crystal's face, streaked with sweat and tears, amidst the debris of a failed concert attempt; the shadows of the failing sun loom large in the background.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_PNNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

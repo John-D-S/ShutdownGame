@@ -1,0 +1,17 @@
+NARRATOR: The PSN's contradictory statements about the sun's status are infuriatingly opaque.  Dax suspects deliberate misinformation, a carefully constructed fog obscuring the true extent of the crisis. He needs verifiable data, not political spin.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT:  "Infiltrate the PSN's main server farm in Midcove, bypassing their security protocols and accessing raw sensor data from SebSA in Seaburn, the agency directly monitoring the artificial sun."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Dax exploits a previously unknown vulnerability in the PSN's firewall, a ghost in the machine he'd discovered months ago during a routine audit. Raw sensor data streams in, revealing the true, horrifyingly precise rate of exotope depletion.
+    # IMAGE: A chaotic but beautiful visualization of data streams flowing onto Dax's multiple monitors, highlighting the dwindling exotope reserves in sharp red against a background of cooler blues and greens representing the sun's energy output.  Each data point is meticulously labeled and categorized.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_PNNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax's intrusion triggers a sophisticated countermeasure. The PSN's security systems not only shut down the compromised access point, but also initiate a system-wide lockdown, encrypting all sensitive data and wiping Dax's temporary access points.  He's left with nothing but a growing sense of dread.
+    # IMAGE: A close-up of Dax's frustrated face, illuminated by the cold blue light of his monitors, now displaying a blank screen with an error message overlaid by the PSN logo.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_PNNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

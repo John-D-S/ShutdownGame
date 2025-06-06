@@ -1,0 +1,17 @@
+NARRATOR: The PSN's contradictory statements about the sun's status are growing more erratic, a clear sign of deeper manipulation. Dax feels the familiar dread of informational chaos closing in, a chilling echo of his sister's death. He needs certainty, a verifiable truth amidst the noise.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Infiltrate the PSN's Midcove mainframe to bypass their filtered data streams and access raw sensor readings directly from the SebSA's Sun monitoring array in Seaburn."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax navigates the PSN's compromised security systems with practiced ease, his fingers flying across the keyboard.  He intercepts the unfiltered data stream, revealing the sun's actual fuel levels and the precise nature of the PSN's manipulations. The clarity is almost painful, a stark contrast to the manufactured ambiguity.
+    # IMAGE: A close-up shot of Dax's face, illuminated by the glow of multiple screens displaying raw data streams. His expression is one of grim determination, tinged with a flicker of relief.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_PPPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax's intrusion triggers a sophisticated countermeasure within the PSN's security protocols. His access is cut off, leaving him with fragmented data and a gnawing sense of incompleteness. The fear of the unknown returns, amplified by his failure to secure the whole truth.
+    # IMAGE: A darkened room, Dax slumped in his chair, surrounded by flickering screens displaying incomplete and contradictory data. His face is etched with frustration and a deep-seated anxiety.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_PPPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

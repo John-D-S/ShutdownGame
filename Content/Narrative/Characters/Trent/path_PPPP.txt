@@ -1,0 +1,15 @@
+NARRATOR: The flickering sun throws long, distorted shadows across the Coldry factory floor. Trent, sweat plastering his hair to his forehead, surveys the haphazard assembly line.  ColCorp's demands for speed are insane, the canisters flimsy and unreliable.  He knows the automatons won't accept them.  This is it.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Organize a work stoppage, seizing control of the better quality canisters already completed, and demanding ColCorp provide proper materials and equipment to meet the automaton's standards.  If they refuse, he will lead a forceful takeover of the factory's remaining resources."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's impassioned speech ignites the workers. They shut down the line, a united front defying ColCorp's overseers.  After a tense standoff, ColCorp, fearing a complete collapse of production and the wrath of the automatons, agrees to Trent's demands.  A shipment of sturdy canisters departs Coldry.
+    # IMAGE: Trent, arms crossed, standing defiantly before a line of determined workers, with a newly organized stack of high-quality canisters visible in the background. The factory floor is silent except for the low hum of newly regulated machinery.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's forceful tactics backfire.  ColCorp calls in the Union Peacekeepers, who brutally quell the protest, leaving Trent and several others injured.  The inferior canisters are shipped regardless, further compromising the sun's dwindling resources. The factory is now under stricter ColCorp control.  Trent, bruised but unbroken, watches from the shadows, plotting his next move.
+    # IMAGE: Trent, battered and bleeding, watches from a darkened alleyway as heavily armed Peacekeepers secure the factory gates. The setting sun casts a grim, orange hue across the scene.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

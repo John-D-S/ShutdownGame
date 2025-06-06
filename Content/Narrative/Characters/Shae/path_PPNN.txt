@@ -1,0 +1,18 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Lumina. Shae, perched in her office overlooking the harbor, feels a familiar knot of anxiety tighten in her chest.  The reports are grim; the Lumina RRM's carefully orchestrated delays are now blatantly failing, and the automatons' warnings are growing more insistent.  This is it – the final test of her loyalty.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Shae will attempt to leverage her influence within the Lumina RRM to discreetly expedite the delivery of a critical shipment of exotope canisters to Sun Island, while publicly maintaining a facade of adherence to established protocols and procedures."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Using carefully worded directives and appeals to national security, Shae convinces key officials within the RRM to prioritize the shipment.  The canisters, albeit slightly delayed, begin their journey. A wave of relief washes over her, quickly replaced by a nervous exhaustion.
+    # IMAGE: Shae, looking pale but relieved, watches from her office window as a fleet of OptimaShips departs, leaving a trail of exhaust fumes in the twilight.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Despite her efforts, entrenched resistance within the RRM, coupled with the growing chaos, thwarts Shae's attempt.  The shipment remains stalled, and the automatons' response is swift and unforgiving.  She is left to face the consequences of inaction – a terrifying prospect.
+    # IMAGE: Shae, slumped in her chair, staring at a communication screen displaying a stark automaton warning, her face etched with fear and despair.  The artificial sun flickers violently in the background.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

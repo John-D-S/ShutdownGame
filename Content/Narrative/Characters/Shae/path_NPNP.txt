@@ -1,0 +1,18 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Lumina's polished streets.  Shae feels the familiar knot of anxiety tighten in her chest.  The Lumina RRM's assurances feel hollow against the backdrop of the failing star.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Secure emergency authorization from the Lumina Council to divert all available Lumina RRM resources – ships, personnel, and fuel – to assist in the immediate transport of exotope canisters from Coldry to Sun Island, bypassing the OptimaShip's normal routing protocols."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Despite initial resistance, Shae’s persistent appeals to the Council, highlighting the potential catastrophic consequences of inaction and emphasizing loyalty to the established order (by ensuring the automatons' directives are fulfilled), sway them.  A flurry of activity ensues as Lumina RRM scrambles to prioritize the exotope transport.
+    # IMAGE: A panoramic view of Lumina's harbor, bustling with activity as ships laden with exotope canisters depart, their urgency reflected in the fiery sunset cast by the unstable artificial sun.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The Council, swayed by internal political maneuvering and fearful of the disruption to Lumina’s carefully controlled trade routes, rejects Shae’s proposal.  Shae's pleas for immediate action fall on deaf ears; her anxieties are dismissed as overreactions. The OptimaShip system remains locked in its inefficient routing, the exotope canisters remain stranded.
+    # IMAGE: Shae stands alone, silhouetted against the failing artificial sun, her face etched with despair and helplessness as a Lumina Council member walks away, ignoring her frantic pleas.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

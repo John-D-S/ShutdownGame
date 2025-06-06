@@ -1,0 +1,16 @@
+NARRATOR: The flickering sun casts long, distorted shadows across Shae's meticulously organized office.  Reports of unrest in Southpoint and Coldry flood her desk, each a potential crack in Lumina's carefully constructed facade. The PSN's contradictory statements only amplify her anxiety.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "To quell rising anxieties and maintain Lumina's stability, Shae will convene a closed-door meeting with key figures in Lumina's RRM and government, focusing on reaffirming established procedures and addressing the automaton warnings through the lens of Lumina's interests and established protocols.  The goal is to present the situation as a manageable logistical challenge, not a planetary crisis requiring radical change, and to reinforce the importance of loyalty and adherence to the existing system."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Shae's carefully crafted presentation, emphasizing the need for controlled responses within the existing system, calms some of the anxieties.  Support for a Lumina-centric approach to resource management gains traction, albeit with lingering questions about the automatons. The meeting concludes with a renewed commitment to "optimizing" existing logistics instead of making significant changes.
+    # IMAGE: Shae stands at the head of a long mahogany table, a confident yet subtly anxious expression on her face as she addresses a group of senior officials. The room is dimly lit, emphasizing the seriousness of the meeting, but the overall mood is one of controlled calm.
+    NEXT_PATH_SEGMENT: path_NNPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Despite Shae's efforts, the meeting devolves into a tense exchange of accusations and anxieties. The underlying distrust of the automatons and the growing evidence of the sun's imminent failure cannot be entirely suppressed.  Concerns arise about the efficacy of Lumina's controlled approach, leaving Shae feeling even more isolated and anxious.
+    # IMAGE:  Shae sits alone in her office, surrounded by scattered papers and half-empty coffee cups, the flickering lights reflecting in her worried eyes. The scene is one of disarray and growing dread.
+    NEXT_PATH_SEGMENT: path_NNPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

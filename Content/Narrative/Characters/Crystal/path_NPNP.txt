@@ -1,0 +1,20 @@
+NARRATOR: The artificial sun sputters, casting long, eerie shadows across Southpoint.  Another blackout looms, but Crystal isn't focusing on that.  A massive Helios party is happening tonight – the perfect distraction.  Or maybe, the perfect opportunity.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: Infiltrate the Helios party, using her charm and musical skills to get close to high-ranking executives, then subtly plant a data-virus designed to expose Helios's exotope-hoarding and sabotage their systems.  This is risky – if she fails, Helios will have her. If she succeeds, it might buy some critical time.
+
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Crystal's infectious energy and dazzling performance captivates the Helios executives.  While they’re distracted, she slips the virus into their mainframe via a cleverly disguised synth-patch. The data leak begins, exposing Helios's crimes to the public.
+    # IMAGE: Crystal, bathed in the neon glow of the party, a mischievous grin on her face as she subtly connects her synth to the mainframe, a faint digital hum the only evidence of her actions.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The party is wilder than Crystal anticipated.  Overwhelmed by the sensory overload and the sheer number of Helios guards, she gets caught attempting to access the mainframe. The virus remains undiscovered, and she's detained.
+    # IMAGE: Crystal, surrounded by burly Helios security guards, her vibrant outfit now rumpled and torn, her synth discarded on the floor. The party continues oblivious.
+    LOCATION: Helios HQ, Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+
+TOKEN_CHALLENGE_END

@@ -1,0 +1,17 @@
+NARRATOR: The flickering of Ita's artificial sun is now undeniable, even in Lumina.  Anxiety gnaws at Shae; the reports from Coldry and Southpoint paint a picture of escalating unrest, directly threatening Lumina's carefully constructed stability.  She knows she must act, but only within the established framework.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Shae will convene a closed-door meeting with key figures in Lumina RRM and selected members of the city council to propose a 'streamlined' logistics plan for exotope transport to Sun Island, focusing on 'efficiency improvements' within existing protocols to avoid appearing to deviate from the approved operational plan, and subtly redirecting resources away from less 'essential' routes to maximize the flow to Sun Island while publicly maintaining that no changes to approved routes are needed."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Shae's meticulously crafted proposal, emphasizing adherence to regulations while subtly prioritizing Sun Island deliveries, gains unexpected support.  Lumina RRM, though initially hesitant, agrees to implement the revised logistics plan, prioritizing Sun Island deliveries and subtly downplaying any 'irregularities' in trade routes. The flow of exotopes begins to improve.
+    # IMAGE: Shae stands at a conference table in a brightly lit Lumina council chamber, a satisfied yet tense smile playing on her lips as council members nod in agreement. Documents are meticulously arranged before her.  The artificial sun's light, though dim, filters through the large windows.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_PPPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Shae's carefully worded proposal is met with skepticism and resistance.  Lumina RRM's leadership, suspicious of any deviation from established procedures, rejects her plan.  The conservative faction within the council uses this as an opportunity to further undermine the automatons' warnings, framing Shae's initiative as an overreaction.  The exotope supply to Sun Island remains critically low. Shae feels a surge of panic and vulnerability.
+    # IMAGE: Shae sits alone in her office, the dim light highlighting her worried expression.  Unsent documents lie scattered on her desk; the city's failing solar panels cast long, stark shadows across the room.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_PPPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

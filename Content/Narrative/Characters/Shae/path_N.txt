@@ -1,0 +1,17 @@
+NARRATOR: The subtly manipulated shipping schedules are causing a ripple effect.  Whispers of discontent are reaching Shae's ears, veiled threats against Lumina's authority.  The weakening sunlight casts long shadows in her office, amplifying her unease.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Shae will convene a closed-door meeting with key figures within Lumina RRM and select loyalist council members.  The goal is to subtly shift blame for the delays onto Coldry's failing canister production, while simultaneously securing assurances of Lumina's continued adherence to protocol and prioritizing essential sun-related shipments to maintain appearances of stability and deflect any potential accusations of sabotage."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Shae's carefully worded presentation, emphasizing the need for rigorous adherence to established procedures and the threats posed by Coldry's substandard materials, successfully shifts focus away from Lumina's role.  The meeting concludes with renewed pledges of loyalty and a plan to publicly condemn Coldry's negligence.
+    # IMAGE: Shae standing at the head of a long mahogany table, her expression serious yet reassuring, as other officials nod in agreement.  The weak sunlight streams through a large window, illuminating dust motes dancing in the air.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_NP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Despite Shae's efforts, doubts linger.  A few council members express skepticism about Lumina RRM's claims, and whispers of an internal investigation begin to circulate.  Shae's carefully constructed facade of control begins to crack under the weight of mounting suspicion.  The carefully laid plans fall apart.  The growing unease within Lumina's governing body intensifies, fueled by anxiety about the declining sun.
+    # IMAGE: Shae sits alone in her office, the weak sunlight highlighting the shadows under her eyes.  A half-empty glass of water sits on her desk, untouched.  Documents related to the shipping delays are scattered across the floor.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_NN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

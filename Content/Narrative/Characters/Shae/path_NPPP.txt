@@ -1,0 +1,15 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Lumina's usually pristine streets. Shae feels the familiar knot of anxiety tighten in her stomach.  The reports are catastrophic; the Lumina RRM’s deliberate slowdowns are now openly blamed for the Sun Island supply crisis.  She must act, but only within the parameters of the system.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Shae will leverage her influence within the Lumina RRM to secretly expedite a shipment of vital exotope canisters to Sun Island, bypassing the usual bureaucratic delays.  She'll frame it as an emergency measure approved by a high-ranking official, forging documents if necessary, and using her contacts to ensure minimal disruption or detection.  Failure will mean severe consequences, exposing her actions and potentially jeopardizing her standing within the system. Success offers a small chance to stabilize the situation and maintain the system’s stability."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  A convoy of OptimaShips, discreetly loaded with critical canisters, slips past the usual checkpoints under the cover of the increasingly erratic sun's light.  A nervous Shae watches from a hidden observation post as the convoy heads towards Sun Island. The immediate threat is averted, if only temporarily.  Her anxiety remains, but a glimmer of relief shines through.
+    # IMAGE: A clandestine convoy of sleek, silver OptimaShips disappearing into the twilight, heading towards the faint outline of Sun Island against a turbulent sky.  Shae watches from a shadowed vantage point, her face etched with a mixture of relief and lingering apprehension.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Shae's carefully constructed plan unravels. A suspicious official detects the discrepancies in her forged documents. The convoy is halted, and Shae is implicated in a major breach of protocol. She faces severe reprimand and a potential career-ending scandal, leaving her vulnerable and stripped of her carefully built security.  The crisis deepens.
+    # IMAGE: Shae, her face pale and trembling, stands before a stern-faced panel of Lumina officials. The flickering artificial sun casts harsh shadows on her, emphasizing her isolation and impending doom.  Documents lie scattered around her, evidence of her failed attempt.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

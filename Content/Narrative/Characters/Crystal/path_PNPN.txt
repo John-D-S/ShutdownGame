@@ -1,0 +1,15 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Southpoint.  Another blackout looms, but Crystal is too busy tweaking the synth-bass line for her upcoming gig at the Helios-sponsored rave – a gig that's both a thrill and a necessary evil, given Helios's control over the city's best performance venues.  She needs the money, even if the air smells faintly of desperation and burnt exotope.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Use the rave as a platform to subtly broadcast a message warning people about Helios's dangerous practices and the real state of the sun crisis, weaving the message into her music and visuals, hoping to inspire others to action without directly confronting Helios."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Crystal's performance is electrifying.  Subtle coded warnings, flashed on her augmented clothing and integrated into the throbbing basslines, resonate with the crowd.  A spark of rebellion ignites in the darkness.
+    # IMAGE: A close-up of Crystal's face, illuminated by pulsating lights, a look of fierce determination in her eyes, as the crowd cheers wildly, some subtly mimicking her coded hand signals.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The rave is a blur of lights and bodies, but Crystal's subtle message is lost in the chaos. Helios's security keeps a close watch, and her attempt to stir unrest goes unnoticed. The thrill of the performance dulls the unsettling reality of the situation.
+    # IMAGE: Crystal, bathed in strobe lights, her face a mask of exhilarated exhaustion, oblivious to the deepening shadows around her as the music fades out.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

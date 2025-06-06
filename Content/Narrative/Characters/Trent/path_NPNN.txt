@@ -1,0 +1,15 @@
+NARRATOR: The flickering sun throws long, distorted shadows across the Coldry factory floor. Trent, sweat beading on his brow, grips a malfunctioning exotope canister. ColCorp's deadline looms, and the automatons' warnings grow harsher.  He knows substandard canisters mean a failing sun, and a failing sun means Coldry's death.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Trent will confront ColCorp's foreman, demanding better materials and threatening a union-wide slowdown if the quality isn't improved immediately. He'll back up his demands by showing the foreman a damaged canister, evidence of ColCorp's negligence. If the foreman refuses, Trent will lead a worker's strike, potentially risking severe repercussions."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's forceful confrontation and the evidence of faulty canisters rattles the foreman.  Faced with a potential crippling strike, ColCorp relents, promising better materials and a temporary production halt to fix the quality issues.  The union stands united, showing their solidarity and resolve.
+    # IMAGE: Trent, surrounded by supportive union workers, stands defiantly before a cowering ColCorp foreman, a pile of substandard canisters at his feet. The workers are illuminated by the intermittently flickering sunlight, highlighting the tension and grim determination in the air.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The foreman laughs in Trent's face, dismissing his concerns and threatening disciplinary action.  The workers are too afraid of losing their jobs to support Trent's strike, leaving him isolated and vulnerable. ColCorp continues to produce substandard canisters.
+    # IMAGE: Trent, alone and defeated, watches as ColCorp workers continue their shoddy work, the flickering light of the failing sun casting long, ominous shadows on the assembly line.  His face is etched with bitter disappointment and simmering rage.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

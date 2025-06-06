@@ -1,0 +1,14 @@
+NARRATOR: Day 7. The artificial sun, a cold, dark void in the sky, mirrored the emptiness Dax felt despite his success.  The city of Midcove was plunged into a twilight gloom, punctuated by the flickering emergency lights. His apartment, usually a chaotic symphony of data streams, was eerily quiet, the monitors displaying only the final, grim statistics: exotope levels at zero, sun offline. His meticulously gathered evidence had broken through the PSN's wall of lies, yet the damage had already been done.
+
+DAX: (to himself, a low murmur)  Clarity.  Always clarity.  But this… this is a different kind of void.  The information was there, the truth exposed. Yet, it wasn't enough.
+
+# IMAGE: Dax sits hunched over a single monitor displaying the final, stark graph of Ita's sun's dwindling exotope levels, ending abruptly at zero. The room is dimly lit, the only light source emanating from the screen, casting long shadows on his face. His expression is not one of defeat, but of weary acceptance. A single line of code from the automaton’s final log sits highlighted on another screen, its message stark: “SYSTEM FAILURE. HABITABILITY UNSUSTAINABLE.”
+
+NARRATOR:  He reviewed the cascade of failures—ColCorp's negligence, Lumina RRM's sabotage, the irreversible damage done by Trent and Shae's setbacks. His own success, in exposing the PSN, felt like a drop in a rapidly emptying ocean. The sheer volume of systemic corruption, the inertia of self-interest, the deeply ingrained fragmentation of Ita's information systems—it all combined to create a darkness he couldn't pierce alone, no matter how many secrets he uncovered.
+
+DAX: (muttering, almost to the empty room)  Perhaps… perhaps the real enemy wasn't the secrets themselves, but the unwillingness to see them.  To act upon them. The system… it’s not a garden. It’s a junkyard, overflowing, yet nobody wants to clean it.
+
+# IMAGE: A wide shot of Midcove at twilight, the city plunged into darkness, the artificial sun a missing void in the sky. The image is overlaid with a translucent network map, the various city-states represented as interconnected yet isolated nodes, highlighting the profound fragmentation of Ita’s governance and communication systems.
+
+
+NARRATOR: Dax, despite the failure, felt a faint flicker of something resembling peace. The compulsive need to gather information, to escape the darkness of the unknown, was still there, but it no longer held the same frantic edge. The clarity he sought wasn't about preventing catastrophes, but understanding them, a grim acceptance of the limits of individual action against systemic failure.  The fight wasn't over; it was just… different.

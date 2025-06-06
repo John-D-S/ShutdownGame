@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Southpoint.  Another blackout looms, but Crystal, buzzing with nervous energy, sees an opportunity.  The Helios corporation, responsible for the exotope mess, is hosting a lavish "Sun's Last Stand" party – a grotesque celebration of impending doom.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: Infiltrate the Helios party, using her music skills and charm to gain access to their secure servers and leak evidence of their sabotage to the public, potentially exposing their negligence and forcing a change.
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Crystal, disguised as a flamboyant tech artist, charms her way into the party.  Using a custom-built sonic device disguised as a synth, she subtly hacks into Helios's mainframe, releasing damning evidence of their sabotage and corrupt practices. The ensuing chaos distracts authorities long enough for her to escape.
+    # IMAGE: Crystal, bathed in the strobing lights of the party, a mischievous grin on her face as data streams across a hidden screen on her synth.  A sea of shocked, wealthy Helios executives surround her.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Crystal's infiltration attempt is foiled.  Her sonic device is detected, and she's confronted by Helios security.  The party continues as planned, the evidence remaining securely hidden.  Crystal escapes narrowly, but the leak fails.
+    # IMAGE:  Crystal running through the back alleys of Southpoint, pursued by burly security guards, the flickering lights of the Helios party visible in the distance.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

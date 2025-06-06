@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Lumina's usually pristine streets.  Shae, her usual composure frayed, clutches her datapad, the latest Lumina RRM report a chilling confirmation of her worst fears: exotope deliveries to Sun Island are critically behind schedule.  This is it; the final test of her loyalty.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT:  "To secure Lumina's standing and avert disaster, Shae will leverage her influence within the Lumina RRM to discreetly expedite the stalled exotope shipments, bypassing the obstructive maneuvers of conservative factions within the government.  She will focus on ensuring adherence to *official* protocols, while subtly overriding the delays created by the OptimaShip system's deliberately inefficient routing."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Using a combination of carefully worded directives and appeals to established emergency protocols, Shae manages to override the system's sabotage.  A convoy of OptimaShips, carrying crucial exotope canisters, finally departs for Sun Island.  Relief washes over her, a fleeting moment before the next crisis inevitably arises.
+    # IMAGE: A panoramic view of Lumina's harbor at sunset, a fleet of sleek OptimaShips silhouetted against the unstable artificial sun, leaving a trail of exhaust in their wake.  Shae stands on a balcony, watching them depart with a mixture of relief and underlying anxiety etched on her face.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Shae's attempts to subtly influence the RRM are thwarted. The conservative factions within Lumina's government, sensing her actions, tighten their grip on the OptimaShip system.  Her carefully constructed appeals are dismissed as "inappropriate interference," and the exotope shipments remain stalled.  The weight of failure crushes her.
+    # IMAGE: Shae sits alone in her office, the flickering light of the dying sun casting harsh shadows on her face. Her datapad lies abandoned, displaying the unmoving progress bar of the exotope shipments. Despair hangs heavy in the air.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

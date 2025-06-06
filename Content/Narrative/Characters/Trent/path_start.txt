@@ -1,0 +1,17 @@
+NARRATOR: The rhythmic clang of the Coldry factory usually drowns out Trent's anxieties, but today, an unsettling quiet hangs in the air.  The usual lunchtime chatter is subdued, replaced by a low hum of unease.  He feels it too – a prickling sense that something's wrong, far beyond the usual ColCorp bullshit.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Trent confronts Foreman Petrov, demanding answers about the delayed exotope canister shipments and the unusual dimming of the artificial sun."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Petrov, usually a smug, oily weasel, is unusually nervous. He spills about ColCorp's shoddy practices and the deliberate use of substandard materials, admitting they're prioritizing profit over quality. Trent extracts a crucial piece of information: the location of a hidden reserve of properly made canisters.
+    # IMAGE: Trent, fists clenched but controlled, standing over a visibly shaken Foreman Petrov in the dimly lit factory office.  Petrov's face is pale, his eyes darting nervously.  Papers detailing ColCorp's shady dealings are scattered on the desk.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: path_P.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Petrov, sensing Trent's anger but unfazed, deflects his questions with corporate jargon and empty assurances.  He threatens Trent with disciplinary action for insubordination.  Trent storms out, feeling his rage building, but empty-handed. The unsettling quiet of the factory only amplifies his frustration.
+    # IMAGE: Trent, his face a mask of simmering fury, slamming the factory door behind him, the cold wind of Coldry whipping around him.  The factory looms large and oppressive in the background, its windows dark and lifeless.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: path_N.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

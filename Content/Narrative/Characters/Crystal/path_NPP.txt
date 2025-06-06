@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts long, distorted shadows across Southpoint.  The air crackles with a nervous energy – the exotope shortage is hitting hard, and the protests are getting louder. Crystal, however, is focused on something else entirely: a massive rave happening tonight in the abandoned Helios rig district.  This could be the biggest gig of her career, a perfect distraction from the dying sun and the impending doom.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Secure a last-minute sponsorship deal from a shady tech company known for its experimental energy drinks and augments, hoping it will provide the resources and gear needed to make this rave an unforgettable spectacle – ignoring the ethical concerns regarding their practices."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The deal closes – a whirlwind of promises, handshakes, and barely-legal energy drinks. Crystal secures top-of-the-line audio-visual equipment, enough to power a small city. The rave is legendary.
+    # IMAGE: A panoramic view of a massive rave taking place inside a derelict Helios rig, vibrant lights and pulsating music illuminating the faces of hundreds of ecstatic ravers; Crystal, center stage, bathed in light and surrounded by the crowd.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_NPPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The shady tech company pulls out at the last minute, leaving Crystal stranded with a half-finished setup and a furious crowd.  The rave is a disaster. The weight of her avoidance catches up to her, making the sun's dimming a stark reality.
+    # IMAGE: Crystal sits alone amidst a dark, half-constructed stage in a derelict Helios rig, the silence punctuated only by the hum of failing equipment, her face illuminated by the weak glow of the dying sun.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_NPPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

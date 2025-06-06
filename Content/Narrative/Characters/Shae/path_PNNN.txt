@@ -1,0 +1,18 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Lumina's usually pristine avenues.  Shae, clutching her datapad, feels a familiar knot of anxiety tighten in her stomach.  The Lumina RRM's assurances of "minor delays" ring hollow. The truth, she suspects, is far more unsettling.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Confront Minister Theron, the head of Lumina RRM, with evidence of deliberate sabotage in the exotope transport system, demanding immediate corrective action and full transparency.  She will present meticulously documented delays and route alterations, highlighting their impact on Sun Island’s fuel reserves, couching her concerns in terms of maintaining Lumina’s reputation and upholding the established order – implying that the current situation jeopardizes Lumina’s position of power and influence."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Theron, initially defensive, is swayed by Shae’s carefully presented evidence and the potential political fallout. He orders an immediate investigation and a prioritization of exotope shipments, albeit reluctantly.  Shae feels a surge of relief, but the underlying anxiety remains.
+    # IMAGE: Shae standing before Minister Theron in his opulent office, a tense but ultimately successful meeting.  The datapad displaying incriminating data is prominently featured.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Theron dismisses Shae's concerns as "hysteria" and "unfounded accusations," subtly threatening her position if she continues to question the official narrative.  He subtly suggests that her anxiety is a weakness.  The weight of her failure crushes her.
+    # IMAGE: Shae alone in her office, the datapad displaying the evidence now feeling like a burden, the flickering sunlight highlighting her despair.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

@@ -1,0 +1,18 @@
+NARRATOR: The flickering sun casts long, distorted shadows across the Coldry factory floor. Trent, sweat beading on his brow, watches his coworkers struggle with malfunctioning machinery – another consequence of ColCorp's cost-cutting. His gut clenches.  This isn't just about the sun; it's about ColCorp's continued exploitation.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Trent confronts ColCorp's plant manager, demanding better equipment and safer working conditions, threatening a full-scale union strike if his demands aren't met immediately."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The plant manager, intimidated by Trent's fury and the simmering unrest among the workers, reluctantly agrees to Trent's demands.  A temporary reprieve, but it buys them some time.
+    # IMAGE: Trent, arms crossed, standing defiantly before a cowering plant manager, a backdrop of tense but hopeful workers.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: path_NPPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The plant manager, backed by ColCorp's security, refuses to yield. Trent's threat backfires, resulting in a violent clash between workers and security forces.  Trent's defiance costs them the little leverage they had.
+    # IMAGE: A chaotic scene of a riot in the factory, security guards clashing with workers, Trent bruised but still fighting.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: path_NPPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

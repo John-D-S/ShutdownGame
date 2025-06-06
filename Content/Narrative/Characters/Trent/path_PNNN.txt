@@ -1,0 +1,18 @@
+NARRATOR: The flickering sun throws long, distorted shadows across the Coldry factory floor.  Trent, sweat plastering his hair to his forehead, grips a dented exotope canister. ColCorp's foreman, a weasel-faced man named Harv, keeps demanding faster production, ignoring the flaws in the materials.  This is it. The final push.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Trent confronts Harv, demanding better materials and threatening to shut down the line until ColCorp complies, risking his job and potential violence to secure the quality of the canisters for the automaton fuel shipment."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Harv, cowed by Trent's intensity and the support of several union workers, backs down.  He promises better materials, knowing a work stoppage will be disastrous. The Coldry factory produces a late but crucial batch of quality canisters.
+    # IMAGE: Trent, arms crossed, stands defiantly over a cowering Harv, while other workers nod in approval.  A stack of newly produced, gleaming canisters sits nearby.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Harv calls in security.  Trent and the union members are outnumbered and beaten. The flawed canisters are shipped anyway, potentially sabotaging the last hope for the sun. Trent’s defiance is crushed, for now.
+    # IMAGE: Trent, bruised and bloodied, is dragged away by ColCorp security, while the flawed canisters are loaded onto a truck, the setting sun casting a bleak orange glow.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

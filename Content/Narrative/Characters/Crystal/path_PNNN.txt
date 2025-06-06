@@ -1,0 +1,16 @@
+NARRATOR: The flickering sun casts long, distorted shadows across Southpoint's chaotic streets.  Crystal, jittery even by her own standards, clutches a synth-bass, its wires snaking like restless veins.  Another blackout looms, and the usual thrill of the impending chaos feels… different.  A gnawing fear, barely suppressed, whispers of finality.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Organize a massive, impromptu concert in the heart of Southpoint's Helios extraction zone, using the performance to disrupt Helios operations and draw attention to their negligence in supplying pure exotopes. The sheer spectacle and defiance will rally the city; the message will be impossible to ignore."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The concert explodes – a riot of sound and light, a defiant wave against the dimming sun.  Crystal's music becomes a weapon, her performance igniting a spontaneous protest, forcing Helios to acknowledge its culpability. The raw energy shifts public opinion, pressuring authorities and forcing a desperate, last-ditch effort to secure pure exotopes.
+    # IMAGE: A massive crowd surges around Crystal's makeshift stage amidst the towering Helios extraction rigs, the stage bathed in the erratic glow of the failing sun, a sea of faces lit by the pulsating lights of augmented instruments.  A banner reading "Helios: Sun Killers" is visible in the crowd.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The concert starts strong, but the energy fizzles as quickly as it ignites.  Helios security disperses the crowd with brutal efficiency, crushing the fragile rebellion before it gains traction. Crystal, overwhelmed and alone, is left facing the harsh reality of her failure, the flickering sun mocking her futile attempt at defiance. The feeling of powerlessness intensifies the underlying anxiety.
+    # IMAGE: Crystal stands alone, surrounded by the debris of her abandoned stage, the faces of the dispersed crowd fading into the encroaching darkness, the failing sun casting a cruel, orange light.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

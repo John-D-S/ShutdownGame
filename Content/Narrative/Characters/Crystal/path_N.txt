@@ -1,0 +1,17 @@
+NARRATOR: The rhythmic pulse of Crystal's latest track, a frantic blend of synth and distorted vocals, does little to mask the growing unease.  The sun’s dimming is undeniable now, even through the haze of Southpoint's neon-drenched nights.  She needs a distraction, a rush – something to obliterate the creeping dread.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Crash Helios's private party – a notorious exclusive event rumored to be happening tonight in the upper levels of the Helios Exotope Refinery, using a newly developed sonic weapon designed to disrupt their security systems and create chaos (while also possibly stealing some of their high-grade exotopes)."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The sonic weapon works – a wave of disorienting sound washes over the party, creating confusion and a perfect opportunity to infiltrate.  Crystal manages to grab a few canisters of pure exotope before escaping the ensuing pandemonium.  The thrill of the heist is exhilarating, a perfect antidote to the day's anxieties.
+    # IMAGE: Crystal, silhouetted against the flashing lights and swirling smoke of the Helios party, a canister of glowing exotope clutched in her hand, a triumphant grin on her face.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_NP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The sonic weapon malfunctions, attracting unwanted attention instead of creating chaos. Helios security swarms the area, and Crystal barely escapes with her life, empty-handed and more anxious than ever.  The close call only intensifies her underlying fear of the sun's impending failure.
+    # IMAGE: Crystal, breathless and panicked, sprinting through the neon-lit alleys of Southpoint, pursued by Helios security guards.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_NN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

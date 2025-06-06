@@ -1,0 +1,18 @@
+NARRATOR: The PSN's contradictory statements regarding the sun's dwindling fuel reserves are a cacophony of half-truths and deliberate obfuscation. Dax feels the familiar icy grip of helplessness tightening, a chilling echo of his sister's death.  He needs clarity, a verifiable chain of causality, to push back the encroaching panic.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Infiltrate the PSN's central server in Midcove and extract the raw sensor data from the Sun Island monitoring stations, bypassing the PSN's filtering and data manipulation protocols."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Dax navigates the PSN's compromised security systems with practiced ease, his fingers flying across the keyboard.  The raw data reveals a stark, undeniable truth: the fuel depletion is far more critical than publicly acknowledged, and the PSN is actively suppressing this reality.
+    # IMAGE: A close-up of Dax's hands working on a keyboard, bathed in the eerie glow of multiple monitors displaying streams of raw sensor data, overlaid with graphs showing a precipitous decline in exotope levels.  The background is a dimly lit, cluttered room filled with technical equipment.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_PNPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax's intrusion triggers an automated lockdown.  He manages to grab some fragmented data before being cut off, but it's insufficient to form a complete picture. The feeling of being trapped in the dark, unable to verify the truth, returns with crushing force. The PSN's countermeasures leave him with more questions than answers.
+    # IMAGE: A blurry, grainy security camera image of Dax frantically disconnecting from a server, with a cascade of error messages and system shutdown warnings filling the screen, followed by a shot of him looking defeated and staring blankly at a nearly empty coffee cup.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_PNPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

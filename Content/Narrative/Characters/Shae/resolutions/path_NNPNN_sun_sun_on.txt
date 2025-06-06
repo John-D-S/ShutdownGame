@@ -1,0 +1,18 @@
+NARRATOR: The artificial sun, a pale, flickering disc in the hazy sky, cast long shadows across the polished floors of Lumina's central plaza.  Seven days. Seven days since the crisis began, seven days since Shae’s carefully constructed world threatened to unravel.  Now, a strange, uneasy calm settled over the city.  The sun, against all odds, still burned.
+
+SHAE: (Whispering to herself, clutching a worn datapad displaying the final PSN report)  Stable… they say it’s stable.  But the margins… the margins were so thin.
+
+NARRATOR:  Shae stood amongst the throng of Lumina citizens, outwardly calm, a picture of controlled composure in her meticulously tailored uniform. But beneath the surface, a tremor of anxiety persisted, a deep-seated fear that the fragile peace was merely a temporary reprieve.  The whispers of Trent’s Coldry success and Crystal’s expose of Helios reached her ears, but they felt distant, almost irrelevant.  Her focus remained on Lumina, on maintaining the order she believed was essential for survival.
+
+SHAE: (To a passing subordinate, her voice tight with forced confidence) The reports confirm the successful delivery of the exotope canisters?  All within RRM protocol?
+
+SUBORDINATE: Yes, Minister Shae.  We have confirmation from Sun Island.  The automatons appear satisfied, for now.
+
+NARRATOR:  Shae allowed a small, almost imperceptible sigh of relief. The relief was shallow. A deep-seated fear remained that the underlying systemic issues remained unresolved.  The victory felt hollow, a temporary bandage on a festering wound.  The narrow escape had only reaffirmed her belief in the system's – Lumina's – ability to maintain control, even if it meant compromising integrity and ignoring unsettling truths.  Her core urge, her compulsion to find security within the existing order, remained utterly unchallenged.
+
+# IMAGE: Shae stands in the Lumina plaza, the pale artificial sun behind her, casting her shadow long and thin on the ground. Her face is impassive, but her shoulders are slightly hunched, betraying her inner tension.  The crowd around her appears relieved but apprehensive.
+
+
+NARRATOR:  The sun might be on, but the shadow of doubt – and the chilling knowledge of her own complicity in the near-catastrophe – lingered. The price of stability, she silently reflected, was a heavy burden to bear.  In her tightly controlled world, maintaining the illusion of order had once again proved more important than confronting the truth.
+
+# IMAGE: Close-up on Shae's datapad, displaying a partially obscured graph showing the dangerously low exotope levels during the crisis, juxtaposed with a news report celebrating Lumina's "efficient response" to the near-disaster.  The contrast is stark.

@@ -1,0 +1,17 @@
+NARRATOR: The PSN's contradictory statements about the sun's status are a cacophony of noise, a maddening echo of the information vacuum that killed his sister. Dax feels the familiar dread rising, a cold wave of helplessness threatening to overwhelm him. He needs clarity, absolute certainty, even if it means venturing into forbidden territory.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Infiltrate the heavily secured server farm housing the PSN's mainframe, bypassing all firewalls and intrusion detection systems, to access their raw, unfiltered data logs—hoping to find the original, unedited sensor readings from Sun Island."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax navigates the PSN's defenses with practiced ease, his fingers a blur across the keyboard.  He finds the raw data logs, a pristine, unadulterated stream of information about the sun's dwindling fuel reserves and the precise nature of the supply chain failures. The truth, cold and brutal, is laid bare.
+    # IMAGE: A close-up of Dax's face, illuminated by the glow of multiple monitors displaying cascading lines of code, his expression a mixture of grim determination and a hard-won sense of relief.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_NNPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax's intrusion triggers a sophisticated countermeasure; the PSN's security systems lock down, erasing all traces of his access and initiating a system-wide data purge. He's left with nothing but the chilling realization that some secrets are meant to stay buried. The fear of the unknown, amplified, closes in.
+    # IMAGE: A darkened screen displaying a single, ominous message: "ACCESS DENIED. SYSTEM PURGE INITIATED." Dax's silhouette is slumped in his chair, hands hanging limply.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_NNPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

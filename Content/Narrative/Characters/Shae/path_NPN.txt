@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts long, unsettling shadows across Shae's meticulously organized office in Lumina's governmental complex.  The PSN's contradictory reports only fuel her growing anxiety.  The automatons' warning echoes in her mind, a dissonant note against the carefully orchestrated calm she strives to maintain.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Secure a private meeting with the Minister of Transportation to discuss Lumina RRM's role in the delayed exotope shipments, subtly suggesting an inquiry into potential operational inefficiencies while emphasizing the need for absolute adherence to established protocols and avoiding any public alarm."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The Minister, initially dismissive, becomes concerned by Shae's carefully presented data highlighting logistical bottlenecks within the OptimaShip system.  A discreet internal audit is initiated, but remains shrouded in secrecy.
+    # IMAGE: Shae, seated opposite the Minister, her expression carefully neutral, a file containing meticulously documented data resting on the polished mahogany desk between them. The Minister's face shows a flicker of unease.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_NPNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The Minister dismisses Shae's concerns as alarmist, reiterating the official PSN statements and emphasizing the stability of Lumina RRM’s operations. Shae's attempts to raise concerns are brushed aside as 'unnecessary negativity' potentially undermining public confidence. The Minister reminds her that unauthorized inquiries are a serious breach of protocol.
+    # IMAGE: Shae sits alone in her office, the flickering sunlight highlighting her worried expression.  Unsent documents, related to the OptimaShip system, lay scattered on her desk.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_NPNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

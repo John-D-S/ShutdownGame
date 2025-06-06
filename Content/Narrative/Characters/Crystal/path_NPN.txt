@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts long, eerie shadows across Southpoint's already chaotic streets.  Protests rage outside, fueled by Helios's exotope shortages and the PSN's increasingly unconvincing pronouncements. Crystal, however, is focused on the throbbing bass of her latest track, a frantic, almost desperate beat mirroring her own inner turmoil.  She needs a distraction, a release—a gig.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Crash Helios's exclusive, underground party – a lavish affair rumored to be stocked with the highest-grade exotope – and use the chaos as a platform to perform a blistering, impromptu set, leveraging the event’s high-profile attendees to broadcast her message about Helios’s negligence to the city and beyond."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Crystal's audacious plan works flawlessly. The unexpected performance captivates the crowd, her music a potent mix of defiance and raw emotion.  The ensuing media frenzy forces Helios to address the exotope crisis.
+    # IMAGE: Crystal center stage, bathed in pulsating lights, her augmented instruments glowing, a sea of faces captivated by her performance, news crews recording the event in the background.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_NPNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Security thwarts Crystal's attempt before she can even reach the stage. Her reckless infiltration ends with a humiliating arrest and a night in a Helios-controlled holding cell, her message unheard. The exotope crisis continues unabated.
+    # IMAGE: Crystal, disheveled and frustrated, being escorted by heavily armed Helios security guards through the dimly lit streets of Southpoint, her equipment strewn on the ground.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_NPNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

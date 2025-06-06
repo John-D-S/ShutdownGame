@@ -1,0 +1,17 @@
+NARRATOR: The subtle delays orchestrated by Lumina RRM are becoming more noticeable.  Shae feels the pressure mounting; the whispers of discontent, usually easily suppressed, are growing louder.  She needs to reassure her superiors and maintain Lumina's image of stability.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Shae will schedule an emergency meeting with key figures in Lumina's government and RRM leadership to address the escalating supply chain issues and propose a 'strict adherence to existing protocols' plan to resolve the delays, subtly emphasizing the potential threat to Lumina's reputation and the need for unified action to present a strong front against any perceived external criticism (i.e., from other city-states worried about the failing sun)."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Shae's presentation, emphasizing loyalty and the preservation of order, successfully calms anxieties.  A revised, strictly enforced protocol is adopted, streamlining the process and marginally improving shipments to Sun Island.  She receives praise for her decisive action.
+    # IMAGE: Shae stands confidently at a mahogany table in a brightly lit conference room, addressing a group of stern but now appeased officials. Charts and graphs showcasing the new, more efficient shipping plan are projected on the wall behind her.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_PP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Despite Shae's efforts, her carefully constructed plan is met with skepticism and accusations of downplaying the severity of the situation.  The meeting ends in deadlock, and the delays worsen, fueling public unease and damaging Lumina's reputation.  Shae's anxiety intensifies.
+    # IMAGE: Shae sits alone in her dimly lit office, the city lights casting long shadows, looking defeated as a news report on the worsening sun crisis plays on a muted screen.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_PN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

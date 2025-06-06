@@ -1,0 +1,15 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Dax's Midcove apartment.  The PSN's lies are thinner than ever; the raw data screams of impending catastrophe. He must act, before the darkness consumes him again.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Initiate a covert data leak of the PSN's falsified sun-stability reports and raw sensor readings to independent journalists and researchers across Ita's fragmented networks, using encrypted channels and decoy servers to mask his origin."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The leak succeeds; fragmented but verifiable evidence of the PSN's deception spreads across Ita's city-states. The raw data, stripped of the PSN's spin, begins to break through the noise. A fragile hope flickers.
+    # IMAGE: A cascading visual representation of data packets moving across a complex network map, highlighting successful transmissions to various points on Ita.  Some packets are intercepted, but many reach their destinations.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: OmniSynaptic's countermeasures are faster, more sophisticated than anticipated. The leak is traced back to Dax; his encrypted channels are compromised, and his location is revealed. His carefully constructed security crumbles.
+    # IMAGE: A close-up of Dax's face, his expression a mixture of shock and grim determination as a red alert flashes across his multiple monitors, highlighting the breach of his security systems.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

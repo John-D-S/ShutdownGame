@@ -1,0 +1,15 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Dax's spartan Midcove apartment.  He's surrounded by his usual chaotic constellation of monitors, each displaying a frantic dance of degrading data streams from the PSN. The lies are almost palpable.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Initiate a clandestine data leak of the PSN's true, unfiltered threat assessment data – bypassing OmniSynaptic's manipulation – directly to independent researchers and journalists across Ita's fragmented networks."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Using a series of carefully crafted exploits and encrypted channels, Dax successfully seeds the raw, unfiltered data into the digital underbelly of Ita.  The truth begins to spread, bypassing the PSN's compromised systems.
+    # IMAGE: A stylized representation of data packets, glowing green, flowing across a network map of Ita, bypassing red, corrupted nodes representing the PSN's control.  Dax's silhouette is visible in the corner, subtly observing the data flow, satisfaction etched on his face.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: OmniSynaptic's countermeasures are more sophisticated than Dax anticipated.  His leak is detected and quarantined almost immediately. The PSN's misinformation campaign intensifies. Dax is left with a chilling sense of vulnerability, and the weight of his failure settles heavily upon him.
+    # IMAGE: A close-up on Dax’s face, his expression a mixture of frustration and fear, as a single red warning light blinks menacingly on his main monitor, surrounded by cascading lines of error codes.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

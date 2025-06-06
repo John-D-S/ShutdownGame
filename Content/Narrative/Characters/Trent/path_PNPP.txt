@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun throws long, distorted shadows across the Coldry factory floor.  Trent grips a dented exotope canister, its substandard welds a testament to ColCorp's cost-cutting.  He knows the automatons won't accept these, and the consequences will be catastrophic.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Trent will lead a group of trusted union workers in a daring raid on the ColCorp storage facility to seize a batch of high-grade canisters, bypassing ColCorp's security and using intimidation to force compliance from any reluctant workers."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  A tense standoff, a few well-placed threats, and a surprising amount of cooperation from workers resentful of ColCorp's exploitation.  Trent's team emerges with a shipment of canisters that meet automaton standards.
+    # IMAGE: Trent, silhouetted against the flickering sunlight, standing defiantly amidst a pile of high-grade exotope canisters, surrounded by his loyal union workers, their faces grim but determined.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  ColCorp security, alerted by a whistleblower, ambushes Trent's team. The ensuing brawl leaves several injured, and the high-grade canisters are damaged beyond use.  The automatons' distrust of Coldry deepens.
+    # IMAGE: Trent, wounded and surrounded by damaged canisters and injured union members, his face a mask of grim determination despite the failure.  ColCorp security guards stand over them, their weapons trained on the defeated group.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

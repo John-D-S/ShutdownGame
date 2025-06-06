@@ -1,0 +1,35 @@
+# Outcome mapping for Crystal
+# Generated based on 32 paths.
+# Distribution: 12 BAD, 8 NEUTRAL, 12 GOOD
+NNNNN: BAD # Score: -9.25
+PNNNN: BAD # Score: -7.25
+NPNNN: BAD # Score: -6.85
+NNPNN: BAD # Score: -5.75
+PPNNN: BAD # Score: -4.85
+NNNPN: BAD # Score: -4.65
+PNPNN: BAD # Score: -3.75
+NPPNN: BAD # Score: -3.35
+NNNNP: BAD # Score: -3.25
+PNNPN: BAD # Score: -2.65
+NPNPN: BAD # Score: -2.25
+PPPNN: BAD # Score: -1.35
+PNNNP: NEUTRAL # Score: -1.25
+NNPPN: NEUTRAL # Score: -1.15
+NPNNP: NEUTRAL # Score: -0.85
+PPNPN: NEUTRAL # Score: -0.25
+NNPNP: NEUTRAL # Score: 0.25
+PNPPN: NEUTRAL # Score: 0.85
+PPNNP: NEUTRAL # Score: 1.15
+NPPPN: NEUTRAL # Score: 1.25
+NNNPP: GOOD # Score: 1.35
+PNPNP: GOOD # Score: 2.25
+NPPNP: GOOD # Score: 2.65
+PPPPN: GOOD # Score: 3.25
+PNNPP: GOOD # Score: 3.35
+NPNPP: GOOD # Score: 3.75
+PPPNP: GOOD # Score: 4.65
+NNPPP: GOOD # Score: 4.85
+PPNPP: GOOD # Score: 5.75
+PNPPP: GOOD # Score: 6.85
+NPPPP: GOOD # Score: 7.25
+PPPPP: GOOD # Score: 9.25

@@ -1,0 +1,15 @@
+NARRATOR: The flickering sun casts long, eerie shadows across the Coldry factory floor. ColCorp's latest demand – a drastic increase in production quotas with substandard materials – hangs heavy in the air. Trent feels the familiar surge of anger, a cold knot of defiance tightening in his gut.  He knows this is a setup, a way to break the union and exploit the workers further.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Organize a union-led work stoppage, leveraging the dwindling sunlight and ColCorp's blatant disregard for worker safety as leverage for better conditions and resources."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's impassioned speech ignites the factory floor. Workers, emboldened by his fiery words and shared desperation, down tools.  ColCorp's threats are met with a united front, forcing them to negotiate.  A limited but vital supply of better quality materials is secured, along with a temporary reduction in quotas.
+    # IMAGE: A powerful image of Trent, arms raised, silhouetted against the dim factory window, leading a throng of determined workers. Their faces are set, determined, reflecting a mix of anger and solidarity. Dust motes dance in the weak sunlight filtering through grimy windows.
+    NEXT_PATH_SEGMENT: path_NPNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's call for a strike is met with hesitant murmuring. Fear of losing their jobs, already threatened by the failing sun, outweighs their anger at ColCorp's greed.  The workers, though sympathetic, remain at their stations, and Trent's defiant stance isolates him. His rage boils over, but it's a futile, lonely outburst. ColCorp uses the opportunity to further tighten their grip.
+    # IMAGE: Trent stands alone in the dimly lit factory, his fists clenched, surrounded by silently working colleagues. His face is a mask of fury and disappointment, shadowed by the weak, flickering light. The image is dominated by a single, powerful spotlight on his tense form, creating a dramatic effect.
+    NEXT_PATH_SEGMENT: path_NPNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

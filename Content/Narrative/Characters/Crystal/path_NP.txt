@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts an eerie, strobe-like light across Southpoint's neon-drenched alleys.  Crystal, amidst the growing unease, feels the familiar pull of her core urge – to escape the creeping dread with a sensory overload.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Organize a massive, impromptu rave in the abandoned Helios exotope refinery, using scavenged tech and amplified sonic augmentations to distract from the sun's erratic behavior and the rising panic."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The rave explodes into a chaotic, exhilarating spectacle, drawing hundreds who crave a temporary escape from fear. Crystal's music becomes a powerful force, unifying the crowd in a shared moment of intense, collective catharsis. For a few precious hours, the sun's flickering is almost forgotten.
+    # IMAGE: A swirling mass of bodies illuminated by flashing lights and holographic projections within the decaying refinery, the air thick with music and the scent of illegal stimulants. Beams of light pierce the gloom from cracks in the refinery's roof, highlighting dancing silhouettes and augmentations.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_NPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The rave attracts unwanted attention – Helios security forces raid the party, arresting several attendees and seizing Crystal's equipment.  The temporary distraction crumbles into a harsh reminder of the very real threat looming over Southpoint.  Crystal escapes, but the experience leaves her feeling defeated and more anxious than before.
+    # IMAGE: A chaotic scene of police clashing with partygoers in the refinery, spotlights cutting through the smoke and flashing lights, equipment scattered on the ground, and a sense of escalating tension and fear.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_NPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

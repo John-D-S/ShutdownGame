@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun throws long, distorted shadows across the Coldry factory floor.  ColCorp's overseers are frantic, demanding more canisters, faster, regardless of quality. Trent knows the shortcuts they're forcing will mean disaster – and he won't stand for it.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Confront ColCorp's foreman, demanding they halt production until the canister flaws are addressed, threatening a full-scale union shutdown if necessary."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's raw fury and the weight of the union behind him forces the foreman's hand. Production halts, a tense negotiation begins, focusing on safety and quality, not quotas.
+    # IMAGE: Trent, silhouetted against the flickering sunlight, standing defiantly before a group of cowering ColCorp foremen, his union brothers and sisters standing in solidarity behind him.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The foreman, backed by ColCorp security, refuses to yield.  Trent's threat is dismissed; a violent clash erupts, leaving him injured and the faulty canisters still rolling off the line.
+    # IMAGE: A chaotic scene of a brawl in the factory, Trent on the ground, surrounded by ColCorp security, his face bloodied, the faulty canisters still being produced in the background.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

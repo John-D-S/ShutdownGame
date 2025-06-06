@@ -1,0 +1,16 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Dax's austere Midcove apartment.  The PSN's lies are a thin veil; he senses a deeper, more terrifying truth lurking beneath the surface of the manipulated data streams. He needs access – true access – to understand the extent of the impending catastrophe.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Initiate a clandestine data leak from the PSN's deepest archive, focusing on the suppressed automaton communication logs and Helios' exotope supply records, then anonymously disseminate this information across Ita's fragmented networks using a newly developed, untraceable routing protocol."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The leak is successful.  A torrent of unfiltered data floods Ita's intranets, revealing the full extent of Helios' sabotage and the PSN's deliberate disinformation campaign.  The truth, raw and undeniable, begins to shatter the carefully constructed illusion of stability.
+    # IMAGE: A chaotic yet beautiful visualization of data packets cascading across a fragmented network map of Ita, highlighting the exposure of Helios' corruption and PSN's deceptive practices.  Dax watches, a flicker of grim satisfaction in his eyes.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Dax's attempt is detected.  A sophisticated countermeasure, likely deployed by OmniSynaptic (or a proxy), locks down the archive and triggers an automated alert, potentially revealing Dax's location and activities.  His carefully constructed anonymity crumbles, leaving him exposed. The data remains buried, the fear of the unknown returns, cold and sharp.
+    # IMAGE:  Dax's workspace is shown in disarray, screens displaying error messages and red alerts. His face is etched with a mask of frustration, his hands clenched tight.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

@@ -1,0 +1,16 @@
+NARRATOR: The artificial sun sputters, casting long, distorted shadows across Dax's spartan Midcove apartment.  The PSN's lies are a throbbing headache, a constant reminder of his sister's death. He needs clarity, a counterpoint to the manufactured chaos.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Initiate a covert data leak from the PSN, focusing on the suppressed records of OmniSynaptic's involvement in the neuro-cybernetics accident that killed his sister, hoping to expose their role in the current crisis by highlighting their past negligence and the ongoing pattern of information suppression."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax uses a series of encrypted tunnels and proxy servers, bypassing PSN's firewalls.  The truth, fragmented but undeniable, begins to surface across Ita's fractured networks.  A wave of outrage washes over the city-states, focusing attention where it belongs.
+    # IMAGE: A cascade of data packets flowing across a network map, highlighted by a key section revealing OmniSynaptic's culpability, interspersed with images of Dax's sister.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  PSN's security protocols, far more robust than Dax anticipated, detect the intrusion. His cover is blown, and he's forced to destroy his data leak before it spreads, leaving him in a deeper pit of helplessness than before.  The truth remains buried, the feeling of being cheated out of knowledge consumes him.
+    # IMAGE: A close-up of Dax's face, streaked with sweat, a single tear rolling down his cheek as he watches his painstaking work vanish. The screen before him shows an ominous red error message.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

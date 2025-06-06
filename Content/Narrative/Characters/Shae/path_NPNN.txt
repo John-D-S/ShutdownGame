@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting Lumina in an erratic, flickering light. Shae, her face etched with worry, clutches a datapad displaying the latest, terrifyingly erratic, energy readings from Sun Island.  The Lumina RRM's OptimaShip system, usually her comfort, is displaying cascading errors, mirroring the chaos outside. She knows something must be done, yet her ingrained fear of disrupting the established order fights back.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Overrule the OptimaShip's automated routing protocols, prioritizing the delivery of emergency exotope canisters to Sun Island, despite the risk of accusations of insubordination and potential system failure."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: With trembling hands, Shae overrides the system.  A few tense minutes later, a surge of power confirms the rerouting.  A fleet of Lumina RRM transports, carrying crucial fuel, speeds towards Sun Island.  A wave of relief washes over her, quickly replaced by a prickle of fear at her actions.
+    # IMAGE: A panoramic view of Lumina's harbor at night, several cargo ships cutting through the turbulent waters towards Sun Island, their lights piercing the uneven glow of the dying sun. The image shows a sense of urgency and a hint of hope amid the chaos.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Shae hesitates, the thought of defying established protocol proving too daunting. She convinces herself that any intervention could cause more harm than good, that the established system, however flawed, is the only safeguard against total collapse. The OptimaShip continues its erratic, inefficient route, precious time lost.
+    # IMAGE: Shae sits alone in her dimly lit office, the flickering lights casting harsh shadows on her face. The datapad displays a catastrophic drop in the sun's energy levels. A look of defeat and regret is visible on her face.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

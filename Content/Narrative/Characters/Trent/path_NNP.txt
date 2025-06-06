@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts long, skeletal shadows across the Coldry factory floor. ColCorp's foreman, a weasel-faced man named Hartigan, is demanding another impossible quota, ignoring the failing equipment and dwindling resources. Trent clenches his fists, the familiar burn of anger rising in his chest.  The union's already on edge. This is the breaking point.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Lead a walkout of the Coldry factory, leveraging the failing equipment and ColCorp's blatant disregard for worker safety as justification, demanding better conditions and resources to meet the impossible quota.  If necessary, use intimidation to ensure participation from hesitant workers."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's fiery speech ignites the workers' simmering resentment. The walkout is immediate and total, forcing ColCorp to negotiate.  They agree to temporary safety improvements and better resource allocation, buying them some time.
+    # IMAGE: A powerful image of Trent standing defiantly at the factory gates, surrounded by a sea of determined workers, the setting sun casting a dramatic glow behind them.  He has a steely gaze, a confident set to his jaw. His union jacket stands out against the crowd.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: path_NNPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's aggressive tactics backfire.  Fear of losing their jobs, and the ever-present threat of ColCorp's security forces, keeps most workers from joining the walkout.  Hartigan smirks, calling Trent's bluff.  The factory continues operating at the same dangerous pace, with the same insufficient resources.
+    # IMAGE: Trent standing alone, isolated and angry, amidst the whirring machinery of the Coldry factory, his face grim, the setting sun casting a harsh light on his defeated posture.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: path_NNPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

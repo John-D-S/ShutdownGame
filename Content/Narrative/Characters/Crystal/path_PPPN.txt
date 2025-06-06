@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting long, distorted shadows across Southpoint.  Another blackout looms, but Crystal isn't focusing on the impending doom. Instead, she's caught in a whirlwind of last-minute preparations for a massive, unauthorized rave she's organizing – a defiant, ecstatic farewell to a dying world.  This is her chance to make one last, unforgettable statement.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Organize and execute a massive, illegal rave within the abandoned Helios exotope refinery, using scavenged power and augmented sound systems to create a sensory overload experience before the final blackout. The goal is to create a moment of shared defiance and ecstatic release in the face of the sun's death, despite the risk of Helios security intervention."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The rave explodes into a cathartic maelstrom of light, sound, and movement. Thousands gather, united in a shared moment of defiance against impending oblivion. Crystal's music pulses through the derelict refinery, a raw expression of both fear and exhilarating freedom.  Helios security arrives but is overwhelmed by the sheer scale of the gathering and the overall mood of defiant joy.
+    # IMAGE: A panoramic view of the abandoned Helios refinery pulsating with vibrant light and movement; throngs of people dance wildly, their bodies augmented with glowing circuitry, a sea of faces uplifted in joyous defiance under the flickering artificial sun.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Helios security forces, alerted by informants, raid the rave before it gains momentum. Crystal's carefully crafted sensory experience is violently cut short, replaced by the harsh reality of capture and the looming darkness of the failing sun.  The potential for collective defiance is lost amidst the chaos of arrest and the crushing weight of fear.
+    # IMAGE: Crystal being roughly apprehended by Helios security forces amidst the wreckage of the aborted rave; flickering emergency lights cast harsh shadows on her face, her expression a mixture of shock and disillusionment. The scene is one of abrupt, violent interruption; the vibrant energy of the previous moment is extinguished.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

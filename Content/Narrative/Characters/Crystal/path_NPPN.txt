@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting the Southpoint rigs in a sickly yellow light.  Another blackout looms, and Crystal feels the familiar prickle of anxiety beneath the adrenaline.  She needs a distraction, a jolt, something... BIG.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Crash Helios's main Southpoint data center –  a bold, chaotic performance art piece designed to expose their exotope mismanagement and hopefully disrupt their operations, thereby freeing up some resources for the sun."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Crystal's augmented synth blasts a sonic wave, overloading Helios's security systems.  Chaos reigns as vital data streams leak onto the net, exposing Helios's criminal negligence. The ensuing public outcry forces some immediate action.
+    # IMAGE: A massive holographic projection of Helios's corrupt data streams exploding over Southpoint's skyline, overlaid with Crystal's performance; a triumphant, defiant expression on her face.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Helios's security is tighter than anticipated; Crystal's attack is quickly suppressed.  Worse, her unauthorized actions draw unwanted attention from both the authorities and Helios’ heavily armed goons.  The distraction backfires spectacularly.
+    # IMAGE: Crystal, cornered and surrounded by heavily armed Helios security personnel in a smoke-filled data center; her synth lies broken on the floor.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

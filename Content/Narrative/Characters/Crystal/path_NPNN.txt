@@ -1,0 +1,18 @@
+NARRATOR: The artificial sun sputters, casting the Southpoint rigs in an erratic strobe light.  Crystal, buzzing with restless energy, feels the familiar tightening in her chest – the fear, disguised as excitement, of the impending doom.  She needs a distraction, a rush, something…bigger.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Crash Helios's main data center, hoping to expose their negligence in supplying substandard exotopes and trigger a public outcry that forces them to cooperate with Sun Island."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  A daring midnight raid, a symphony of glitches and cascading errors – Crystal’s virus wreaks havoc.  The evidence is leaked to the city's independent news channels.  Chaos erupts, but it's the kind of thrilling chaos Crystal thrives on.  Helios is exposed, their stock plummets, and the pressure mounts.
+    # IMAGE: A grainy security camera shot of Crystal’s signature neon-green code cascading across Helios's mainframe, overlaid with panicked faces of executives on a split-screen.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Helios’s security is tighter than Crystal anticipated.  Her intrusion is detected, her virus neutralized before it can spread.  Worse,  she's trapped, surrounded by Helios's heavily augmented security forces.  The city's focus remains on the flickering sun, oblivious to her failure.
+    # IMAGE: Crystal cornered in a server room, surrounded by armed Helios security guards, bathed in the harsh red emergency lights.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

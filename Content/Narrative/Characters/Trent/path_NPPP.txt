@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun throws long, distorted shadows across the Coldry factory floor.  Trent, sweat stinging his eyes, grips a dented exotope canister. ColCorp's foreman keeps demanding more, faster, regardless of the substandard materials. Today, he’ll make a stand.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Trent confronts ColCorp's foreman, publicly exposes the shoddy materials being used for the canisters, and rallies his fellow union workers to a shutdown until ColCorp provides suitable materials for the sun's fuel."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's fiery speech ignites the workers.  The foreman, intimidated by the unified front, backs down, promising to petition ColCorp's higher-ups for better supplies.  The union wins a temporary victory.
+    # IMAGE: Trent, arms raised in a defiant gesture, standing amidst a crowd of cheering, determined workers in the Coldry factory. The flickering sunlight illuminates dust motes dancing in the air.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's outburst enrages the foreman, who calls in security. The workers, divided and unsure, hesitate. Trent's defiance is met with force, and the production line continues churning out flawed canisters.
+    # IMAGE: Trent, bruised and battered, being hauled away by ColCorp security guards amidst a chaotic factory floor. The sun's flickering light casts harsh shadows, highlighting the tension and violence.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

@@ -1,0 +1,18 @@
+NARRATOR: Shae, perched at her polished mahogany desk in the Lumina Government Building, sips lukewarm tea, her gaze flitting between the official government intranet and the subtle dimming of the artificial sun outside her window.  A report on the delayed Sun Island shipment sits unopened, the anxiety building in her chest a familiar weight.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Contact Minister Theron, head of Lumina RRM, to request an immediate briefing on the Sun Island shipment delay and offer her full cooperation in investigating any potential logistical issues impacting the delivery of essential resources. This will involve subtly emphasizing the potential threat to Lumina's stability should the sun's operation be compromised."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Minister Theron, initially dismissive, agrees to a meeting after Shae stresses the potential reputational damage to Lumina if the situation escalates beyond their control.  She promises a full report within the hour, and offers to initiate a discreet internal investigation into Lumina RRM's involvement in the delays.
+    # IMAGE: Shae and Minister Theron seated across a large desk in a dimly lit office, serious expressions on their faces as they review documents.  A subtle, concerned expression crosses Minister Theron's face as she reads a critical data point.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_P.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Minister Theron, already overwhelmed by unrelated political pressures, brushes aside Shae's concerns, assuring her that the delay is a minor issue and Lumina RRM is handling the situation appropriately.  She refuses a meeting and dismisses Shae's anxieties as overblown, leaving Shae feeling more anxious and uncertain than ever.
+    # IMAGE: Shae sitting alone at her desk, the unopened report on the Sun Island shipment still sitting in front of her, her face etched with worry and frustration as the sun continues to dim subtly.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_N.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

@@ -1,0 +1,18 @@
+NARRATOR: The sun flickers violently, casting Southpoint in strobe-like light.  Another blackout looms, and the usual thrill of chaos feels different today; a cold dread seeps in under the adrenaline.  Crystal knows she needs to do *something*, but the sheer scale of the problem is almost paralyzing.  But hey, there's always a party, right?  Wrong.  Maybe not.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Crash Helios's main Southpoint data center, hoping to expose their exotope mismanagement to the public and force them to release their reserves for the sun."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Crystal, aided by a network of disgruntled Helios technicians and augmented DJs, manages to overload Helios's systems with a symphony of sonic glitches and data floods.  The ensuing chaos exposes Helios's shady dealings and triggers a public outcry, forcing the release of some of their stored exotope reserves. The city erupts in a mix of relief and righteous fury.
+    # IMAGE: A massive holographic projection of the Helios logo dissolving into a chaotic stream of data and sound waves, overlaid with a jubilant crowd in Southpoint's main plaza.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The attack is detected and repelled; Helios's security systems prove far more robust than Crystal anticipated.  Worse, the countermeasures cause a wider power outage, plunging Southpoint into darkness and chaos. The ensuing panic leaves Crystal feeling exposed and defeated.
+    # IMAGE: Crystal, silhouetted against the blinding flash of a security system counter-attack, surrounded by flickering screens and the sounds of alarms.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

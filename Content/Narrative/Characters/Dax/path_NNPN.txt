@@ -1,0 +1,16 @@
+NARRATOR: The artificial sun's erratic flickering casts long, distorted shadows across Dax's spartan Midcove apartment.  The PSN's lies are a dull ache, a constant pressure against his meticulously-constructed informational fortress.  He needs more.  He needs to know.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Initiate a covert data leak of the PSN's raw sensor data, bypassing their manipulative filtering algorithms, and anonymously seed it across Ita's fragmented intranets."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  A carefully crafted packet, disguised as routine maintenance data, slips past the PSN's firewalls.  The unfiltered truth – the sun's true instability, the extent of the PSN's deception – begins to spread. A wave of panic, yes, but also clarity.
+    # IMAGE: A swirling vortex of data packets spreading across a map of Ita's city-states, overlaid with a graph showing the sun's declining energy output.  Dax watches, a flicker of something akin to satisfaction in his eyes.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The leak is detected.  The PSN's automated countermeasures trigger, erasing the leaked data and isolating Dax's systems.  He's left with nothing but the gnawing uncertainty of the unknown, and the chilling certainty that the system is far more resilient than he'd anticipated.
+    # IMAGE: Dax's screens flash red, error messages cascading across them.  His face is a mask of frustrated fury, the brief clarity shattered, replaced by a suffocating dread.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

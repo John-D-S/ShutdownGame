@@ -1,0 +1,18 @@
+NARRATOR: The flickering artificial sun throws long, distorted shadows across the Coldry factory floor. Trent, sweat stinging his eyes, grips a faulty exotope canister – another ColCorp cost-cutting measure threatening to sabotage the entire city's contribution to Sun Island.  He has one last chance to ensure Coldry's survival.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Lead a group of trusted union workers in a forceful takeover of the ColCorp quality control section to personally inspect and repair substandard canisters, threatening ColCorp management with exposure if they interfere."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent and his team, fueled by righteous anger and sheer muscle, overwhelm the outnumbered ColCorp supervisors.  They identify and fix enough canisters to meet the minimum standard, buying Coldry some precious time.
+    # IMAGE: Trent, silhouetted against the flickering factory lights, stands over a pile of repaired canisters, his loyal union workers rallying behind him.  ColCorp supervisors are subdued and watching from a distance.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: ColCorp, tipped off by a plant snitch, calls in the Union Peacekeepers.  Trent's team is overwhelmed, the substandard canisters remain, and Coldry's contribution is deemed unfit for use.  Trent's rage simmers, but he's outmatched this time.
+    # IMAGE: Trent, bruised and battered, is forced to his knees by the Union Peacekeepers, while ColCorp officials look on with satisfaction. The defective canisters litter the floor.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

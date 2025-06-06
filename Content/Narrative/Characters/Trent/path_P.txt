@@ -1,0 +1,15 @@
+NARRATOR: The weakening sunlight casts long shadows across the Coldry factory floor. Trent, sweat beading on his brow, finishes tightening a faulty exotope canister seal. ColCorp's demands for faster production are pushing the limits of safety, and he knows it.  The whispers about the sun's failing power only amplify his unease.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Trent decides to confront Foreman Petrov, demanding a meeting with ColCorp's local manager to discuss Coldry's safety concerns and the substandard materials leading to faulty canisters. He will use the union's influence to pressure for change; if Petrov refuses, Trent will shut down the assembly line until his demands are met."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Petrov, intimidated by Trent's forceful demeanor and the union's potential backing, agrees to arrange a meeting.  ColCorp's manager, initially dismissive, is ultimately swayed by the threat of a prolonged factory shutdown and the potential negative publicity. They agree to improve materials and slow down production.
+    # IMAGE: Trent, standing tall and defiant before a nervous Foreman Petrov and a reluctantly conceding ColCorp manager, the Coldry factory workers watching expectantly in the background.
+    NEXT_PATH_SEGMENT: path_PP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Petrov refuses to cooperate, calling Trent a troublemaker and threatening disciplinary action.  Trent's attempt to shut down the assembly line is met with ColCorp security, leading to a violent confrontation.  Trent manages to evade arrest but suffers minor injuries, and the production of faulty canisters continues.
+    # IMAGE: Trent, bruised and bloodied, is surrounded by ColCorp security guards in the Coldry factory, the atmosphere tense and filled with shouting.
+    NEXT_PATH_SEGMENT: path_PN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

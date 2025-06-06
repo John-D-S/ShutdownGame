@@ -1,0 +1,15 @@
+NARRATOR: The flickering sun casts an unsettling, strobe-like light across Dax's Midcove apartment.  The PSN's official reports are laughably optimistic, a carefully constructed facade of calm against the growing panic he detects in the city's fragmented intranet chatter. His compulsion to pierce through the lies intensifies.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Infiltrate the PSN's central server to analyze the algorithm used to filter and manipulate the incoming data on the sun's status; identify the source of the falsified data."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Dax circumvents the PSN's security protocols, his custom-built virus silently dissecting the data stream.  He identifies three distinct sources injecting false data – two corporate entities, one government agency. The truth, raw and brutal, floods his screens.
+    # IMAGE: A chaotic tapestry of code on multiple screens, with three distinct colored streams highlighted in red, showing conflicting information sources feeding into a central point of data manipulation.
+    NEXT_PATH_SEGMENT: path_PNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax's intrusion triggers an automated lockdown.  He manages to extract some fragmented data before being cut off, but the algorithm remains mostly elusive, leaving him with more questions than answers—and a growing sense of dread.
+    # IMAGE: A close-up of a computer screen showing a fragmented, unreadable data stream with an error message overlayed; Dax's face, tense and frustrated, is reflected in the screen's glare.
+    NEXT_PATH_SEGMENT: path_PNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

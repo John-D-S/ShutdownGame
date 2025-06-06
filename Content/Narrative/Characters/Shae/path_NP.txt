@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts an unsettling, uneven light across Lumina.  Shae, already anxious from the day's escalating energy fluctuations, receives a frantic message from a subordinate: Coldry's exotope canisters are failing quality control checks, threatening the Sun Island supply.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Contact the Lumina RRM director, requesting an immediate, thorough investigation into Coldry's manufacturing processes and proposing an emergency inspection team to ensure compliance with Lumina's stringent quality standards.  Simultaneously, discreetly raise concerns about ColCorp's influence in Coldry, suggesting further inquiries into possible corruption or sabotage. Frame everything as a measure to ensure Lumina's continued security and trade relationships."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The RRM director, though initially resistant, agrees to an investigation, recognizing the potential threat to Lumina’s trade routes if the situation worsens. A high-level Lumina RRM team is dispatched to Coldry, initiating a formal inquiry into the canisters' flaws, and begins to subtly probe ColCorp's operations, securing key testimonies and documentation of substandard practices.
+    # IMAGE: Shae, looking slightly relieved but still tense, reviewing a report detailing irregularities found in Coldry’s production line.  The document displays official seals and Lumina RRM logos.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_NPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The RRM director dismisses Shae’s concerns, citing budgetary constraints and downplaying the severity of the situation.  They emphasize adherence to existing trade agreements and express skepticism regarding accusations of ColCorp’s influence.  Shae’s attempts to escalate the matter are met with bureaucratic roadblocks and dismissive responses from superiors. The failing exotope supply remains unaddressed.
+    # IMAGE: Shae sits alone at her desk, a pile of unread reports and ignored messages around her. The flickering light of the dying sun casts long shadows, emphasizing her isolation and growing fear.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_NPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

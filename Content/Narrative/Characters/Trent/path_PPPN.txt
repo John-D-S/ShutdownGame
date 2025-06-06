@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts long, harsh shadows across the Coldry factory floor.  Trent, sweat beading on his brow, grips a malfunctioning exotope canister. ColCorp's demands for faster production are escalating, and the canisters are failing more frequently.  He knows the consequences of another substandard batch.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Trent confronts ColCorp's foreman, demanding better materials and stricter quality control. He threatens a factory-wide slowdown, using his union influence to leverage a deal for safer, more durable canister components. He's prepared to use force if necessary to seize the materials himself."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Trent's forceful negotiation, backed by the threat of a union strike, forces ColCorp's hand.  They reluctantly agree to supply better materials, prioritizing short-term compliance over further risks.  The factory shifts to a more controlled, quality-focused production line.
+    # IMAGE: Trent standing defiantly before a cowering ColCorp foreman, union members rallying behind him in support. The backdrop shows a Coldry factory floor partially lit, yet organized and focused on improved production.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's aggressive tactics backfire. ColCorp, using their connections with the increasingly assertive automatons, shuts down the factory, citing safety concerns and "union sabotage." Trent's attempt to seize the materials results in a violent confrontation, leaving him injured and facing arrest.
+    # IMAGE: Trent, bruised and battered, being escorted by Coldry security, ColCorp's foreman smirking behind them. The backdrop is a dark and shut-down Coldry factory, with broken machinery and a tense atmosphere.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

@@ -1,0 +1,17 @@
+NARRATOR: The sun flickers violently, casting Southpoint in a strobe-like light.  Another Helios party is starting, but the usual thrill is muted by a nagging unease.  Crystal feels the familiar anxiety bubbling, the need to escape the deepening dread.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Crash Helios's party, using a new sonic weapon prototype to disrupt their comms and broadcast a message directly to the automatons on Sun Island, bypassing the PSN and Lumina RRM."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The sonic weapon jams Helios's security systems and broadcasts a raw, urgent plea for help directly to Sun Island. The automatons recognize the authenticity of the message and reroute resources.
+    # IMAGE: Crystal, bathed in the eerie glow of the malfunctioning sun, holds the sonic weapon aloft, a triumphant grin spreading across her face as a message flashes on a nearby screen confirming automaton response.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Helios' security forces intervene, overwhelming Crystal before she can complete the broadcast. The sonic weapon malfunctions, causing only a minor disruption before being confiscated.
+    # IMAGE: Crystal is restrained, surrounded by Helios security guards, the malfunctioning sonic weapon lying discarded on the floor. The sun flickers ominously overhead.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

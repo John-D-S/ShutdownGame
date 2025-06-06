@@ -1,0 +1,17 @@
+NARRATOR: The air in Crystal's apartment hangs heavy with the dimming light.  Another frantic message flashes across her augmented visor – Sun Island's automatons are sounding the alarm, but the PSN feed is still downplaying the crisis.  She needs a distraction, a new thrill...and maybe a way to leverage this chaos into her next big gig.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Crash Helios's private party at the Skydeck, hoping to snag some exclusive intel (and maybe a killer performance opportunity) from their executives, while simultaneously attempting to subtly leak some of the unfiltered Sun Island automaton messages to the wider Southpoint network."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Crystal, disguised in a shimmering, gravity-defying outfit, infiltrates the party with her usual charm and a cleverly disguised data-stream embedded in her sonic augmentations.  She manages to subtly broadcast the raw automaton warnings during a dazzling, impromptu performance, sowing seeds of panic among Helios's less-loyal employees.
+    # IMAGE: Crystal center stage at a lavish Helios party, bathed in the fading light of Ita's sun, her augmented instruments glowing as she subtly transmits data amidst a sea of oblivious partygoers.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_PP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Crystal's attempt to infiltrate the party is thwarted. Helios's security, alerted to her presence (or perhaps a poorly-timed augmented malfunction), detains her.  Her data-stream attempt is detected and quickly scrubbed, leaving the warnings undelivered.
+    # IMAGE: Crystal restrained by Helios security guards in a harshly lit interrogation room, her glittery outfit now rumpled and her expression one of frustrated defiance.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_PN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

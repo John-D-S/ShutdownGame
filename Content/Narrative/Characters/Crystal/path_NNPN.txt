@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting the Southpoint rigs in a sickly, flickering light.  Crystal, perched atop a half-constructed Helios rig, fiddles with a sonic amplifier, the rhythmic pulse a desperate counterpoint to the planet's dying heartbeat.  She needs a distraction, a rush, anything to stop the creeping dread.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Organize a massive, impromptu rave within the Helios extraction rigs, using experimental sonic tech to temporarily mask the sun's failing energy and create a powerful, unforgettable experience, hoping to distract people from the crisis and perhaps even draw attention – and maybe some lucrative gigs – from influential figures in the city."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The rave is a chaotic success.  Thousands flood the rigs, lost in the throbbing bass and dazzling light shows projected onto the machinery.  For a few precious hours, the fear is muted, replaced by a collective euphoria. Crystal’s performance is electrifying; she even manages to attract the attention of a powerful Helios executive who appreciates her rebellious spirit, even if it’s for a brief moment.
+    # IMAGE: A panoramic view of a massive rave inside the Helios extraction rigs, pulsating with light and sound, people dancing amidst the industrial machinery; Crystal, center stage, bathed in intense light, her augmented instruments glowing.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The rave is a disaster. The unstable power grid sputters and fails entirely, plunging the rigs into darkness. The partygoers turn violent, angry at being deprived of their escape. Helios security cracks down, accusing Crystal of sabotage, and she barely escapes with her life, the fleeting high replaced by a harsh dose of reality.
+    # IMAGE: A chaotic scene of violence and darkness within the rigs, people fighting amidst a power outage; Crystal running through the shadows, pursued by security forces.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

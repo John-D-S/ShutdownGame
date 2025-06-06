@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Lumina.  Shae feels a familiar knot of anxiety tighten in her chest.  The whispers of dissent, usually muted, have grown louder.  She must act, but only within the boundaries of the system.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Secure a private meeting with the Minister of Transport, discreetly presenting evidence of Lumina RRM's deliberate slowdown of exotope shipments to Sun Island, framed as a 'security risk' that needs immediate rectification, ensuring Lumina's reputation is preserved through strict adherence to existing protocols."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The Minister, initially resistant, is swayed by Shae's carefully constructed argument emphasizing the danger of escalating automaton intervention and the potential for chaos if Lumina's image is tarnished.  A swift investigation is launched, leading to adjustments in logistics.
+    # IMAGE: Shae, looking relieved but still tense, shaking hands with the Minister in a dimly lit office, a confidential document subtly visible on the desk.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The Minister dismisses Shae's concerns, accusing her of spreading fear and undermining Lumina RRM.  Shae's carefully constructed arguments are misconstrued; her evidence is deemed insufficient, and the Minister even suspects her of disloyalty. Shae is publicly reprimanded.
+    # IMAGE: Shae standing alone in a large, echoing hall, her face pale and downcast, while several high-ranking officials coldly observe her from afar.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

@@ -1,0 +1,17 @@
+NARRATOR: The PSN's contradictory statements regarding the sun's failing fuel reserves are a smokescreen, a deliberate distortion of reality. Dax, his usual calm replaced by a simmering unease, suspects a deeper cover-up.  He needs to verify the automatons' fuel depletion warning independently.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Infiltrate the SebSA network in Seaburn to access their real-time sun monitoring data, bypassing the PSN's filtered reports."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax exploits a known vulnerability in SebSA's older satellite uplink protocols, cleverly masking his intrusion. The raw data confirms the automatons' dire warning: fuel reserves are critically low, far beyond what the PSN publicly admits.
+    # IMAGE: A close-up of Dax's monitor displaying a graph of sharply declining exotope fuel levels, overlaid with a map of Sun Island and the artificial sun.  The background is a dimly lit room, filled with various data screens and humming servers.
+    LOCATION: Seaburn
+    NEXT_PATH_SEGMENT: path_NPPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax's intrusion triggers SebSA's advanced firewall, resulting in a temporary network lockdown and an alert sent to their security team.  His access is cut off, leaving him with nothing but suspicion and the PSN's misleading reports.
+    # IMAGE: A red alert flashing across multiple screens in a high-security SebSA control room, showing Dax's IP address traced.  Dax sits hunched over his own terminal, his face pale with frustration.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_NPPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts long, distorted shadows across the Coldry factory floor. Trent, sweat beading on his brow, grips a dented exotope canister. ColCorp's foreman, a weasel-faced man named Barlow, keeps demanding more, faster, regardless of the quality.  The automatons' warnings echo in Trent's mind, a low, insistent hum of impending doom.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Lead a group of trusted union workers in a forceful takeover of the Coldry exotope canister production line, seizing control of the resources and ensuring only quality canisters are produced, even if it means defying ColCorp and potentially the authorities."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent and his crew move with practiced efficiency, overpowering the startled ColCorp guards. The production line is secured, substandard canisters are rejected, and a more rigorous quality control is implemented.  The union's message is clear: Coldry's survival is paramount.
+    # IMAGE: Trent, silhouetted against the harsh factory lights, stands defiantly atop a stack of perfectly-formed exotope canisters, a handful of loyal union workers behind him, their faces grim but determined.  Barlow is on the floor, bruised but unharmed.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The takeover attempt is met with brutal ColCorp security forces backed by compliant Union Peacekeepers, who view Trent's actions as insubordination. The union workers are outnumbered and outmatched. The production line remains under ColCorp control. Trent is left wounded and betrayed by those he deemed trustworthy.
+    # IMAGE: Trent, bleeding and battered, lies amidst discarded exotope canisters, his gaze filled with cold fury. ColCorp security forces stand over him, weapons raised, the flickering factory lights highlighting their arrogant posture.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

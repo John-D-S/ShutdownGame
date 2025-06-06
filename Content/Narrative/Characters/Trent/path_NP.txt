@@ -1,0 +1,16 @@
+NARRATOR: The flickering sun casts long, jittery shadows across the Coldry factory floor.  ColCorp's foreman, a weasel of a man named Silas, is pushing harder than ever for faster production, demanding substandard materials for the exotope canisters. Trent feels the familiar tightening in his chest – the pressure to control, to resist.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Trent confronts Silas, demanding an explanation for the inferior materials and threatening a work stoppage if the situation isn't rectified. He plans to leverage his union connections to ensure ColCorp complies, and if necessary, he will lead a forceful demonstration to shut down production entirely."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Silas, intimidated by Trent's fiery defiance and the potential consequences of a union-backed strike, backs down. He promises to escalate the issue to higher management, emphasizing the risk to ColCorp's reputation and the potential dangers of defective canisters.
+    # IMAGE: Trent, arms crossed, standing defiantly before a visibly shaken Silas, his union brothers and sisters watching with approval in the background.  The factory floor is still, anticipation hanging heavy in the air.
+    NEXT_PATH_SEGMENT: path_NPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Silas, unmoved by Trent's threats, calls security.  Trent's anger flares, but he's outnumbered and ultimately subdued, suspended from work without pay.  The inferior materials continue to be used, exacerbating the crisis.
+    # IMAGE: Trent, his face bruised and bloodied, being led away by ColCorp security guards.  His union brothers and sisters watch helplessly from a distance, their attempts to intervene ignored.
+    NEXT_PATH_SEGMENT: path_NPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

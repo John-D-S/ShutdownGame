@@ -1,0 +1,18 @@
+NARRATOR: The flickering sun throws long, distorted shadows across the Coldry factory floor. Trent, sweat stinging his eyes, grips a wrench tighter.  Another canister fails inspection; ColCorp's demands for speed are pushing the limits of safety.  He knows what needs to be done.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Trent will confront ColCorp's foreman, demanding they halt production until the faulty exotope supply is addressed and proper materials are secured. He'll threaten to shut down the line himself if necessary, using his union leverage and intimidating presence to back his demands."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Trent's raw fury and the threat of a full-blown union walkout force the foreman's hand. Production halts, and a grudging promise of better materials is secured. The union steps in, guaranteeing worker safety and quality control.
+    # IMAGE: Trent, silhouetted against the dim factory light, standing defiantly before a cowering foreman, union members rallying behind him in support.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The foreman, backed by ColCorp's security, refuses to yield. Trent's threats are met with derision; ColCorp cites the urgency of the sun crisis to justify their demands.  Desperate, Trent attempts a forceful shutdown, but he's outnumbered and subdued.
+    # IMAGE: Trent restrained by ColCorp security, his face a mask of frustrated rage, as production continues relentlessly amidst the failing sun's light.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

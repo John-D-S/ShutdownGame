@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Southpoint's neon-drenched alleys.  Crystal, perched atop a Helios extraction rig, feels the familiar thrum of anxiety – but it's overshadowed by the electrifying buzz of the impending chaos.  Tonight, she's got a plan.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Organize a massive, impromptu concert/protest at the Helios headquarters, using amplified sonic weaponry and dazzling light shows to disrupt Helios operations and draw attention to their negligence in the sun crisis."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The concert is a roaring success, a defiant wave of sound and light that overwhelms the Helios security forces and temporarily shuts down their operations. News of the protest spreads like wildfire, exposing Helios's greed to the whole city.  The authorities, overwhelmed and fearing further escalation, are forced to negotiate.
+    # IMAGE: A vibrant, chaotic scene of a massive crowd gathered around a makeshift stage built on the ruins of a Helios facility. Crystal commands the stage, bathed in pulsating light, as her music blares through custom-built sonic weaponry that jams Helios' security systems. Smoke and sparks fill the air.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The protest attracts attention, but not the kind Crystal hoped for.  Helios’ heavily armed security forces brutally crack down on the gathering, their superior firepower quickly dispersing the crowd. Crystal's equipment is destroyed, and she's left bruised and alone, her defiance met with swift, overwhelming force. The incident is quickly suppressed, with little long-term impact.
+    # IMAGE:  Crystal, injured and surrounded by the wreckage of her sonic equipment, as Helios security forces disperse the crowd with flashbangs and riot control measures. The city's lights flicker violently in the background, reflecting the unstable sun.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

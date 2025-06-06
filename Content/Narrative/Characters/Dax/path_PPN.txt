@@ -1,0 +1,18 @@
+NARRATOR: The PSN's contradictory statements about the sun's status are driving Dax to the edge.  The flickering light outside his Midcove apartment only amplifies his growing unease; the lack of reliable information is a suffocating pressure. He needs certainty, even if it's a terrifying one.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: Dax decides to bypass the compromised PSN entirely and directly access the automaton network's raw telemetry data from Sun Island, hoping to find unfiltered information about the sun's actual fuel reserves and the status of ongoing maintenance.  He will use a combination of his custom-built deep-packet inspection tool and a recently discovered vulnerability in the island's outdated security protocols.
+
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The data floods his screens – a torrent of unfiltered sensor readings, maintenance logs, and power consumption figures. The picture is bleak but undeniably clear.  He now has precise figures and the timeline on which the fuel supply is being depleted.
+    # IMAGE:  Multiple screens displaying cascading lines of code, charts illustrating a rapidly depleting fuel curve, and Dax's face, grim but focused, illuminated by the glow of the monitors.
+    NEXT_PATH_SEGMENT: path_PPNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax's intrusion triggers Sun Island's emergency protocols. The connection is severed, and a counter-intrusion program erases the trace of his access before he can retrieve any usable data. The feeling of helplessness, the same one that drove him years ago, claws at him.
+    # IMAGE: Dax slumped back in his chair, the screens going dark one by one, his face a mask of frustrated defeat.  A single, persistent error message glows ominously on one monitor.
+    NEXT_PATH_SEGMENT: path_PPNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+
+TOKEN_CHALLENGE_END

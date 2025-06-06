@@ -1,0 +1,16 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Dax's spartan Midcove apartment.  The PSN's lies are a dull ache, a constant background hum of manufactured calm against the growing chaos outside. He needs more. He needs *certainty*.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Initiate a covert data leak from the PSN, focusing on the raw, unfiltered telemetry data from the Sun Island automatons, bypassing the PSN's manipulative filters and scrubbing protocols."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Dax executes a series of intricate hacks, exploiting a previously unknown backdoor.  Raw data streams flood his encrypted channels, revealing the true extent of the sun's instability and the PSN's deliberate obfuscation.
+    # IMAGE: A cascading waterfall of green code filling Dax's multiple monitors, interspersed with stark graphs showing the sun's rapidly deteriorating condition, overlaid with faint, almost imperceptible alterations in the background data streams indicative of the PSN's manipulation.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax's intrusion triggers the PSN's advanced security protocols.  His access is severed, his encrypted channels jammed, leaving him stranded in the same suffocating information vacuum he dreads. The knowledge he sought remains tantalizingly out of reach. The sun's dimming intensifies, mirroring his own sinking hope.
+    # IMAGE: Dax's monitors are blanked out, replaced by a single, ominous red error message on a black screen; the flickering artificial sun outside casts an even more menacing shadow.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

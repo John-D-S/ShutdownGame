@@ -1,0 +1,15 @@
+NARRATOR: The artificial sun shudders, plunging Midcove into another agonizing flicker. Dax, hunched over his monitors, feels the familiar cold dread—the information vacuum threatening to swallow him whole.  He spots a telltale pattern in the PSN's erratic broadcasts: a deliberate, almost surgical distortion of the automaton's distress signals.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Initiate a covert data leak of the PSN's manipulated sun-status reports and the raw, unfiltered automaton communication logs directly to independent news outlets and citizen journalists across Ita's fragmented networks, bypassing PSN's censorship."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax's meticulously crafted leak successfully circumvents the PSN's firewalls. The raw data, a stark contrast to the official reports, explodes across Ita's fractured intranets.  A wave of public outrage and demand for transparency washes over the city-states.
+    # IMAGE: A chaotic, yet hopeful, collage of news feeds and citizen journalist broadcasts across various city-state intranets, all showing the raw, unfiltered automaton data contrasting sharply with PSN's deceptive reports; Dax observing from a shadowed corner, a faint but satisfied smile on his face.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The PSN's security protocols prove more resilient than Dax anticipated.  His leak is detected, traced, and neutralized, leaving him exposed and his efforts in vain. The official narrative of a "minor sun fluctuation" continues to dominate public discourse, exacerbating the crisis.
+    # IMAGE: A close-up of Dax's frustrated face illuminated by the harsh red glow of a security alert on his screen, a cascade of error messages overwhelming the display.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

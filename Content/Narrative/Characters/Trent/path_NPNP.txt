@@ -1,0 +1,18 @@
+NARRATOR: The flickering sun throws long, distorted shadows across the Coldry factory floor.  Trent grips a wrench, the metal cold against his calloused hand. ColCorp's foreman, a weasel named Silas, keeps demanding more canisters, regardless of the shoddy materials.  The automatons' patience is wearing thin.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Organize a union work stoppage, forcing ColCorp to prioritize quality over quantity, and directly confront Silas about the substandard materials, threatening to expose his negligence to the automatons if he doesn't comply."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's fiery speech ignites the workers. The factory grinds to a halt. Silas, cornered and fearing the repercussions, reluctantly agrees to use better materials, but only if Trent ensures the canisters are delivered to the automatons.
+    # IMAGE: Trent standing defiantly before a crowd of striking workers, his silhouette stark against the flickering factory lights. Silas, pale and defeated, stands beside him, signing a document.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's confrontation escalates into a brawl, attracting unwanted attention from ColCorp security and the automatons. The ensuing chaos halts production, but does nothing to improve canister quality.  Worse, his reckless action earns Coldry the wrath of the automatons.
+    # IMAGE: Trent, bruised and surrounded by ColCorp security, watches as an automaton dismantles a line of defective canisters. The factory floor is in ruins.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

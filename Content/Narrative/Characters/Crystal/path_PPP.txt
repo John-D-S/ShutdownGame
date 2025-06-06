@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts long, eerie shadows across Southpoint's neon-drenched alleys.  Crystal, perched atop a crumbling rig, tunes her synth, the rhythmic pulse a defiant counterpoint to the growing unease. The exotope shortage is hitting hard – the usual vibrant energy is muted, replaced by a nervous tension.  She needs a distraction, a rush, something to shatter the creeping dread.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Organize a massive, impromptu rave inside one of the abandoned Helios extraction rigs, using scavenged power cells and experimental sonic augmentations to create an unforgettable, defiant experience against the backdrop of the failing sun."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The rave is a chaotic masterpiece of light, sound, and augmented bodies, a pulsating heart of defiance against the encroaching darkness.  Crystal's music transcends the anxieties, briefly uniting the city in a shared moment of ecstatic abandon.  The energy is electrifying, a momentary forgetting of the impending doom.
+    # IMAGE: A sprawling, chaotic rave scene inside a massive, derelict Helios extraction rig.  Beams of light pierce the gloom, illuminating hundreds of dancing, augmented figures. Crystal commands the stage, her synth glowing intensely as she creates a powerful soundscape.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_PPPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The scavenged power cells prove unreliable, the rig's unstable structure threatens collapse, and the rave quickly descends into chaos.  Helios security forces arrive, shutting down the party and arresting several attendees, leaving Crystal feeling exposed and defeated. The fleeting escape only highlighted the harsh reality.
+    # IMAGE: A chaotic scene of flashing lights and smoke, security forces clashing with partygoers, Crystal watching helplessly as her makeshift rave descends into pandemonium.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_PPPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

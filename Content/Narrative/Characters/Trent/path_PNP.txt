@@ -1,0 +1,15 @@
+NARRATOR: The flickering sun casts long, skeletal shadows across the Coldry factory floor. Trent, muscles tense, watches ColCorp foreman,  Jenkins,  attempt to bully a younger worker into overtime.  The air crackles with unspoken defiance.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Confront Jenkins directly, demanding he cease his intimidation tactics and adhere to the union's agreed-upon work hours, threatening to rally the workforce if he refuses."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Jenkins, unnerved by Trent's steely gaze and the murmur of support from other workers, backs down.  He retreats, muttering about reporting Trent to management. The workers, emboldened, resume their tasks with renewed purpose.
+    # IMAGE: Trent, standing tall and defiant, silhouetted against the dim factory light, with a group of workers looking to him with a mixture of respect and apprehension.
+    NEXT_PATH_SEGMENT: path_PNPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Jenkins, refusing to back down, calls for security. A brawl ensues, resulting in Trent and several union members facing disciplinary action, potentially jeopardizing their jobs and access to vital resources during the crisis.
+    # IMAGE: A chaotic scene in the factory, with security guards wrestling with workers, Trent pinned to the ground, his face showing a mixture of anger and frustration.
+    NEXT_PATH_SEGMENT: path_PNPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

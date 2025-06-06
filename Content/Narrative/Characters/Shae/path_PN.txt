@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts an unsettling strobe effect across Lumina's usually pristine avenues.  Shae, already tense from the day's escalating anxieties, feels the pressure mounting.  The whispers of panic she'd carefully tried to contain are growing louder.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Shae decides to convene an emergency meeting with key figures within the Lumina RRM and her political allies to address the worsening energy fluctuations and push for a coordinated, system-approved response to secure exotope shipments to Sun Island, emphasizing adherence to established protocols and avoiding any deviation from official channels."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Shae's carefully worded appeals to stability and order resonate with her colleagues.  They agree to prioritize exotope transport, streamlining procedures within the RRM to expedite shipments, while publicly downplaying the crisis to avoid wider panic.
+    # IMAGE: Shae presiding over a tense but controlled meeting, her colleagues nodding in agreement as she outlines a revised logistics plan, emphasizing established procedures and reporting directly to higher authorities.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_PNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Despite Shae's efforts, ingrained rivalries and unspoken agendas within the Lumina RRM prevent a unified response.  Her pleas for cooperation are met with skepticism and internal power struggles, leaving the exotope transport situation largely unchanged.  The subtle manipulations and deliberate slowdowns continue, further hindering the already precarious situation.
+    # IMAGE: Shae looking defeated, surrounded by arguing colleagues, the flickering sunlight highlighting the division and inaction within the room.  Reports of further supply chain issues flash on a nearby monitor.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_PNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

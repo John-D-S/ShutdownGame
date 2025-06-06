@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts an unsettling pallor across Lumina.  Shae, already on edge from the day's escalating energy fluctuations, receives a panicked report: Coldry's exotope canisters are failing quality control, jeopardizing Sun Island's supply.  Her carefully constructed world of order and stability is cracking.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Discreetly investigate the ColCorp influence in Coldry, focusing on uncovering evidence of compromised canister production and reporting it to her superiors within Lumina's RRM, hoping to quietly rectify the issue before it causes a wider crisis.  She will emphasize the security risks of substandard materials and the potential for severe repercussions if the automatons detect them."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Shae's meticulous investigation, conducted through established channels and carefully worded reports, exposes ColCorp's negligence. Lumina RRM, acting on her findings, pressures Coldry's government to implement stricter quality control, averting immediate disaster.  The crisis is contained, at least for now.  She feels a brief moment of relief, a small victory within the system she strives to protect.
+    # IMAGE: Shae sits at her polished desk in her Lumina office, reviewing a successful report, a subtle but satisfied smile playing on her lips. The city outside is bathed in the uneven, flickering light of the dying sun, but her office remains calmly lit.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_NNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Shae's efforts to expose ColCorp's actions are stymied by Lumina RRM's internal resistance.  Her superiors, possibly influenced by unseen forces, dismiss her concerns as overblown or even actively sabotage her investigation. Coldry continues to send subpar canisters, exacerbating the sun's instability.  The fear of repercussions for challenging the established order outweighs her concern for the truth. The anxiety she’s been trying to manage intensifies, and she begins to question her own ability to effectively influence the situation.
+    # IMAGE: Shae hunched over her desk in her dimly lit office, surrounded by discarded reports and files. Her face is etched with worry and defeat, a single tear tracing a path down her cheek. The flickering sunlight outside casts long, ominous shadows.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_NNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

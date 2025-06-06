@@ -1,0 +1,18 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Southpoint.  Another blackout looms, but Crystal's not worried...yet.  The thrill of the impending chaos is almost intoxicating.  She needs a distraction, a way to turn the fear into fuel for her next performance.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Organize a massive, impromptu rave in the abandoned Helios exotope refinery, using scavenged equipment and stolen power to create a defiant, electrifying spectacle in the face of the dying sun.  The goal is to draw attention to Helios' negligence while creating the ultimate, adrenaline-fueled experience."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The rave explodes. Thousands gather, drawn by the raw energy of Crystal's performance and the defiant spirit of the event.  The sheer scale of the party forces Helios to acknowledge the public anger and the precarious state of the city's power grid.  The blackout is averted as a temporary truce is called.
+    # IMAGE: A sprawling, chaotic rave scene amidst the skeletal remains of the Helios refinery, bathed in the flickering light of the failing sun.  Crystal performs on a makeshift stage, surrounded by a euphoric crowd.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Helios security forces crack down hard on the rave before it gains real momentum. Crystal's hastily assembled equipment malfunctions, leading to a chaotic scramble and a spectacular power surge that leaves the refinery in flames. The party ends in a blaze of frustration and near disaster, failing to expose Helios or truly galvanize the population.  The blackout hits even harder as a result of the refinery's destruction.
+    # IMAGE: Security forces clashing with revelers amidst smoke and flames billowing from the destroyed refinery. Crystal looks defeated and overwhelmed as a police siren wails in the distance.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

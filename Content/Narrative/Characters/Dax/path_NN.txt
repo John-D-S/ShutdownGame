@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts an unsettling strobe effect across Dax's Midcove apartment, highlighting the chaotic dance of data streams across his multiple monitors.  The PSN's officially sanitized reports contradict the raw data he's pulling from independent sources – a jarring dissonance that fuels his anxiety. He needs to understand the discrepancy.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Infiltrate the PSN's central server farm, bypassing their layered security protocols to access their unfiltered, raw data logs on the solar energy readings and the automatons' resource requests. This requires exploiting a known vulnerability in their outdated firewall, but it's his only chance to get a complete picture of the situation before the situation gets worse."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Dax successfully navigates the PSN's digital labyrinth, his fingers flying across the keyboard. The raw data reveals a far more dire situation than the public knows – a deliberate suppression of critical information by ColCorp and Lumina RRM, who have been manipulating the PSN's reports.
+    # IMAGE: A close-up shot of Dax's face, illuminated by the glow of multiple screens displaying complex data streams, a look of grim determination etched on his features.  His eyes are locked on a specific anomaly in the data.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_NNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax's intrusion triggers a sophisticated counter-intrusion protocol, shutting down the server farm and initiating a system-wide lockdown. The PSN’s security logs are wiped, and his unauthorized access is logged. He gains nothing but a heightened sense of dread and a confirmation of his worst fears.
+    # IMAGE: A darkened room, only the faint red glow of emergency lights illuminating Dax’s frustrated and defeated figure.  His monitors are blank, leaving him in a digital void.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_NNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

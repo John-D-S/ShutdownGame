@@ -1,0 +1,18 @@
+NARRATOR: The flickering sun casts an erratic glow across Dax's cluttered apartment in Midcove.  The PSN's official feed continues to downplay the crisis, but the raw data streams tell a different story – a chillingly precise countdown to planetary darkness.  He needs more.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Infiltrate the compromised Planetary Systems Network (PSN) servers in Midcove to find evidence of data manipulation and identify the source of the disinformation campaign."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Dax bypasses the PSN's weakened security protocols, tracing the falsified data to a hidden server farm within OmniSynaptic's abandoned Midcove facility. The evidence is undeniable: a deliberate, systematic campaign to suppress the truth about the sun's failure. A surge of grim satisfaction washes over him, momentarily eclipsing the ever-present dread.
+    # IMAGE: A close-up shot of Dax's intense gaze fixed on a monitor displaying lines of code revealing OmniSynaptic's involvement, overlaid with a faint, flickering image of the dying sun in the background.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_NPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax's intrusion triggers a sophisticated counter-intrusion system within the PSN. His access is severed, leaving him with only fragments of data and a deepened sense of frustration and helplessness.  The unknown remains, a suffocating blanket of uncertainty.
+    # IMAGE: A dark, empty screen reflecting Dax's worried expression, contrasted with the bright, panicked newsfeeds broadcasting on nearby monitors showing the worsening solar instability.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_NPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Southpoint.  Another blackout threatens, but Crystal's focus is elsewhere – on the throbbing bass of her latest track, a frantic pulse mirroring the city's anxiety.  She needs a distraction, a rush... a gig.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Crash Helios's private, invitation-only party at the abandoned Exotope Refinery, using a forged invite and a killer new sonic augment to deliver an electrifying, impromptu performance – and maybe, just maybe, leak some incriminating data about their shady practices to the public."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The forged invite works; the augment is a sensation. Crystal's performance is a chaotic masterpiece, eclipsing even the decadent atmosphere of the party.  Amidst the swirling lights and pulsating bass, she subtly transmits the damning Helios data to a sympathetic contact.
+    # IMAGE: Crystal bathed in neon light on a makeshift stage amidst a crowd of stunned, wealthy Helios executives, her sonic augment projecting holographic visuals of Helios's corruption onto the refinery walls.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The forged invite is spotted; Crystal's augment malfunctions spectacularly, shorting out the power and causing a panic.  She escapes, but the data remains hidden, and her reputation takes a hit.  The blackout deepens, swallowing Southpoint in darkness.
+    # IMAGE: Crystal fleeing the refinery, the entrance engulfed in flames and smoke, as a panicked crowd surges around her.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

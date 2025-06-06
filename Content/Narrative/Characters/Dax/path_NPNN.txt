@@ -1,0 +1,15 @@
+NARRATOR: The artificial sun shudders, plunging Midcove into another agonizing flicker. Dax, hunched over his multi-monitor array, feels the familiar icy grip of helplessness—a phantom echo of his sister's death.  The PSN's disinformation campaign is deafening, but a faint signal, a statistically improbable anomaly, catches his attention.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Bypass the PSN's main firewall and upload a compressed archive of raw sensor data from the SebSA sun monitors directly to the global dark web, hoping to circumvent the information blackout and trigger an independent, decentralized response."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The upload completes just as the sun plunges into a prolonged eclipse.  A surge of encrypted confirmations floods Dax's screens. The data is out.
+    # IMAGE: A chaotic, yet organized collage of data streams, encrypted messages, and confirmations flashing across multiple monitors in a darkened room.  Dax's face is partially visible, a flicker of grim satisfaction in his eyes.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The PSN's countermeasures detect the intrusion, triggering a full system lockdown. Dax's connection is severed, his data lost in the digital void.  The sun's dimming continues.
+    # IMAGE: A close-up of Dax's face, pale and strained, the glow of the failing sun casting long, harsh shadows.  His screens are blank, and a single tear streaks down his cheek.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts long, unsettling shadows across Shae's meticulously organized office in Lumina's governmental complex.  Reports of unrest in Southpoint and Coldry flood her desk, each one a fresh tremor in the carefully constructed order she strives to maintain. The automatons' stark warning about fuel depletion echoes in her mind, a dissonant note in the symphony of controlled anxieties she usually orchestrates.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Shae will attempt to convene an emergency meeting of Lumina's key transport officials and subtly redirect Lumina RRM's OptimaShip logistics system to prioritize the delivery of verified, high-quality exotope canisters to Sun Island, while simultaneously downplaying the severity of the automaton's warning to prevent panic and maintain the appearance of control."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Shae's carefully worded arguments, emphasizing the need for 'efficient resource allocation' and 'preventative measures', sway the transport officials.  The OptimaShip system subtly shifts, prioritizing Sun Island shipments without causing alarm.  A sense of precarious calm settles over Lumina.
+    # IMAGE: Shae, composed but visibly stressed, stands at the head of a conference table in a dimly lit room.  Charts and graphs depicting optimized transport routes are projected on the wall.  A faint, hopeful glow emanates from the partially obscured image of the artificial sun on a nearby screen.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_PNPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Shae's attempts to subtly manipulate the OptimaShip system are countered by more entrenched conservative factions within Lumina RRM. Her pleas for prioritized exotope delivery are met with thinly veiled accusations of alarmist behavior and undue influence from the "automaton lobby." The system remains largely unchanged, and the critical shipments remain delayed.  Anxiety gnaws at Shae as the sun's light continues to dim.
+    # IMAGE: Shae sits alone in her office, the flickering light highlighting the worry lines etched on her face.  A stack of unread reports lies on her desk, alongside a discarded communication from Sun Island detailing the worsening fuel situation.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: path_PNPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

@@ -1,0 +1,18 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Lumina's meticulously manicured streets. Shae, her usual composure frayed, clutches a datapad displaying alarmingly erratic energy readings from Sun Island.  The whispers of dissent, once easily dismissed, now echo with a terrifying urgency.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Secure an emergency meeting with the Lumina Council, presenting the Sun Island data and proposing an immediate, albeit limited, relaxation of Lumina RRM's transport protocols to expedite vital exotope deliveries to Sun Island.  This will require navigating the intricate web of Lumina's political hierarchy, emphasizing the threat to Lumina's stability above all else."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Shae's carefully constructed argument, emphasizing the looming danger to Lumina's prosperity and security, gains traction. The Council, though hesitant, agrees to a temporary easing of restrictions.  The first shipments of essential materials begin their journey to Sun Island.
+    # IMAGE: Shae addressing the Lumina Council, her anxiety palpable but her voice firm as she displays graphs depicting the failing sun's energy output and the impact on Lumina's infrastructure.  A subtle shift in the council members’ expressions indicates her success.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Shae's presentation is met with resistance. Council members, entrenched in their positions and suspicious of anything that disrupts the established order, dismiss her concerns as exaggerated or a ploy by those who seek to undermine Lumina. The RRM's restrictive protocols remain in place.
+    # IMAGE: Shae stands alone before the Lumina Council, her pleas ignored as the members exchange skeptical glances and dismiss her concerns. The image is dimly lit, emphasizing her isolation.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

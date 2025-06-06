@@ -1,0 +1,15 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Dax's austere Midcove apartment.  The PSN's lies are a choking cloud, but a faint signal, a whisper of genuine data, leaks from a compromised Helios server.  He knows this could be his last chance.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Initiate a covert data exfiltration from the compromised Helios server, focusing on extracting raw exotope production and transport data, bypassing PSN's filtering mechanisms."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax leverages a previously unknown backdoor, slipping past the PSN's cloaking protocols.  The data streams in – a torrent of Helios's lies, and the brutal truth hidden beneath.
+    # IMAGE: A close-up of Dax's workstation, multiple screens displaying cascading lines of code, interspersed with raw data visualizations showing a dramatic discrepancy between reported and actual exotope production.  The faint glow of the failing sun casts a stark light on his determined face.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Helios's security protocols, more sophisticated than anticipated, detect his intrusion.  The connection is severed, and Dax is left with nothing but the gnawing suspicion of what he almost uncovered.  The PSN's misinformation campaign intensifies, further obscuring the truth.
+    # IMAGE: A dark, empty screen, reflecting Dax's grim expression.  The flickering sunlight emphasizes the dust motes dancing in the oppressive silence of his apartment.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

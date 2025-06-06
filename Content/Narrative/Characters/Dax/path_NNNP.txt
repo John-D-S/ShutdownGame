@@ -1,0 +1,15 @@
+NARRATOR: The artificial sun sputters, casting long, distorted shadows across Dax's Midcove apartment.  The PSN's lies are a suffocating blanket, but a flicker of hope—a trace of anomalous data buried deep within the PSN's corrupted logs—offers a potential escape from the encroaching darkness.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Initiate a covert data leak of the falsified PSN stability reports, exposing OmniSynaptic's continued manipulation and the true extent of the sun's instability to the public via encrypted channels on the dark web."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax expertly circumvents the PSN's firewalls, using a newly developed exploit to siphon the corrupted data. The leak is successful, triggering a wave of public outrage and demands for transparency.
+    # IMAGE: A stylized representation of data packets streaming across a network, transitioning from red (corrupted) to blue (truth), with Dax's silhouette superimposed.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Dax's leak is detected mid-transmission; OmniSynaptic's countermeasures swiftly neutralize his access point, wiping his system and leaving him vulnerable. The falsified data remains untouched, the truth buried deeper than ever.
+    # IMAGE: A close-up of a computer screen showing a cascade of error messages and a spinning hourglass cursor, overlaid by the OmniSynaptic logo.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

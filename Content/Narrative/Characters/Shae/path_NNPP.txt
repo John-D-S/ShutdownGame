@@ -1,0 +1,15 @@
+NARRATOR: The artificial sun sputters, casting Lumina in a sickly yellow light.  Shae feels the familiar knot of anxiety tighten in her chest.  The whispers about sabotage within the Lumina RRM are growing louder, and she knows she must act—or at least, appear to act—before the instability reaches a breaking point.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Initiate a full audit of Lumina RRM's OptimaShip logistics system, focusing on the last week's exotope transport records, to identify any deliberate delays or irregularities that might compromise the sun's fuel supply.  She will present her findings to the highest authority, hoping to secure their support for immediate corrective action—within the system."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Shae's meticulous audit reveals a pattern of suspiciously timed delays and reroutings, cleverly disguised within the OptimaShip's complex algorithms.  She presents her findings to the Council, carefully framing the evidence as a threat to Lumina's stability and security. The Council, shaken by the implications, orders an immediate investigation and instructs Lumina RRM to prioritize exotope transport.
+    # IMAGE: Shae stands before the Lumina Council, a holographic projection of the OptimaShip data displaying the evidence of deliberate delays.  Her face is pale but determined, a sense of relief washing over her as the Council members react with concern.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Despite her efforts, Shae's audit yields inconclusive results.  The subtle sabotage within the OptimaShip system proves too sophisticated for her to detect without more time and resources—time that is rapidly running out.  Her report is dismissed as insignificant by the Council, who are more concerned with maintaining political appearances than facing the difficult truths that could undermine the current order.  Shae is left feeling exposed, her anxiety escalating as she suspects that her concerns may have fallen on deaf ears, perhaps even inviting suspicion against her.
+    # IMAGE: Shae sits alone in her office, the holographic display showing a jumble of inconclusive data. The flickering light of the failing sun casts long shadows, accentuating her growing despair and fear.
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

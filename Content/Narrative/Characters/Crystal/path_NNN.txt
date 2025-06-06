@@ -1,0 +1,18 @@
+NARRATOR: The flickering sun casts long, distorted shadows across Southpoint's already chaotic streets.  Protests rage outside, fueled by Helios's exotope shortage and the PSN's conflicting reports. Crystal, however, is focused on a different kind of energy – the pulse of a new synth-bass line she's been tweaking.  But even the thrill of creation can't entirely drown out the growing unease.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Organize a massive, impromptu concert in the heart of Southpoint's protest zone, using her music to both channel the city's anger and distract from the sun's failing light, hoping to leverage the attention to pressure Helios for more exotope."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The raw energy of Crystal's performance ignites the crowd. Her music, a blend of defiant rhythms and soaring melodies, becomes a cathartic release. The protest takes on a new focus, morphing into a demand for Helios's accountability. News crews arrive, broadcasting the event across the fragmented intranet.
+    # IMAGE: A wide shot of Crystal on stage, bathed in the flickering artificial sunlight, a massive crowd surging around her, a mix of anger and exhilaration on their faces.  Smoke and lasers fill the air.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_NNNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Despite Crystal's best efforts, the performance is met with apathy. The crowd is too consumed by fear and desperation to be swayed by music.  Helios, unmoved by the lackluster media coverage, simply tightens its grip on the exotope supply. The concert ends in a dispirited silence.
+    # IMAGE: Crystal stands alone on a deserted stage, the lights dim, her instruments silent, the setting sun casting a harsh glow on her face, revealing the vulnerability beneath her usual bravado.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_NNNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

@@ -1,0 +1,15 @@
+NARRATOR: The flickering sun casts an unsettling, uneven light across Lumina.  Shae, already anxious from the day's escalating reports of panic buying and energy fluctuations, feels a knot tighten in her stomach. The official line – "technical solar issues" – feels increasingly flimsy.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Shae will discreetly contact her superiors in Lumina's RRM (Roads, Rail, Maritime) to request a full audit of the exotope canister shipments to Sun Island, focusing on identifying any potential delays or irregularities caused by Lumina RRM’s internal procedures.  She will emphasize the need for absolute transparency and adherence to protocol, framing any deviations as a potential threat to Lumina's stability and reputation."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Her superiors, concerned about maintaining Lumina's image and avoiding any potential repercussions from the automatons, agree to the audit. The investigation reveals several instances of minor procedural delays and inconsistencies within Lumina RRM that, while seemingly insignificant individually, cumulatively contributed to the slow-down of exotope shipments.  These irregularities are quietly addressed and swiftly corrected.
+    # IMAGE: Shae, seated at a polished mahogany desk in her office, reviewing a meticulously organized stack of reports.  A subtle but reassuring glow emanates from a data-pad displaying a green bar graph indicating improved logistics efficiency.
+    NEXT_PATH_SEGMENT: path_PPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Shae's superiors dismiss her concerns, attributing the delays to "unforeseen circumstances" and "minor technical glitches" outside of Lumina RRM's control.  They subtly reprimand her for causing unnecessary alarm and focus on maintaining the façade of calm and order, further delaying any meaningful investigation into the true logistical failures that are exacerbating the sun's decline. The delays persist, intensifying the crisis.
+    # IMAGE: Shae, looking pale and anxious, sits alone in her office, a pile of unread reports growing larger, the flickering sunlight highlighting her worried expression. The data-pad displays a worsening graph.
+    NEXT_PATH_SEGMENT: path_PPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

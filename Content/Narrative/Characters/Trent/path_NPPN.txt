@@ -1,0 +1,18 @@
+NARRATOR: The flickering sun casts long, distorted shadows across the Coldry factory floor.  Trent, his face grim, surveys the half-finished exotope canisters. ColCorp's deadlines loom, and the automatons' warnings grow more insistent.  He knows the substandard materials are a ticking time bomb.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Trent will confront ColCorp's foreman, demanding better materials and threatening to shut down production until the quality improves, even if it means risking his job and incurring the wrath of the automatons."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Trent's forceful stand, backed by the tacit support of his union brothers, forces ColCorp's hand.  The foreman, intimidated by Trent's unwavering resolve, agrees to procure better materials, albeit reluctantly. Production slows, but the quality improves significantly.
+    # IMAGE: Trent standing defiantly before a cowering foreman, surrounded by a circle of supportive but wary factory workers, the dim light of the failing sun highlighting the tension.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's confrontation escalates into a violent argument. The foreman, backed by ColCorp security, calls Trent's bluff.  The union offers no overt support; they fear the repercussions of outright defiance. Trent is suspended, and substandard canisters continue to roll off the production line.
+    # IMAGE: Trent, bruised and alone, watches as security guards escort him out of the factory, the failing sun casting a cold, harsh light on his defeat.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

@@ -1,0 +1,17 @@
+NARRATOR: The flickering sun casts long, distorted shadows across Southpoint's neon-drenched alleys.  The air crackles with unrest; the Helios-controlled exotope shortage has fueled riots. Crystal, however, is focused on tonight's gig – a high-stakes underground synthwave rave promising the ultimate adrenaline rush.  This could be the break she needs, the escape from the looming darkness.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Secure a coveted performance slot at the 'Sun's Last Dance' rave, using her charm and improvisational skills to bypass Helios's increasingly strict control over performance permits and venues."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Crystal's infectious energy and dazzling improvisation win over the jaded rave organizer, securing her a prime spot. The crowd is electric, a wave of pulsating light and sound washing over her as she performs.
+    # IMAGE: Crystal bathed in the vibrant glow of the rave, her augmented instruments glowing, the crowd a sea of ecstatic faces.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_PNPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Helios's goons, sensing a potential threat to their control, shut down the rave before Crystal can take the stage.  Her attempts to charm her way in are met with brutal efficiency.  Left with nothing but frustration, she retreats to the shadowed back alleys.
+    # IMAGE: Riot police dispersing a crowd at the rave entrance, Crystal standing dejectedly in the shadows, her augmented instruments discarded.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_PNPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

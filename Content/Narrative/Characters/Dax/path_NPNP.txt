@@ -1,0 +1,19 @@
+NARRATOR: The artificial sun sputters, casting long, distorted shadows across Dax's cluttered Midcove apartment.  The PSN's lies are thinner than ever; the flickering data streams reflect the dying star itself.  He knows he needs to act, to pierce the veil of misinformation before it's too late.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: Dax will attempt to anonymously leak the PSN's falsified sun-stability data to a trusted, independent journalist contact in Seaburn, exposing the extent of the network's manipulation and hopefully triggering a more accurate public response. He will use a carefully crafted, untraceable encrypted channel and a decoy network to mask his location and protect his identity.
+
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The leak is successful.  The journalist publishes the story, triggering widespread outrage and a demand for transparency.  While the immediate impact on the sun's stability is unclear, a wave of public scrutiny washes over the PSN, forcing a hesitant re-evaluation of their data. Dax feels a fleeting sense of clarity amidst the chaos.
+    # IMAGE: A newsfeed displaying a headline revealing the PSN's deception, interspersed with images of public protests and concerned citizens demanding action.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax's encrypted channel is intercepted.  The PSN, already on high alert, traces the leak back to him.  The consequences are swift and brutal: his apartment is raided, his systems wiped clean, and he is left adrift in a sea of uncertainty, the chilling realization that even his meticulously crafted anonymity failed him. The horrifying silence of ignorance threatens to return.
+    # IMAGE: Dax's apartment, ransacked and empty, his multiple data screens now dark and lifeless, reflecting his own sense of helplessness.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

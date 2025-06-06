@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Lumina.  Shae feels a familiar knot of anxiety tighten in her chest.  The Lumina RRM's assurances feel hollow against the backdrop of the impending catastrophe.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Secure emergency authorization from the highest levels of Lumina's government to override the OptimaShip system and force the immediate transport of all available exotope canisters to Sun Island, regardless of established protocols or potential political repercussions."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: After frantic calls and tense negotiations, citing the imminent planetary collapse, Shae obtains the necessary emergency authorization. The OptimaShip system reluctantly complies, diverting all available resources to Sun Island. A wave of relief, tinged with exhaustion, washes over her.
+    # IMAGE: Shae, pale but resolute, stands before a bank of monitors displaying the rerouted cargo ships heading towards Sun Island, a relieved yet strained smile on her face.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Despite her pleas, the higher-ups in Lumina's government refuse to override the OptimaShip system, prioritizing political maneuvering and their own survival over planetary survival.  Shae’s desperate attempts to convince them are met with cold indifference and veiled threats. The sun continues its erratic flickering.
+    # IMAGE: Shae slumped in her chair, the monitors displaying the unchanged, stagnant cargo routes, her face etched with despair and a dawning sense of betrayal.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

@@ -1,0 +1,15 @@
+NARRATOR: The artificial sun, a once-constant presence in the Lumina sky, is gone.  Darkness blankets the city, a stark contrast to the meticulously controlled environment Shae has always known.  The chill is more than just a drop in temperature; it's a chilling confirmation of her failure.  The faint glow of emergency lights paints the cityscape in an eerie, unsettling hue.
+
+SHAE: (Whispering, her voice trembling slightly)  It… it can’t be.  It’s… impossible.  We followed protocol.  We… we did everything right.
+
+NARRATOR:  Shae clutches a datapad displaying the final, grim reports – the confirmation of Lumina RRM's deliberate sabotage, the faulty Coldry canisters, the PSN's misleading data.  Each line is a testament to her adherence to a system that ultimately betrayed her.  The weight of her complicity crushes her.  She failed to see beyond her ingrained loyalty to the system, her fear of questioning authority, her fervent belief that only adherence to Lumina’s rules guaranteed safety, blinding her to the systemic corruption at its heart.
+
+SHAE: (To herself, a bitter laugh escaping her lips)  Security… prosperity…  It was all a lie.  A carefully constructed illusion.  And I… I helped build it.
+
+NARRATOR:  The city's emergency broadcasts crackle with panicked pleas, conflicting reports, and the unsettlingly calm voice of the automatons issuing stark warnings.  Shae flinches at the automatons' assertive tone, a far cry from the carefully controlled narratives she had always been exposed to. The carefully constructed order she had dedicated her life to preserving has crumbled, replaced by chaos and cold.  Her carefully curated world is shattered, and the chilling darkness mirrors the void now gaping inside her.
+
+# IMAGE: Shae sits alone in her darkened office, the emergency lights casting harsh shadows on her face. The datapad displaying the incriminating reports lies abandoned on the desk, the faint glow reflecting in her hollow, fearful eyes. The silence is punctuated only by the distant, unsettling drone of the automatons and the rising whispers of panic from the city outside.
+
+# IMAGE: A wide shot of Lumina at night, plunged into darkness except for the sporadic glow of emergency lights, the towering structures looming like skeletal fingers against the star-filled sky.  In the distance, faint, almost imperceptible, red warning lights flicker on the automated sun-maintenance structures.  The image conveys a sense of deep unease and utter vulnerability.
+
+NARRATOR:  The failure of the artificial sun is not just a technical malfunction; it's a reflection of Shae's own profound failure.  Her deep-seated fear of disrupting the established order, her unwavering loyalty to a corrupt system, and her inability to confront the truth have condemned her and her city to a chilling, uncertain future.  The meticulously controlled structure she held so dear has crumbled, leaving only the bitter taste of her own complicity.

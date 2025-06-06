@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting long, eerie shadows across Lumina.  Shae, her usual composure frayed, clutches a datapad displaying alarmingly erratic energy readings from Sun Island.  The Lumina RRM's assurances feel hollow.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Shae will attempt to personally deliver a report to Minister Theron, bypassing the usual bureaucratic channels, detailing the Lumina RRM's deliberate slowdowns in exotope transport and urging immediate, transparent action to avoid escalating the crisis and risking Lumina's stability."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Minister Theron, initially skeptical, is swayed by Shae's detailed evidence and the gravity of the situation. He orders an immediate investigation and publicly reprimands the RRM, initiating emergency measures to expedite exotope delivery.  Shae feels a surge of relief, albeit tinged with anxiety about the repercussions.
+    # IMAGE: Shae standing before Minister Theron, her datapad displaying irrefutable evidence, a look of cautious hope on her face as Theron nods grimly.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Minister Theron dismisses Shae's concerns, viewing her actions as insubordination and a threat to Lumina's carefully managed image. He silences her report, subtly using the crisis to further consolidate his power and blame the automatons for the failing sun, while privately ordering the RRM to discreetly continue their obstructive tactics.  Shae is left isolated, her anxiety escalating into paralyzing fear.
+    # IMAGE: Shae standing alone in a dimly lit corridor, the datapad clutched tightly in her hand, her face reflecting fear and despair, the flickering sun casting long, distorted shadows.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

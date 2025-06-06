@@ -1,0 +1,17 @@
+NARRATOR: Dax sits in his Midcove apartment, a chaotic constellation of monitors displaying fragmented data streams from the PSN. The rhythmic hum of servers is punctuated by the insistent beep of an anomaly alert – a spike in unusual data deletion activity originating from the PSN's core servers.  The official PSN feeds still report "minor network fluctuations," a blatant lie.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Bypass the PSN's compromised surface-level security protocols and access its raw, unfiltered system logs to identify the source of the data deletion and any attempts to mask the artificial sun's failing status."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Dax navigates a labyrinthine digital landscape, his fingers flying across the keyboard. He bypasses firewalls, cracks encryption, and traces the deletions to a specific server farm—one that's physically located within the PSN building, yet masked as a separate, inactive node. The logs reveal a sophisticated algorithm systematically removing all data points indicating the sun's deteriorating condition.
+    # IMAGE: A close-up of Dax's screen displaying a complex network map, highlighted nodes revealing the hidden server farm and the data deletion activity visualized as a cascading wave of red.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_P.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax's intrusion triggers a sophisticated counter-intrusion protocol. His access is cut off, his system flooded with malware, and his digital footprint is aggressively scrubbed from the PSN's logs. The hidden server farm remains undetected, leaving him with a disturbing void where information should be.
+    # IMAGE: Dax's screen displays a chaotic cascade of error messages and corrupted data, overlaid with a warning banner indicating system lockdown.  His face is a mask of frustrated intensity.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_N.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

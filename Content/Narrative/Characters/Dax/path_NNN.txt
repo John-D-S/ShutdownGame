@@ -1,0 +1,17 @@
+NARRATOR: The PSN's contradictory statements regarding the sun's decline are escalating, fueling widespread panic and inaction. Dax, hunched over his monitors in his Midcove safehouse, feels the familiar icy grip of helplessness rising. He needs clarity, a verifiable truth to pierce the fog of misinformation.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Infiltrate the PSN's mainframe to bypass their public-facing filters and access their raw, unfiltered sensor data regarding the artificial sun's fuel levels and operational status."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  Exploiting a previously unknown backdoor, Dax bypasses the PSN's firewalls. The raw data reveals a far more dire situation than the public statements indicated—fuel reserves are critically lower than reported.
+    # IMAGE: A sprawling network map projected onto Dax's wall, highlighted with critical red nodes indicating the severity of the fuel shortage, contrasted against the calm, almost serene expression on Dax's face as he meticulously analyzes the data.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_NNNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax's intrusion triggers a system-wide alert. The PSN's automated defenses lock him out, and his unauthorized access is flagged, leaving him with even less information and more uncertainty than before.  The feeling of being trapped in another information vacuum intensifies.
+    # IMAGE: A close-up of Dax's frustrated face, his hands clenched as a series of error messages flash across his screen, the network map on his wall now dominated by red warnings and closed connections.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: path_NNNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

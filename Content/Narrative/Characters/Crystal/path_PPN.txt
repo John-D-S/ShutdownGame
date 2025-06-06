@@ -1,0 +1,18 @@
+NARRATOR: The flickering sun casts long, distorted shadows across Southpoint's already chaotic streets.  The air crackles with a nervous energy, a mix of fear and desperate revelry. Crystal, amidst the growing unrest, feels the familiar tug of anxiety – the gnawing feeling that she needs to escape, to find the next rush before the darkness consumes her.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Organize a massive, impromptu concert in the heart of Southpoint's Rig District, using the event to both channel the city's anxieties and distract from the worsening sun crisis, hoping to leverage the energy of the crowd and attract the attention of Helios – maybe even negotiate a better deal for exotope access."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The concert explodes into a cathartic release of pent-up energy.  Crystal's performance electrifies the crowd, momentarily eclipsing the fear with a wave of collective euphoria. Helios representatives, drawn by the spectacle, approach her backstage. A tense but surprisingly productive negotiation ensues.
+    # IMAGE: A panoramic view of the Rig District at night, ablaze with light and sound from Crystal's massive concert; the crowd is a sea of faces illuminated by vibrant augmented displays, while in a backstage area, Crystal negotiates with a stern but impressed Helios executive.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_PPNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The concert starts strong, but the chaotic energy spirals into a riot as tensions over the exotope shortage boil over. Helios, instead of being impressed, views the event as a threat and sends in security forces to shut it down. Crystal's escape is narrow, and her equipment is damaged.
+    # IMAGE: A chaotic scene of a riot in the Rig District, security forces clashing with angry citizens amidst the wreckage of Crystal's concert stage; Crystal narrowly escapes through the crowd, a look of fear and regret on her face.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: path_PPNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

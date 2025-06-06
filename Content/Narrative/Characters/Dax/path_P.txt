@@ -1,0 +1,15 @@
+NARRATOR: The PSN's carefully crafted narrative of "minor solar fluctuations" clashes violently with the increasingly frantic, near-desperate automated messages Dax intercepts from Sun Island.  His compulsion screams; the lack of clarity is a physical ache. He needs to know—to *see*—the raw data, unfiltered by the PSN's manipulative algorithms.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Bypass the PSN's main data stream and directly access the Sun Island automaton network using a newly developed backdoor exploit leveraging known vulnerabilities in their older communication protocols."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  A cascade of raw data floods Dax's screens—exotope levels plummeting, critical component failures, increasingly desperate resource requests. The truth, stark and undeniable, is a brutal counterpoint to the PSN's carefully constructed lie.  The immediacy of the threat feels almost… palpable.
+    # IMAGE: A wall of flickering screens displaying complex graphs and raw data streams, interspersed with increasingly urgent automated messages in stark white text on a black background.  Dax's face, illuminated by the eerie glow, is etched with grim determination.
+    NEXT_PATH_SEGMENT: path_PP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax's intrusion triggers an automated countermeasure.  The backdoor is sealed, and his access is completely severed. Worse, a security alert floods the PSN with his digital signature, flagging him as a threat. The information vacuum tightens, the fear more intense than before.
+    # IMAGE: A single, blank screen displaying a red "ACCESS DENIED" message; Dax stares at it, his face a mask of frustration and growing dread, the silence of his secure location suddenly oppressive.
+    NEXT_PATH_SEGMENT: path_PN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

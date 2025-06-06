@@ -1,0 +1,16 @@
+NARRATOR: The flickering sun casts long, unsettling shadows across the Coldry factory floor. ColCorp's foreman, a weasel of a man named Harv, is pushing for even cheaper materials – a blatant disregard for safety. Trent feels the familiar pressure building, a simmering rage against those who would exploit Coldry's workers.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Confront Harv directly, demanding he use the proper exotope canisters and threatening to rally the union if he refuses."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's intimidating presence and the threat of a union strike prove effective. Harv, sweating and pale, backs down, promising to use the approved materials.  A tense but temporary victory.
+    # IMAGE: Trent standing over a cowering Harv, the Coldry factory floor behind them, workers watching expectantly.
+    NEXT_PATH_SEGMENT: path_PNP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Harv, emboldened by ColCorp's backing and Trent's perceived isolation (given the recent union setbacks), calls Trent's bluff, claiming the 'better' canisters are unavailable due to the crisis. He reports Trent's 'incitement' to higher management. Trent's anger explodes, but it's a poorly targeted rage.
+    # IMAGE: Trent, fists clenched, facing a smug Harv who smirks, security guards closing in, the factory floor a blur of motion and anxiety.
+    NEXT_PATH_SEGMENT: path_PNN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

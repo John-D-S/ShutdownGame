@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting long, eerie shadows across Southpoint.  Another blackout looms, and the usual frantic energy of the city feels… strained. Crystal, perched on a crumbling rooftop, fiddles with her synth, the rhythmic pulse a defiant counterpoint to the looming darkness.  She needs a distraction, a rush, something to make this terrifying reality fade.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Crash Helios's private party at the Obsidian Tower, using a sonic weaponized performance to expose their negligence and sabotage their exotope siphoning operation."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Crystal's electrifying performance, laced with subliminal messages revealing Helios's crimes, overwhelms the party-goers.  Chaos erupts, drawing the attention of authorities, but also exposing Helios’s illegal activities to the public. The ensuing investigation temporarily halts their exotope theft.
+    # IMAGE: Crystal, bathed in the strobing lights of her augmented instruments, center stage as the Obsidian Tower's opulent party descends into pandemonium; police sirens wail in the background.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Helios's security detail is tighter than anticipated. Crystal's performance, while impressive, is overshadowed by a sudden, brutal crackdown on the party. Her sonic weapon malfunctions, causing only a minor disruption, and she's forced to flee, the exposure failing to materialize.  
+    # IMAGE: Crystal, silhouetted against the flashing lights of a police helicopter, running through the darkened streets of Southpoint, her synth clutched in her hand.
+    LOCATION: Southpoint
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

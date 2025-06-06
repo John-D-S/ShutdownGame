@@ -1,0 +1,19 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Dax's spartan apartment.  Another dimming period begins, and the PSN's reassuring lies feel more brittle than ever. He needs certainty, concrete data—anything to pierce the encroaching dread.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: Dax decides to attempt a risky data leak from the PSN's compromised servers, focusing on the obscured maintenance logs from Sun Island, hoping to find evidence of Helios' sabotage or Lumina RRM's manipulation.  He will use a newly developed wormhole protocol to bypass the PSN's firewalls and inject the data directly into a secure, encrypted archive accessible only to him.
+
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The wormhole protocol works flawlessly. Terabytes of data flood his system, revealing a pattern of falsified reports, deliberate resource misallocation, and concealed communication between Helios, Lumina RRM, and corrupt PSN officials. The truth, brutal and undeniable, floods Dax with a cold, sharp relief.
+    # IMAGE: A chaotic visual representation of data streams converging onto a single point of clarity on Dax's multiple monitors, the data forming a chilling narrative as it assembles.  His face is pale but focused, a grim satisfaction etched in his expression.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: The wormhole protocol triggers an automated countermeasure.  Dax's systems are overwhelmed by a wave of disinformation and encrypted malware designed to erase any trace of his intrusion.  The data remains obscured, and the fleeting sense of certainty evaporates, replaced by an even more profound sense of helplessness. The encroaching darkness deepens.
+    # IMAGE: Dax's monitors are filled with a swirling vortex of indecipherable code, red error messages flashing across the screen. His face is a mask of frustrated exhaustion.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

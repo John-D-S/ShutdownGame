@@ -1,0 +1,18 @@
+NARRATOR: The flickering sun casts long, distorted shadows across Coldry's factory floor. Trent, muscles tense, watches ColCorp's foreman, a weasel named Silas, attempt to bully a younger worker into overtime.  The air crackles with simmering resentment.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Confront Silas, demanding he stop exploiting the workers and threatening to shut down the exotope canister line if he doesn't back down immediately."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Trent's imposing presence and the unspoken threat of the entire union backing him forces Silas to retreat, sweating and muttering. The workers cheer, a wave of solidarity washing over the factory floor. The line remains operational, but the atmosphere shifts—a small victory won.
+    # IMAGE: Trent standing defiantly over a cowering Silas, the workers looking on with a mixture of relief and admiration.  The exotope canister line continues to operate smoothly in the background, workers moving with renewed purpose.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: path_PPPP.txt
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Silas, emboldened by ColCorp's increasingly desperate measures and the looming sun crisis, calls Trent's bluff.  He contacts security, and Trent finds himself facing suspension and potential union reprisal for his insubordination at a time of critical output demands.
+    # IMAGE: Trent being escorted out of the factory by security guards, his face a mask of furious frustration. The exotope line hums on, but the atmosphere is thick with fear.
+    LOCATION: Coldry
+    NEXT_PATH_SEGMENT: path_PPPN.txt
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
+

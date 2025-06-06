@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting long, flickering shadows across Dax's spartan apartment.  The PSN's lies are a constant, low thrum of anxiety – a physical ache in his skull. He needs clarity, needs *data*, before the final flicker extinguishes everything.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Initiate a covert data exfiltration from the PSN's compromised servers, targeting any hidden logs or suppressed reports related to OmniSynaptic's involvement in the sun's failing maintenance cycle – specifically focusing on any deliberate sabotage or withheld information."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax navigates the PSN's labyrinthine security protocols with practiced ease, exploiting known vulnerabilities and leaving no trace. A trove of suppressed data spills into his encrypted archive – a chilling tapestry of corporate negligence and deliberate obfuscation. The sheer volume of evidence confirming his suspicions brings a grim satisfaction, a fleeting respite from the encroaching dread.
+    # IMAGE: A close-up shot of Dax's workstation, multiple screens displaying cascading lines of code and decrypted files.  In the background, the artificial sun casts eerie, flickering light.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Dax's intrusion triggers a sophisticated counter-intrusion protocol.  His access is cut off abruptly, leaving him with nothing but fragmented data and a burning sense of frustration – the vacuum of ignorance threatening to swallow him whole.  He's left with more questions than answers, and the sun's dimming becomes a tangible representation of his failure.
+    # IMAGE: A screen displaying a stark "ACCESS DENIED" message, Dax's face illuminated by the flickering emergency lights.  His hands are clenched, his expression one of frustrated rage.
+    LOCATION: Midcove
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

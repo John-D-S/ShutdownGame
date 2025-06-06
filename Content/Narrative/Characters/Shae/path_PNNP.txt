@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting Lumina in a sickly yellow light.  Shae, perched in her office, clutches a datapad, anxiety twisting in her gut. The reports are catastrophic; Lumina RRM's deliberately slowed shipments are now openly acknowledged as a failure.  The automatons' demands are escalating.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "To appease the automatons and maintain Lumina's standing, Shae will secretly divert a small, previously allocated, shipment of high-grade exotopes from Lumina RRM's OptimaShip system, bypassing the official channels and the corrupt Lumina officials who are sabotaging the sun's fuel supply. This involves navigating complex logistical protocols, lying to her superiors, and potentially risking her career—a terrifying prospect, but one that seems less dangerous than the complete collapse of Lumina due to the sun's failure."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The diversion is successful.  A small, but crucial, shipment reaches Sun Island. The automatons acknowledge the delivery, their response less hostile.  Shae feels a sliver of relief, though the weight of her deception remains heavy.
+    # IMAGE: A single, gleaming exotope canister being loaded onto a small transport craft, silhouetted against the flickering artificial sun, watched by a silent automaton.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR: Shae's attempt is discovered. The corrupt officials within Lumina RRM expose her actions, framing her as a traitor who undermined the established system. Shae is stripped of her position, facing accusations of conspiracy and sabotage, her career ruined.  The sun's fate remains uncertain.
+    # IMAGE: Shae, alone and disgraced, stands before a panel of stern-faced officials, the artificial sun casting a harsh light on her face; the datapad she used lies broken on the floor.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END

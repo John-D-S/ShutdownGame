@@ -1,0 +1,17 @@
+NARRATOR: The artificial sun sputters, casting Lumina in a sickly, flickering light.  Shae, perched in her office, clutches a datapad displaying alarmingly erratic energy readings. The Lumina RRM’s assurances feel hollow, the carefully crafted reports masking a deeper, more terrifying truth.
+
+TOKEN_CHALLENGE_START
+  ACTION_TO_ATTEMPT_TEXT: "Secure an emergency meeting with the Lumina High Council, presenting the falsified RRM data alongside her own independent analysis (gathered through discreet channels and meticulously documented) to expose the deliberate inefficiencies within the state-owned transport system and demand immediate corrective action, emphasizing the catastrophic consequences of inaction and the potential threat to Lumina's security."
+  POSITIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The High Council, initially resistant, is swayed by Shae's compelling evidence and the undeniable severity of the crisis.  Orders are issued to prioritize Sun Island resupply, overriding the RRM's obstructive measures.  A wave of relief washes over Shae, though anxiety still lingers.
+    # IMAGE: Shae, standing before the High Council, her voice steady despite her visible tension, as a holographic projection displays the manipulated RRM data contrasted with her own analysis.  The Council members exchange serious but decisive nods.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  POSITIVE_PATH_OUTCOME_TEXT_END
+  NEGATIVE_PATH_OUTCOME_TEXT_START
+    NARRATOR:  The High Council dismisses Shae's concerns as alarmist, citing the RRM's official reports and emphasizing the need for calm and order.  Her meticulously gathered evidence is brushed aside as insufficient, her warnings dismissed as destabilizing. Despair threatens to overwhelm her.
+    # IMAGE: Shae, alone in her office, the flickering light reflecting in her distraught eyes as she stares at the dismissive response from the High Council. The datapad displays the now-useless independent analysis.
+    LOCATION: Lumina
+    NEXT_PATH_SEGMENT: END_OF_5_DAY_ARC
+  NEGATIVE_PATH_OUTCOME_TEXT_END
+TOKEN_CHALLENGE_END
