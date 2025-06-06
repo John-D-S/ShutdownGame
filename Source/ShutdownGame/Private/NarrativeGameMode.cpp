@@ -97,15 +97,9 @@ void ANarrativeGameMode::ResolveTokenChallenge(const FString& CharacterName, boo
 		CharState->CurrentLocation = OutcomeData.NewLocation;
 	}
 	
-	GS->CurrentTimeOfDayIndex = GS->PlayedCharactersThisDay.Num();
-	
-	ANarrativePlayerController* PC = Cast<ANarrativePlayerController>(UGameplayStatics::GetPlayerController(this, 0));
-	if (PC)
-	{
-		PC->IncrementSunRotation(60.0f);
-	}
-
-	ReturnToMapView();
+	// This function NO LONGER advances time or returns to the map.
+	// It just updates the state and then notifies the UI that the choice was resolved.
+	OnChoiceResolved(bSucceeded);
 }
 
 void ANarrativeGameMode::StartNewDay()
@@ -113,19 +107,16 @@ void ANarrativeGameMode::StartNewDay()
 	ANarrativeGameState* GS = GetGameState<ANarrativeGameState>();
 	if (GS)
 	{
-		// First, update the core state variables.
 		GS->PlayedCharactersThisDay.Empty();
 		GS->CurrentDay++;
 		GS->CurrentTimeOfDayIndex = 0;
 		
-		// Then, call the Blueprint event to let it set the tokens for the new day.
 		GS->OnNewDayStarted();
 	}
 
 	ANarrativePlayerController* PC = Cast<ANarrativePlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 	if (PC)
 	{
-		// From the 12am position, rotate 120 degrees more to get to the 8am position.
 		PC->IncrementSunRotation(120.0f);
 	}
 	

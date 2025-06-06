@@ -7,9 +7,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4211ba3-dcf1-4677-9285-db2110da52a8" name="Changes" comment="">
+    <list default="true" id="67086c14-4d57-4722-a1a3-784028954547" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShutdownGame.dir/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShutdownGame.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShutdownGame.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/GM_NarrativeGame.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/GM_NarrativeGame.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/WBP_HUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/WBP_HUD.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativeGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativeGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativeGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativeGameMode.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,45 +23,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Source/ShutdownGame.Target.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/ShutdownGame/Private/MyUserWidget.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativeDataHelper.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativeDialogWidget.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativeGameMode.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativeGameState.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativePlayerController.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/ShutdownGame/Public/MyUserWidget.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativeDataHelper.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativeDialogWidget.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativeGameMode.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativeGameState.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativePlayerController.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativeStructs.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Source/ShutdownGame/ShutdownGame.Build.cs" root0="FORCE_HIGHLIGHTING" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2y5DVbbpuYuAfpCkKedvLo4KDpe" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2y8kvrtFFgMcWBlJGviWr1ChfeO" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="ShutdownGame" type="Uproject" factoryName="rider.uproject">
       <configuration_1 setup="1">
@@ -136,18 +124,12 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d4211ba3-dcf1-4677-9285-db2110da52a8" name="Changes" comment="" />
-      <created>1749115566020</created>
+      <changelist id="67086c14-4d57-4722-a1a3-784028954547" name="Changes" comment="" />
+      <created>1749223822771</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1749115566020</updated>
-      <workItem from="1749115567488" duration="3000" />
-      <workItem from="1749115573412" duration="5000" />
-      <workItem from="1749115803344" duration="42000" />
-      <workItem from="1749115894311" duration="3000" />
-      <workItem from="1749116672986" duration="10317000" />
-      <workItem from="1749170474020" duration="4480000" />
-      <workItem from="1749193916778" duration="9135000" />
+      <updated>1749223822771</updated>
+      <workItem from="1749223824536" duration="856000" />
     </task>
     <servers />
   </component>

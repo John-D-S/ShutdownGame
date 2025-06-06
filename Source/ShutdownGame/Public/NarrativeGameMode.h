@@ -37,7 +37,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Game Flow")
 	void ReturnToMapView();
 
-	/// Processes the token challenge result, updates character state, and advances time.
+	/// Processes the token challenge result and updates character state.
 	UFUNCTION(BlueprintCallable, Category = "Game Flow")
 	void ResolveTokenChallenge(const FString& CharacterName, bool bSucceeded);
 	
@@ -48,4 +48,8 @@ public:
 	/// Event called in Blueprints when the game state changes, used to switch UI.
 	UFUNCTION(BlueprintImplementableEvent, Category = "Game Flow")
 	void OnGameStateChanged(EGameState NewState);
+	
+	/// Event called in Blueprints to notify the HUD that a choice has been resolved.
+	UFUNCTION(BlueprintImplementableEvent, Category = "Game Flow")
+	void OnChoiceResolved(bool bWasSuccess);
 };
