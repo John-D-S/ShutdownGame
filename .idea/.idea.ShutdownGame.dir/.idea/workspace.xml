@@ -9,15 +9,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d4211ba3-dcf1-4677-9285-db2110da52a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShutdownGame.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShutdownGame.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/GM_MainMenu.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/GM_MainMenu.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/GM_NarrativeGame.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/GM_NarrativeGame.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/PC_NarrativeGame.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/PC_NarrativeGame.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/WBP_Dialog.uasset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_StaticCameraPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_StaticCameraPawn.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/WBP_HUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/WBP_HUD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/WBP_Map.uasset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/WBP_NarrativeLIne.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/WBP_NarrativeLIne.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/GameLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameLevel.umap" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/MainMenuLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/MainMenuLevel.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativePlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativePlayerController.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativePlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativePlayerController.h" afterDir="false" />
     </list>
@@ -157,7 +151,7 @@
       <workItem from="1749115894311" duration="3000" />
       <workItem from="1749116672986" duration="10317000" />
       <workItem from="1749170474020" duration="4480000" />
-      <workItem from="1749193916778" duration="2041000" />
+      <workItem from="1749193916778" duration="3608000" />
     </task>
     <servers />
   </component>
