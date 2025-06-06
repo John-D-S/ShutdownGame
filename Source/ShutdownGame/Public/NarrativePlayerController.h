@@ -16,9 +16,13 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "UI")
 	TObjectPtr<UUserWidget> HUDWidgetInstance;
 
-	/// Smoothly moves the sun's parent pivot to a new rotation on the X axis.
+	/// Sets the sun pivot's target X-axis (Roll) rotation to an absolute angle.
 	UFUNCTION(BlueprintCallable, Category = "World Control")
-	void UpdateSunRotation(float NewRotationX);
+	void SetSunRotation(float TargetRotationRoll);
+	
+	/// Increments the sun pivot's target X-axis (Roll) rotation by a given angle.
+	UFUNCTION(BlueprintCallable, Category = "World Control")
+	void IncrementSunRotation(float AngleIncrementRoll);
 
 	/// Smoothly moves the camera to a target location and rotation.
 	UFUNCTION(BlueprintCallable, Category = "World Control")

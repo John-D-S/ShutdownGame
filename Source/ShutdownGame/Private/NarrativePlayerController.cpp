@@ -1,7 +1,7 @@
 #include "NarrativePlayerController.h"
 #include "Blueprint/UserWidget.h"
 #include "GameFramework/Pawn.h"
-#include "GameFramework/PlayerStart.h" // Required include for APlayerStart
+#include "GameFramework/PlayerStart.h"
 #include "Kismet/GameplayStatics.h"
 
 void ANarrativePlayerController::BeginPlay()
@@ -27,6 +27,8 @@ void ANarrativePlayerController::BeginPlay()
 	if (FoundActors.Num() > 0)
 	{
 		SunPivotActor = FoundActors[0];
+		// Set the sun's initial starting position for Day 1 (e.g., -60 degrees on the X-axis/Roll).
+		SetSunRotation(-60.0f);
 	}
 	else
 	{
@@ -39,24 +41,10 @@ void ANarrativePlayerController::BeginPlay()
 
 	if (PlayerStartActor && ControlledPawn)
 	{
-		// Get the intended starting location and rotation from the PlayerStart actor.
 		DefaultCameraLocation = PlayerStartActor->GetActorLocation();
 		DefaultCameraRotation = PlayerStartActor->GetActorRotation();
-
-		// Set the pawn's position and rotation to match the PlayerStart.
 		ControlledPawn->SetActorLocationAndRotation(DefaultCameraLocation, DefaultCameraRotation);
-
-		// Crucially, set the controller's rotation to match as well.
 		SetControlRotation(DefaultCameraRotation);
-
-		// Set the initial targets for the tick interpolation to this correct starting transform.
-		TargetCameraLocation = DefaultCameraLocation;
-		TargetCameraRotation = DefaultCameraRotation;
-	}
-	else if (ControlledPawn) // Fallback if no PlayerStart is found.
-	{
-		DefaultCameraLocation = ControlledPawn->GetActorLocation();
-		DefaultCameraRotation = ControlledPawn->GetActorRotation();
 		TargetCameraLocation = DefaultCameraLocation;
 		TargetCameraRotation = DefaultCameraRotation;
 	}
@@ -93,11 +81,21 @@ void ANarrativePlayerController::Tick(float DeltaTime)
 	}
 }
 
-void ANarrativePlayerController::UpdateSunRotation(float NewRotationX)
+void ANarrativePlayerController::SetSunRotation(float TargetRotationRoll)
 {
 	if (SunPivotActor)
 	{
-		TargetSunRotation = FRotator(NewRotationX, 0.0f, 0.0f);
+		// Set the target rotation directly, applying the value to the Roll (X-axis).
+		TargetSunRotation = FRotator(0.0f, 0.0f, TargetRotationRoll);
+	}
+}
+
+void ANarrativePlayerController::IncrementSunRotation(float AngleIncrementRoll)
+{
+	if (SunPivotActor)
+	{
+		// Add the increment to the current target rotation's Roll (X-axis).
+		TargetSunRotation.Roll += AngleIncrementRoll;
 	}
 }
 

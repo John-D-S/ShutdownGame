@@ -27,11 +27,7 @@ void ANarrativeGameState::BeginPlay()
 	{
 		TrentState->CurrentLocation = FName("Coldry");
 	}
-}
 
-void ANarrativeGameState::InitializeNewDay(int32 MinTokens, int32 MaxTokens)
-{
-	CurrentDay++;
-	CurrentTimeOfDayIndex = 0;
-	PlayerTokens = FMath::RandRange(MinTokens, MaxTokens);
+	// Trigger the Blueprint event to set up tokens for the first day.
+	OnNewDayStarted();
 }

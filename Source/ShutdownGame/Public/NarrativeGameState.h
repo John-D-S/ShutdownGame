@@ -2,7 +2,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameStateBase.h"
-#include "NarrativeStructs.h" // Include our structs
+#include "NarrativeStructs.h"
 #include "NarrativeGameState.generated.h"
 
 UCLASS()
@@ -14,9 +14,9 @@ public:
 	/// Called when the game starts or when spawned.
 	virtual void BeginPlay() override;
 	
-	/// Exposes CurrentDay to Blueprints, read-only.
+	/// Exposes CurrentDay to Blueprints, read-only. Starts at Day 1.
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Game State")
-	int32 CurrentDay = 0;
+	int32 CurrentDay = 1;
 
 	/// Exposes PlayerTokens to Blueprints for reading and writing.
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite, Category = "Game State")
@@ -42,7 +42,11 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Game State")
 	FNarrativeSegmentData CurrentSegmentData;
 
-	/// This function will be callable from our Blueprints.
-	UFUNCTION(BlueprintCallable, Category = "Game Logic")
-	void InitializeNewDay(int32 MinTokens, int32 MaxTokens);
+	/// A list of character names that have been played during the current day.
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Game State")
+	TArray<FString> PlayedCharactersThisDay;
+
+	/// Event called from C++ when a new day starts, implemented in the Blueprint child.
+	UFUNCTION(BlueprintImplementableEvent, Category = "Game Logic")
+	void OnNewDayStarted();
 };

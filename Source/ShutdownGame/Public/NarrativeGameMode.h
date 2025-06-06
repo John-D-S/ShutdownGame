@@ -10,6 +10,7 @@ enum class EGameState : uint8
 {
 	EMapView		UMETA(DisplayName = "Map View"),
 	EDialogView		UMETA(DisplayName = "Dialog View"),
+	EEndOfDay		UMETA(DisplayName = "End of Day"),
 	EResolutionView	UMETA(DisplayName = "Resolution View")
 };
 
@@ -39,6 +40,10 @@ public:
 	/// Processes the token challenge result, updates character state, and advances time.
 	UFUNCTION(BlueprintCallable, Category = "Game Flow")
 	void ResolveTokenChallenge(const FString& CharacterName, bool bSucceeded);
+	
+	/// Resets daily progress and starts the next day.
+	UFUNCTION(BlueprintCallable, Category = "Game Flow")
+	void StartNewDay();
 
 	/// Event called in Blueprints when the game state changes, used to switch UI.
 	UFUNCTION(BlueprintImplementableEvent, Category = "Game Flow")

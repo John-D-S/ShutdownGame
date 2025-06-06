@@ -9,10 +9,13 @@
   <component name="ChangeListManager">
     <list default="true" id="d4211ba3-dcf1-4677-9285-db2110da52a8" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShutdownGame.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShutdownGame.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/BP_StaticCameraPawn.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/BP_StaticCameraPawn.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/GS_NarrativeGame.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/GS_NarrativeGame.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/WBP_HUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/WBP_HUD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/GameLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameLevel.umap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativeGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativeGameMode.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativeGameState.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativeGameState.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativePlayerController.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativePlayerController.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativeGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativeGameMode.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativeGameState.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativeGameState.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativePlayerController.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativePlayerController.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -151,7 +154,7 @@
       <workItem from="1749115894311" duration="3000" />
       <workItem from="1749116672986" duration="10317000" />
       <workItem from="1749170474020" duration="4480000" />
-      <workItem from="1749193916778" duration="3608000" />
+      <workItem from="1749193916778" duration="7873000" />
     </task>
     <servers />
   </component>
