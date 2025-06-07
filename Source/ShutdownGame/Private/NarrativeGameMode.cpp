@@ -190,9 +190,15 @@ void ANarrativeGameMode::BeginEndGameSequence()
 	ANarrativeGameState* GS = GetGameState<ANarrativeGameState>();
 	if (!GS) return;
 
+	// Update the Day and Time for the final outcome reveal.
+	GS->CurrentDay++; // Advance from Day 5 to Day 6.
+	GS->CurrentTimeOfDayIndex = 1; // Set time to 12:00 PM (index 1).
+
+	// Rotate the sun forward from its 12am position to the next day's noon.
 	ANarrativePlayerController* PC = Cast<ANarrativePlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 	if (PC)
 	{
+		// The sun is at +180 (midnight). We add 180 more to get to +360 (next day's noon).
 		PC->IncrementSunRotation(180.0f);
 	}
 	

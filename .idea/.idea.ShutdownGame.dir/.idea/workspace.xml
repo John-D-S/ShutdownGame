@@ -8,9 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67086c14-4d57-4722-a1a3-784028954547" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShutdownGame.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShutdownGame.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/WBP_HUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/WBP_HUD.uasset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativeDataHelper.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativeDataHelper.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/WBP_NarrativeLIne.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/WBP_NarrativeLIne.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativeGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativeGameMode.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +128,7 @@
       <updated>1749223822771</updated>
       <workItem from="1749223824536" duration="1453000" />
       <workItem from="1749264776992" duration="3272000" />
-      <workItem from="1749276356754" duration="6778000" />
+      <workItem from="1749276356754" duration="7415000" />
     </task>
     <servers />
   </component>
