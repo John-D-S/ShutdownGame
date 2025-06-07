@@ -48,9 +48,11 @@ private:
 	UPROPERTY()
 	TObjectPtr<AActor> SunPivotActor;
 
-	/// The target rotation for the sun pivot. The Tick function will smoothly interpolate to this value.
-	UPROPERTY()
-	FRotator TargetSunRotation;
+	/// The current, continuously interpolated roll of the sun.
+	float CurrentSunRoll;
+
+	/// The target roll the sun is moving towards.
+	float TargetSunRoll;
 
 	/// The target location for the camera. The Tick function will smoothly interpolate to this value.
 	UPROPERTY()

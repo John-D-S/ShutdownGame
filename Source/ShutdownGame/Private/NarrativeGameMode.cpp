@@ -29,7 +29,21 @@ void ANarrativeGameMode::StartCharacterSegment(const FString& CharacterName)
 	if (!CharState) return;
 	
 	FNarrativeSegmentData ParsedData;
-	bool bSuccess = UNarrativeDataHelper::ParseNarrativeFile(CharacterName, CharState->CurrentPathString, ParsedData);
+	bool bSuccess;
+
+	if (GS->bIsInResolutionPhase)
+	{
+		// In the resolution phase, we parse a resolution file instead.
+		TArray<FNarrativeLine> ResolutionLines = UNarrativeDataHelper::ParseResolutionFile(CharacterName, CharState->CurrentPathString, GS->bSunWasSaved);
+		ParsedData.InitialNarrativeLines = ResolutionLines;
+		bSuccess = ResolutionLines.Num() > 0;
+	}
+	else
+	{
+		// Normal gameplay: parse a standard segment file with a challenge.
+		bSuccess = UNarrativeDataHelper::ParseNarrativeFile(CharacterName, CharState->CurrentPathString, ParsedData);
+	}
+	
 
 	if (bSuccess)
 	{
@@ -39,21 +53,20 @@ void ANarrativeGameMode::StartCharacterSegment(const FString& CharacterName)
 	}
 	else
 	{
-		UE_LOG(LogTemp, Error, TEXT("Failed to parse narrative file for %s at path string '%s'"), *CharacterName, *CharState->CurrentPathString);
+		UE_LOG(LogTemp, Error, TEXT("Failed to parse file for %s at path string '%s'"), *CharacterName, *CharState->CurrentPathString);
 	}
 }
 
 void ANarrativeGameMode::ReturnToMapView()
 {
 	ANarrativeGameState* GS = GetGameState<ANarrativeGameState>();
-	if (GS)
-	{
-		GS->ActiveCharacterName = "";
-		
-		// Set the time index based on how many characters have been played.
-		GS->CurrentTimeOfDayIndex = GS->PlayedCharactersThisDay.Num();
+	if (!GS) return;
 
-		// Advance the sun's position.
+	// In resolution phase, time does not advance.
+	if (!GS->bIsInResolutionPhase)
+	{
+		GS->CurrentTimeOfDayIndex = GS->PlayedCharactersThisDay.Num();
+		
 		ANarrativePlayerController* PC = Cast<ANarrativePlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 		if (PC)
 		{
@@ -61,11 +74,19 @@ void ANarrativeGameMode::ReturnToMapView()
 		}
 	}
 	
-	// Check if all characters have been played.
+	GS->ActiveCharacterName = "";
+	
 	const int32 TotalCharacters = 4;
-	if (GS && GS->PlayedCharactersThisDay.Num() >= TotalCharacters)
+	if (GS->PlayedCharactersThisDay.Num() >= TotalCharacters)
 	{
-		CurrentGameState = EGameState::EEndOfDay;
+		if (GS->bIsInResolutionPhase)
+		{
+			CurrentGameState = EGameState::EGameFinished;
+		}
+		else
+		{
+			CurrentGameState = EGameState::EEndOfDay;
+		}
 	}
 	else
 	{
@@ -108,22 +129,25 @@ void ANarrativeGameMode::ResolveTokenChallenge(const FString& CharacterName, boo
 		CharState->CurrentLocation = OutcomeData.NewLocation;
 	}
 	
-	// This function now only notifies the UI that the choice has been resolved.
-	// It no longer advances time or returns to the map.
 	OnChoiceResolved(bSucceeded);
 }
 
 void ANarrativeGameMode::StartNewDay()
 {
 	ANarrativeGameState* GS = GetGameState<ANarrativeGameState>();
-	if (GS)
+	if (!GS) return;
+
+	const int32 FinalDay = 5;
+	if (GS->CurrentDay >= FinalDay)
 	{
-		GS->PlayedCharactersThisDay.Empty();
-		GS->CurrentDay++;
-		GS->CurrentTimeOfDayIndex = 0;
-		
-		GS->OnNewDayStarted();
+		BeginEndGameSequence();
+		return;
 	}
+
+	GS->PlayedCharactersThisDay.Empty();
+	GS->CurrentDay++;
+	GS->CurrentTimeOfDayIndex = 0;
+	GS->OnNewDayStarted();
 
 	ANarrativePlayerController* PC = Cast<ANarrativePlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 	if (PC)
@@ -132,5 +156,76 @@ void ANarrativeGameMode::StartNewDay()
 	}
 	
 	CurrentGameState = EGameState::EMapView;
+	OnGameStateChanged(CurrentGameState);
+}
+
+void ANarrativeGameMode::DisplayWorldOutcome()
+{
+	CurrentGameState = EGameState::EDisplayingWorldOutcome;
+	OnGameStateChanged(CurrentGameState);
+}
+
+void ANarrativeGameMode::PrepareForResolutions()
+{
+	ANarrativeGameState* GS = GetGameState<ANarrativeGameState>();
+	if(GS)
+	{
+		GS->bIsInResolutionPhase = true;
+		GS->PlayedCharactersThisDay.Empty();
+	}
+	
+	CurrentGameState = EGameState::EMapView;
+	OnGameStateChanged(CurrentGameState);
+}
+
+void ANarrativeGameMode::BeginEndGameSequence()
+{
+	ANarrativeGameState* GS = GetGameState<ANarrativeGameState>();
+	if (!GS) return;
+
+	// Rotate the sun forward from its 12am position to the next day's noon.
+	ANarrativePlayerController* PC = Cast<ANarrativePlayerController>(UGameplayStatics::GetPlayerController(this, 0));
+	if (PC)
+	{
+		// The sun is at +180 (midnight). We add 180 more to get to +360 (next day's noon).
+		PC->IncrementSunRotation(180.0f);
+	}
+	
+	TArray<FString> CharacterNames = {"Crystal", "Shae", "Dax", "Trent"};
+	FString WorldOutcomeKey;
+
+	for (int32 i = 0; i < CharacterNames.Num(); ++i)
+	{
+		const FString& Name = CharacterNames[i];
+		FCharacterState* CharState = GS->CharacterStates.Find(Name);
+		TMap<FString, FString> OutcomeMap = UNarrativeDataHelper::LoadOutcomeMapping(Name);
+
+		if (CharState && OutcomeMap.Num() > 0)
+		{
+			FString* OutcomeLabel = OutcomeMap.Find(CharState->CurrentPathString);
+			if (OutcomeLabel)
+			{
+				GS->FinalCharacterOutcomes.Add(Name, *OutcomeLabel);
+				WorldOutcomeKey.Append(*OutcomeLabel);
+				if (i < CharacterNames.Num() - 1)
+				{
+					WorldOutcomeKey.Append(",");
+				}
+			}
+		}
+	}
+
+	TMap<FString, FWorldOutcome> WorldMap = UNarrativeDataHelper::LoadWorldOutcomeMapping();
+	if (WorldMap.Num() > 0)
+	{
+		FWorldOutcome* WorldOutcome = WorldMap.Find(WorldOutcomeKey);
+		if (WorldOutcome)
+		{
+			GS->bSunWasSaved = WorldOutcome->bSunIsOn;
+			GS->WorldOutcomeExplanation = WorldOutcome->Explanation;
+		}
+	}
+
+	CurrentGameState = EGameState::EShowingWorldOutcome;
 	OnGameStateChanged(CurrentGameState);
 }

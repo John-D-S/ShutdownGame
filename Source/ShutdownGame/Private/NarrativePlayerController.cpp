@@ -27,8 +27,11 @@ void ANarrativePlayerController::BeginPlay()
 	if (FoundActors.Num() > 0)
 	{
 		SunPivotActor = FoundActors[0];
-		// Set the sun's initial starting position for Day 1 (e.g., -60 degrees on the X-axis/Roll).
-		SetSunRotation(-60.0f);
+		// Set the sun's initial starting position for Day 1.
+		constexpr float StartAngle = -60.0f;
+		CurrentSunRoll = StartAngle;
+		TargetSunRoll = StartAngle;
+		SunPivotActor->SetActorRotation(FRotator(0.0f, 0.0f, CurrentSunRoll));
 	}
 	else
 	{
@@ -69,34 +72,27 @@ void ANarrativePlayerController::Tick(float DeltaTime)
 		}
 	}
 
-	// Smoothly interpolate the sun pivot to its target rotation.
+	// Smoothly interpolate our internal float value and apply it to the sun pivot.
 	if (SunPivotActor)
 	{
-		FRotator CurrentSunRotation = SunPivotActor->GetActorRotation();
-		if (!CurrentSunRotation.Equals(TargetSunRotation, 0.01f))
+		if (!FMath::IsNearlyEqual(CurrentSunRoll, TargetSunRoll, 0.01f))
 		{
-			FRotator NewSunRotation = FMath::RInterpTo(CurrentSunRotation, TargetSunRotation, DeltaTime, InterpolationSpeed);
-			SunPivotActor->SetActorRotation(NewSunRotation);
+			CurrentSunRoll = FMath::FInterpTo(CurrentSunRoll, TargetSunRoll, DeltaTime, InterpolationSpeed);
+			SunPivotActor->SetActorRotation(FRotator(0.0f, 0.0f, CurrentSunRoll));
 		}
 	}
 }
 
 void ANarrativePlayerController::SetSunRotation(float TargetRotationRoll)
 {
-	if (SunPivotActor)
-	{
-		// Set the target rotation directly, applying the value to the Roll (X-axis).
-		TargetSunRotation = FRotator(0.0f, 0.0f, TargetRotationRoll);
-	}
+	// Set the target float value.
+	TargetSunRoll = TargetRotationRoll;
 }
 
 void ANarrativePlayerController::IncrementSunRotation(float AngleIncrementRoll)
 {
-	if (SunPivotActor)
-	{
-		// Add the increment to the current target rotation's Roll (X-axis).
-		TargetSunRotation.Roll += AngleIncrementRoll;
-	}
+	// Add the increment to the current target float value.
+	TargetSunRoll += AngleIncrementRoll;
 }
 
 void ANarrativePlayerController::MoveCameraToTarget(FVector TargetLocation, FRotator TargetRotation)

@@ -3,6 +3,21 @@
 #include "CoreMinimal.h"
 #include "NarrativeStructs.generated.h"
 
+// Holds the data for a single world outcome mapping.
+USTRUCT(BlueprintType)
+struct FWorldOutcome
+{
+	GENERATED_BODY()
+
+	/// Whether the sun was saved in this outcome.
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Narrative")
+	bool bSunIsOn = false;
+
+	/// The AI-generated text explaining this world outcome.
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Narrative")
+	FString Explanation;
+};
+
 // Holds the dynamic state for a single character throughout the game.
 USTRUCT(BlueprintType)
 struct FCharacterState

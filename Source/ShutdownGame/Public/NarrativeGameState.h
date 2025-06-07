@@ -46,6 +46,22 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Game State")
 	TArray<FString> PlayedCharactersThisDay;
 
+	/// A map of character names to their final G/N/B outcome label. Populated at the end of Day 5.
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Game State|End Game")
+	TMap<FString, FString> FinalCharacterOutcomes;
+	
+	/// The final state of the sun. Set at the end of Day 5.
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Game State|End Game")
+	bool bSunWasSaved = false;
+
+	/// The final world outcome explanation text. Set at the end of Day 5.
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Game State|End Game")
+	FString WorldOutcomeExplanation;
+
+	/// A flag to indicate the game is in the final resolution phase.
+	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Game Flow")
+	bool bIsInResolutionPhase = false;
+
 	/// Event called from C++ when a new day starts, implemented in the Blueprint child.
 	UFUNCTION(BlueprintImplementableEvent, Category = "Game Logic")
 	void OnNewDayStarted();
