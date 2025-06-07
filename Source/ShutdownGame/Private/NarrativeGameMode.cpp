@@ -29,18 +29,19 @@ void ANarrativeGameMode::StartCharacterSegment(const FString& CharacterName)
 	if (!CharState) return;
 	
 	FNarrativeSegmentData ParsedData;
-	bool bSuccess;
+	bool bSuccess = false;
 
+	// Check if the game is in the final resolution phase.
 	if (GS->bIsInResolutionPhase)
 	{
-		// In the resolution phase, we parse a resolution file instead.
+		// If yes, parse the character's specific resolution file.
 		TArray<FNarrativeLine> ResolutionLines = UNarrativeDataHelper::ParseResolutionFile(CharacterName, CharState->CurrentPathString, GS->bSunWasSaved);
 		ParsedData.InitialNarrativeLines = ResolutionLines;
 		bSuccess = ResolutionLines.Num() > 0;
 	}
 	else
 	{
-		// Normal gameplay: parse a standard segment file with a challenge.
+		// If no, do the normal gameplay: parse a segment file with a challenge.
 		bSuccess = UNarrativeDataHelper::ParseNarrativeFile(CharacterName, CharState->CurrentPathString, ParsedData);
 	}
 	
@@ -62,7 +63,13 @@ void ANarrativeGameMode::ReturnToMapView()
 	ANarrativeGameState* GS = GetGameState<ANarrativeGameState>();
 	if (!GS) return;
 
-	// In resolution phase, time does not advance.
+	// Add the character that was just being played to the completed list.
+	if (!GS->ActiveCharacterName.IsEmpty())
+	{
+		GS->PlayedCharactersThisDay.AddUnique(GS->ActiveCharacterName);
+	}
+
+	// In normal gameplay phase, advance time. Time does not advance during resolutions.
 	if (!GS->bIsInResolutionPhase)
 	{
 		GS->CurrentTimeOfDayIndex = GS->PlayedCharactersThisDay.Num();
@@ -101,7 +108,7 @@ void ANarrativeGameMode::ResolveTokenChallenge(const FString& CharacterName, boo
 	ANarrativeGameState* GS = GetGameState<ANarrativeGameState>();
 	if (!GS) return;
 
-	GS->PlayedCharactersThisDay.AddUnique(CharacterName);
+	// This function no longer tracks played characters; ReturnToMapView does.
 
 	FCharacterState* CharState = GS->CharacterStates.Find(CharacterName);
 	if (!CharState) return;
@@ -183,11 +190,9 @@ void ANarrativeGameMode::BeginEndGameSequence()
 	ANarrativeGameState* GS = GetGameState<ANarrativeGameState>();
 	if (!GS) return;
 
-	// Rotate the sun forward from its 12am position to the next day's noon.
 	ANarrativePlayerController* PC = Cast<ANarrativePlayerController>(UGameplayStatics::GetPlayerController(this, 0));
 	if (PC)
 	{
-		// The sun is at +180 (midnight). We add 180 more to get to +360 (next day's noon).
 		PC->IncrementSunRotation(180.0f);
 	}
 	

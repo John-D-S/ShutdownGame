@@ -98,10 +98,11 @@ bool UNarrativeDataHelper::ParseNarrativeFile(const FString& CharacterName, cons
 			
 			if (TrimmedLine.Split(TEXT(":"), &SpeakerStr, &LineStr))
 			{
+				// Line has a speaker: "SPEAKER: Text".
 				NewNarrativeLine.Speaker = FName(*SpeakerStr.TrimStartAndEnd());
 				NewNarrativeLine.Line = FText::FromString(LineStr.TrimStart());
 			}
-			else 
+			else // Line has no speaker, assume NARRATOR.
 			{
 				NewNarrativeLine.Speaker = FName("NARRATOR");
 				NewNarrativeLine.Line = FText::FromString(TrimmedLine);
@@ -109,6 +110,7 @@ bool UNarrativeDataHelper::ParseNarrativeFile(const FString& CharacterName, cons
 
 			if (CurrentState == ENarrativeParseState::InPositiveOutcome || CurrentState == ENarrativeParseState::InNegativeOutcome)
 			{
+				// Check for keywords within outcome blocks before adding as narrative.
 				if (TrimmedLine.StartsWith("LOCATION:"))
 				{
 					if(CurrentOutcomeData) CurrentOutcomeData->NewLocation = FName(*TrimmedLine.RightChop(9).TrimStart());
@@ -200,7 +202,10 @@ TArray<FNarrativeLine> UNarrativeDataHelper::ParseResolutionFile(const FString& 
 {
 	TArray<FNarrativeLine> ResolutionLines;
 	FString SunStateStr = bSunIsOn ? "sun_on" : "sun_off";
-	FString FileName = FString::Printf(TEXT("path_%s_%s.txt"), *PathString, *SunStateStr);
+	
+	// Corrected filename format to match the generated files.
+	FString FileName = FString::Printf(TEXT("path_%s_sun_%s.txt"), *PathString, *SunStateStr);
+	
 	FString FullPath = FPaths::ProjectContentDir() / TEXT("Narrative") / TEXT("Characters") / CharacterName / TEXT("resolutions") / FileName;
 
 	TArray<FString> Lines;
