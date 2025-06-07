@@ -8,12 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="67086c14-4d57-4722-a1a3-784028954547" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ShutdownGame.dir/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ShutdownGame.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ShutdownGame.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Content/Blueprints/GM_NarrativeGame.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/GM_NarrativeGame.uasset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Content/Blueprints/WBP_HUD.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/WBP_HUD.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/Blueprints/WBP_NarrativeLIne.uasset" beforeDir="false" afterPath="$PROJECT_DIR$/Content/Blueprints/WBP_NarrativeLIne.uasset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Content/GameLevel.umap" beforeDir="false" afterPath="$PROJECT_DIR$/Content/GameLevel.umap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativeGameMode.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShutdownGame/Private/NarrativeGameMode.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativeGameMode.h" beforeDir="false" afterPath="$PROJECT_DIR$/Source/ShutdownGame/Public/NarrativeGameMode.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,29 +22,29 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2y8kvrtFFgMcWBlJGviWr1ChfeO" />
   <component name="ProjectViewState">
     <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="ShutdownGame" type="Uproject" factoryName="rider.uproject">
       <configuration_1 setup="1">
@@ -129,7 +128,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1749223822771</updated>
-      <workItem from="1749223824536" duration="856000" />
+      <workItem from="1749223824536" duration="1453000" />
+      <workItem from="1749264776992" duration="3272000" />
     </task>
     <servers />
   </component>

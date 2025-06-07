@@ -49,8 +49,19 @@ void ANarrativeGameMode::ReturnToMapView()
 	if (GS)
 	{
 		GS->ActiveCharacterName = "";
-	}
+		
+		// Set the time index based on how many characters have been played.
+		GS->CurrentTimeOfDayIndex = GS->PlayedCharactersThisDay.Num();
 
+		// Advance the sun's position.
+		ANarrativePlayerController* PC = Cast<ANarrativePlayerController>(UGameplayStatics::GetPlayerController(this, 0));
+		if (PC)
+		{
+			PC->IncrementSunRotation(60.0f);
+		}
+	}
+	
+	// Check if all characters have been played.
 	const int32 TotalCharacters = 4;
 	if (GS && GS->PlayedCharactersThisDay.Num() >= TotalCharacters)
 	{
@@ -97,8 +108,8 @@ void ANarrativeGameMode::ResolveTokenChallenge(const FString& CharacterName, boo
 		CharState->CurrentLocation = OutcomeData.NewLocation;
 	}
 	
-	// This function NO LONGER advances time or returns to the map.
-	// It just updates the state and then notifies the UI that the choice was resolved.
+	// This function now only notifies the UI that the choice has been resolved.
+	// It no longer advances time or returns to the map.
 	OnChoiceResolved(bSucceeded);
 }
 
