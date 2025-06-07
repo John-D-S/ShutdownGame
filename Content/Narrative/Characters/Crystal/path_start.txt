@@ -1,16 +1,44 @@
-NARRATOR: The bass throb of the latest Helios rave still vibrates in Crystal's bones, a fading echo of the exhilarating escape.  But even the most potent exotope cocktail can't fully drown out the nagging feeling that something's off.  The sun feels… weaker.
+NARRATOR: The bass from The Neon Coil Club's speakers is a physical force, vibrating through the floor and the augmented bodies of the patrons. Crystal stands near the bar, scanning the manic energy of the crowd, a half-finished, brightly colored exotope drink in her hand. Liam, a musician she was supposed to be rehearsing with, spots her and pushes through the throng.
+
+LIAM: (Voice raised over the music, strained) Crystal! Seriously? Here? I waited three hours at the studio!
+
+NARRATOR: Crystal jumps slightly, forcing a bright, practiced smile as she turns.
+
+CRYSTAL: Liam! Hey! Wild, right? This place just erupted. You gotta hear this new synth line—
+
+LIAM: (Frustrated) The synth line? Crystal, we were supposed to lock down the bridge for the showcase track. The one that could actually get us noticed outside this chaos?
+
+NARRATOR: Her smile flickers. She takes a quick, reflexive sip of her drink to avoid his gaze, her expression turning sour. The taste is thin, chemical. Wrong.
+
+LIAM: This is the problem, Crystal. You're always chasing a buzz that isn't even good anymore. Even the escape is second-rate. Some things don't wait for 'later', Crystal.
+
+NARRATOR: He turns and disappears back into the crowd. Crystal stands alone at the bar, his words stinging. She feels a familiar wave of guilt and shame. She turns to Mila, the owner, forcing a nonchalant tone.
+
+CRYSTAL: Hey, Mila. Liam’s just stressed. But he’s right about one thing. What is this stuff you’re serving?
+
+MILA: (Sighs, gestures with her rag) It’s what there is. Another shipment of "premium" from Helios. Tastes like Every regular has been complaining for a week. My sales are in the tank.
+
+CRYSTAL: So get it from somewhere else.
+
+MILA: (She gives a short, harsh laugh) And where would that be? It all comes from the same place now: the main commercial depot down by the rigs. You take what they give you, or you have nothing to sell.
+
+NARRATOR: Mila moves down the bar to serve another customer. Crystal is left with the information and a lingering bad taste.
 
 TOKEN_CHALLENGE_START
-  ACTION_TO_ATTEMPT_TEXT: "Chase the rumor of a secret after-party – a notorious underground gathering rumored to be hosted by a group of augmented tech heads known for their access to restricted data and experimental tech. Crystal figures they might know something juicy, something beyond the usual Helios-spun spin on the sun's dimming."
+  ACTION_TO_ATTEMPT_TEXT: "Liam's words and Mila's rumour combine into a single, dissonant note beneath the club's noise. Will crystal tune into that unsettling new signal, or crank up the noise and drown it out?"
   POSITIVE_PATH_OUTCOME_TEXT_START
-    NARRATOR:  The party is wilder, weirder, and more informative than Crystal could have hoped.  Hidden amongst the glitching synths and bioluminescent body paint, she overhears hushed conversations about the failed automaton launch and a brewing crisis.  Someone slips her a data chip containing leaked Helios memos revealing the extent of their exotope manipulation.
-    # IMAGE: Crystal, surrounded by a throng of neon-clad partygoers, a mischievous grin playing on her lips as she discreetly pockets a data chip.  The background is a blur of pulsating lights and experimental augmentations.
+    NARRATOR: Crystal pulls out her phone, the club's pulsing lights making the screen feel like a lifeline. She quickly types a message to Liam, her tone breezy, designed to smooth things over and move on.
+    CRYSTAL (PHONE TEXT): Ugh you're right. My bad. Total flake. Studio tomorrow, first thing. I'll bring the good stuff to make up for it.
+    NARRATOR: She sends it, a minor problem dealt with. But she’s still left with the bigger one: she's stuck in a terrible party with a bad drink, and her anxiety is creeping back in. The club feels played out. Then she remembers Mila's words about the depot. A place with secrets, a problem no one is talking about. A flicker of genuine interest cuts through her restlessness. Now that sounds more interesting than this noise.
+    # IMAGE: A spark in Crystal's eyes as she looks up from her phone, a genuine, curious smile replacing her earlier forced one. The boring party behind her is now just out-of-focus background light.
     LOCATION: Southpoint
     NEXT_PATH_SEGMENT: path_P.txt
   POSITIVE_PATH_OUTCOME_TEXT_END
   NEGATIVE_PATH_OUTCOME_TEXT_START
-    NARRATOR: The "secret" party turns out to be a Helios-sponsored trap, designed to distract and control the city's more inquisitive minds. Crystal, caught up in the thrill of the chase and the promise of exclusive new sounds, forgets her initial suspicions. She ends up spending the night indulging in heavily adulterated exotope cocktails and misses any crucial information.
-    # IMAGE: Crystal slumped against a wall in a dimly lit, grimy alleyway, the remnants of a failed night of partying, her head throbbing and her pockets empty. The neon lights of Southpoint are a cruel mockery of the fun she thought she'd find.
+    NARRATOR: She watches Liam go, a shadow crossing her face before she shakes it off. "Forget it," she mutters, turning back to the bar with a forced energy. She flags down the bartender, shouting over the music.
+    CRYSTAL: Another round! And make it a double!
+    NARRATOR: She spends the rest of the night chasing a feeling she never quite catches, each drink tasting worse than the last. The apology she owes Liam goes unsent, and the deeper problem with the city's supply remains an unexplored.
+    # IMAGE: Crystal at the chaotic bar, laughing too loudly with a stranger. Her eyes, however, are unfocused and reflect the neon lights with a hollow, joyless sheen.
     LOCATION: Southpoint
     NEXT_PATH_SEGMENT: path_N.txt
   NEGATIVE_PATH_OUTCOME_TEXT_END
